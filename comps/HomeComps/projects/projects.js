@@ -34,9 +34,6 @@ export default function Projects() {
           initial={{ x: "-100vw", opacity: 0.1 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{duration: 1.7, delay: 1, type: "tween", }}>
-          {/* transition={{duration: 1.7, delay: 1, type: "spring", stiffness:"110"}}> */}
-          {/* <Image src={image} width={500} height={300}/> */}
-          {/* <a href={visit} target="_blank"><Img src={image} /></a> */}
           <a href={`/project/${id}`} target="_blank"><Img src={image} /></a>
         {/* <BlogCard> */}
         <TitleContent>
