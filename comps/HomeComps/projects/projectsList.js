@@ -19,7 +19,8 @@ export default function ProjectsGroup({ category }) {
             {
     projectll.map(({
     title,
-    description,
+      description,
+    detailsPage,
     image,
     tags,
     source,
@@ -39,7 +40,7 @@ export default function ProjectsGroup({ category }) {
         {/* <a href={visit} target="_blank"><Img src={image} /></a> */}
         
            {/* <Link href=`/project/1${id}`><a><Img src={image} /> </a></Link> */}
-           <Link href={`/project/${id}`}><a><Img src={image} /> </a></Link>
+           <Link href={detailsPage}><a><Img src={image} /> </a></Link>
         
         <TitleContent>
           <HeaderThree >{title}</HeaderThree>

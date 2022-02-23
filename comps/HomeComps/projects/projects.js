@@ -27,6 +27,7 @@ export default function Projects() {
     title,
     description,
     image,
+    detailsPage,
     tags,
     source,
     visit,
@@ -38,7 +39,7 @@ export default function Projects() {
           initial={{ x: "-100vw", opacity: 0.1 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{duration: 1.7, delay: 1, type: "tween", }}>
-          <a href={`/project/${id}`} ><Img src={image} /></a>
+          <a href={detailsPage} ><Img src={image} /></a>
         {/* <BlogCard> */}
         <TitleContent>
           <HeaderThree >{title}</HeaderThree>

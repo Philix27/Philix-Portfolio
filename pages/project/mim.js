@@ -13,16 +13,16 @@ export default function Mim() {
                 <div>
                 <SectionTitle >{title}</SectionTitle>
                 </div>
-                {/* <Image
+                <Image
                 layout="responsive"
                 objectFit="cover"
                 height={250}
                 width={1040}
                 src={image}
-            />   */}
-            <div className={styles.imgBox}>
+            />  
+            {/* <div className={styles.imgBox}>
                 <Img src={image} />  
-            </div>  
+            </div>   */}
                
             <div className={styles.description}>
             <div className={styles.SectionText}>{description}</div>
