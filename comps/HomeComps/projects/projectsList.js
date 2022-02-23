@@ -1,12 +1,9 @@
-// import Image from 'next/image';
-
 import Link from 'next/link'
 import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './projects.module.css'
-import {FaGithub, FaHourglassEnd } from 'react-icons/fa'
 import { projects } from './constants';
-import {  BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './projectsStyles';
+import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './projectsStyles';
 import { Section, SectionTitle, SectionText } from '../../../styles';
 
 

@@ -1,4 +1,4 @@
-import  Mim  from './details/mim';
+import  Mim  from '../../../pages/project/mim';
 import  Home  from '../../../pages/index';
 
 export const projects = [

@@ -1,16 +1,21 @@
-// import Image from 'next/image';
-
 import Link from 'next/link'
 import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './projects.module.css'
-import {FaGithub, FaHourglassEnd } from 'react-icons/fa'
 import { projects } from './constants';
 import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './projectsStyles';
 import { Section, SectionTitle, SectionText } from '../../../styles';
 
 
 export default function Projects() {
+
+  const listic = [
+    projects[0],
+    projects[1],
+    projects[3],
+    projects[4],
+    // projects[5],
+  ];
     return (
       <>
         <Section id="projects">
@@ -18,7 +23,7 @@ export default function Projects() {
           <SectionTitle>Projects</SectionTitle>
         
              <GridContainer>
-      {projects.map(({
+      {listic.map(({
     title,
     description,
     image,

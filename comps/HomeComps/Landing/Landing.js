@@ -1,13 +1,11 @@
-// import Image from 'next/image';
 import React from 'react'
 import styles from './Landing.module.css'
-import {Section, Content, SectionTitle, Img, Linka } from './LandingStyles'
+import {Section, Content, SectionTitle } from './LandingStyles'
 
 export const HomeLanding = () => {
 
     return (
       <div id='home' className={styles.container}> 
-        {/* <Image src='/images/dark.jpg' width={700} height={400} /> */}
        <Content>
               <SectionTitle>Hi, I'm Felix Eligbue</SectionTitle>
            
@@ -17,7 +15,7 @@ export const HomeLanding = () => {
 
           <div className={styles.btn}>
 
-           <Linka  href="/docs/res.pdf" download="philix_cv">Download Resume</Linka>
+           <a  href="/docs/res.pdf" download="philix_cv">Download Resume</a>
           </div>
 
   

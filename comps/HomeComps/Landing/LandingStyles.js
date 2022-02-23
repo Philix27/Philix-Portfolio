@@ -43,10 +43,3 @@ export const SectionTitle = styled.h1`
  
 `
 
-export const Linka = styled.a`
-  /* color: rgba(31, 44, 90, 0.685),#fff; */
-  /* background-color: #fff; */
-  /* padding: 5px, 10px; */
- 
-`
-

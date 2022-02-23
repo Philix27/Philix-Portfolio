@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './Footer.module.css'
-import { Section, Linka } from './footerStyles';
 import { FaWhatsapp } from 'react-icons/fa'
 import {
     AiOutlineMail,
@@ -9,26 +8,26 @@ import {
     AiFillFacebook,
     AiFillTwitterSquare,
     AiFillPhone,
-    // AiFillTwitter
 } from 'react-icons/ai'
 
 export default function Footer() {
     return (
-        <Section id="footer">
+        <div id="footer" className={styles.wrapper}>
+        <div className={styles.container}  >
             <div>
                 <ul >
                     <li className={styles.list_headers}>Navigators</li>
                     <li>
-                        <Linka href="#home" >Home</Linka>
+                        <a className={styles.Linka} href="#home" >Home</a>
                     </li>
                     <li>
-                        <Linka href="#contact" >Contact</Linka>
+                        <a className={styles.Linka}  href="#contact" >Contact</a>
                     </li>
                     <li>
-                        <Linka href="#projects" >Projects</Linka>
+                        <a className={styles.Linka} href="#projects" >Projects</a>
                     </li>
                     <li>
-                        <Linka href="#about" >About</Linka>
+                        <a className={styles.Linka} href="#about" >About</a>
                     </li>
                      
                   
@@ -38,31 +37,31 @@ export default function Footer() {
                 <ul >
                     <li className={styles.list_headers}>Contacts</li>
                      <li>
-                        <Linka  target="_blank" href="/docs/res.pdf" download="philix_cv">
+                        <a className={styles.Linka} target="_blank" href="/docs/res.pdf" download="philix_cv">
                             {/* <AiFillGithub size={15} />   */}
                             <span className={styles.contact_list}>Resume</span>
-                        </Linka>
+                        </a>
                     </li>
                     <li>
-                        <Linka  target="_blank" href="mailto:philixbob@gmail.com">
+                        <a className={styles.Linka} target="_blank" href="mailto:philixbob@gmail.com">
                             <AiOutlineMail size={15} />
                             <span className={styles.contact_list}>Email</span>
-                        </Linka>
+                        </a>
                     </li>
                     <li>
-                        <Linka
+                        <a className={styles.Linka}
                             target="_blank"
                             href="https://wa.me/2348108850572?text=Hi+Philix%2C+I%27m+just+visited+your+website.">
                             <FaWhatsapp size={15} />
                             <span className={styles.contact_list}>Whatsapp</span>
-                        </Linka>
+                        </a>
                     </li>
                     <li>
-                        <Linka
+                        <a className={styles.Linka}
                             href="tel:+2348108850572">
                             <AiFillPhone size={15} />
-                            <span className={styles.contact_list}>Call me </span>
-                        </Linka>
+                            <span className={styles.contact_list}>Phone </span>
+                        </a>
                     </li>
                    
                 </ul>
@@ -72,36 +71,41 @@ export default function Footer() {
                      <li className={styles.list_headers}>Socials</li>
                    
                     <li>
-                        <Linka target="_blank" href="https://linkedin.com/in/eligbue-felix-362372124">
+                        <a className={styles.Linka} target="_blank" href="https://linkedin.com/in/eligbue-felix-362372124">
                             <AiFillLinkedin size={15} /> 
                             <span className={styles.contact_list}>Linkedin</span>
                             
-                        </Linka>
+                        </a>
                     </li>
                     <li>
-                        <Linka target="_blank" href="https://facebook.com/eligbue.felix.7">
+                        <a className={styles.Linka} target="_blank" href="https://facebook.com/eligbue.felix.7">
                           <AiFillFacebook size={ 15}/>  
                             <span className={styles.contact_list}>Facebook</span>
 
-                        </Linka>
+                        </a>
                     </li>
                     <li>
-                        <Linka target="_blank" href="https://twitter.com/eligbue_felix">
+                        <a className={styles.Linka} target="_blank" href="https://twitter.com/eligbue_felix">
                          <AiFillTwitterSquare />   
                             <span className={styles.contact_list}>Twitter</span>
 
-                        </Linka>
+                        </a>
                     </li>
                     <li>
-                        <Linka  target="_blank" href="https://github.com/Philix27">
+                        <a className={styles.Linka} target="_blank" href="https://github.com/Philix27">
                             <AiFillGithub size={15} />  
                             <span className={styles.contact_list}>Github</span>
-                        </Linka>
+                        </a>
                     </li>
                    
                 </ul>
             </div>
            
-        </Section>
+            </div >
+            <div className={styles.copyright}>
+                {/* <p>Copyright &copy;.</p> */}
+                <p>2022 Copyright &copy; All Rights Reserved</p>
+            </div>
+            </div>
     )
 }

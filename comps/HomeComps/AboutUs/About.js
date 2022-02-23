@@ -1,15 +1,11 @@
 import React from 'react'
 import styles from './About.module.css'
-// import Image from 'next/image'
-import Link from 'next/link'
 import { Section, SectionTitle, SectionText } from '../../../styles';
 
 
 
 
 export default function About() {
-
-
 
     return (
         <Section id="about">

@@ -7,8 +7,6 @@ import { Section, SectionTitle, SectionText, SectionJumbotron } from '../../../s
 
 export default function Objectives() {
 
-
-
     return (
         <Section id="objectives">
             <SectionTitle>Objectives</SectionTitle>

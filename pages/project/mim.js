@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './details.module.css'
-import { projects } from '../constants';
-import { Section, SectionTitle, SectionText } from '../../../../styles';
-import {  BlogCard,  ExternalLinks,  Tag, TagList,  Img } from '../projectsStyles';
+import styles from '../../comps/HomeComps/projects/details.module.css'
+import { projects } from '../../comps/HomeComps/projects/constants';
+import { Section, SectionTitle, SectionText } from '../../styles';
+import {   Img } from '../../comps/HomeComps/projects/projectsStyles';
 
 export default function Mim() {
    
