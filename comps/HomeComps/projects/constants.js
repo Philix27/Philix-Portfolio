@@ -1,4 +1,5 @@
 import  Mim  from './details/mim';
+import  Home  from '../../../pages/index';
 
 export const projects = [
   {
@@ -72,5 +73,17 @@ export const projects = [
     visit: '#',
     githubLink: "",
     id: 5,
+  },
+  {
+    title: 'Portfolio',
+    group: "web",
+     detailsPage: <Home/>,
+    description: "My personal website for detailed explanation of all my projects.",
+    image: '/images/project/portfolio.jpg',
+    tags: ['Next.js',],
+    source: 'www.philix.tech',
+    visit: 'www.philix.tech',
+    githubLink: "",
+    id: 6,
   },
 ];

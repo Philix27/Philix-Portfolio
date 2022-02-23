@@ -48,9 +48,28 @@
 
 .title {
   padding: 10px;
-  color: #4642f8;
-  font-size: 1.5rem;
+ 
+
 }
+.btn {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background-color: #022044;
+  max-width: 40vw;
+  border-radius: 20px;
+
+}
+.btn:hover {
+ 
+  background-color: #4642f8;
+  /* max-width: 45vw; */
+
+}
+
+
 
 .subtitle {
   padding: 10px;
