@@ -18,6 +18,7 @@ export default function Mim() {
                 objectFit="cover"
                 height={250}
                 width={1040}
+                alt={title}
                 src={image}
             />  
             {/* <div className={styles.imgBox}>
@@ -28,7 +29,7 @@ export default function Mim() {
             <div className={styles.SectionText}>{description}</div>
                 <div className={styles.SectionText}>
                      <ul>
-                    <a href={visit} target="_blank"><li>View Source Code on Github</li></a>        
+                    <a href={visit} target="_blank" rel="noreferrer"><li>View Source Code on Github</li></a>        
                     <a><li>View on Playstore - Android</li></a>        
                           
                 </ul>

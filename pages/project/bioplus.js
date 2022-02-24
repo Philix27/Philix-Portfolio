@@ -13,7 +13,8 @@ export default function Mim() {
                 <div>
                 <SectionTitle >{title}</SectionTitle>
                 </div>
-                <Image
+            <Image
+                alt={title}
                 layout="responsive"
                 objectFit="cover"
                 height={250}
@@ -28,7 +29,7 @@ export default function Mim() {
             <div className={styles.SectionText}>{description}</div>
                 <div className={styles.SectionText}>
                      <ul>
-                    <a href={visit} target="_blank"><li>View Source Code on Github</li></a>        
+                    <a href={visit} target="_blank" rel="noreferrer"><li>View Source Code on Github</li></a>        
                     <a><li>View on Playstore - Android</li></a>        
                           
                 </ul>
