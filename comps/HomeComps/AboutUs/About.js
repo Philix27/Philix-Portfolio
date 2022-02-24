@@ -17,16 +17,18 @@ export default function About() {
                     {/* <Image src="/pp.jpg" width={500} height={500}/> */}
                 <img className={styles.img} src="/pp.jpg" alt=""/>
                 </div>
-                <div >
+                <div className={styles.education}>
                     <h3>Education</h3>
                     <SectionText>
                         <ul>
                             <li>
                                 Graduated from Delta State University
                                 Abraka, Nigeria (DELSU): 2013 - 2019.
-                            </li>
-                            <li>First Degree: Pharmacy at Delta
+                                First Degree: Pharmacy at Delta
                                 State University (2012 - 2019).
+                            </li>
+                            <li>
+                                Currently serving (NYSC) at Kebbi State.
                             </li>
                         </ul>
                     </SectionText>      

@@ -4,11 +4,16 @@ import { Section, SectionTitle, SectionText } from '../../styles';
   
 export default function ProjectsPage() {
   return (
-    <Section >    
+    < > 
+      <br/>
+      <Section>
       <SectionTitle>Mobile Apps</SectionTitle>
+      </Section>  
       <ProjectsGroup category="mobile"/>
+      <Section>
       <SectionTitle>Web Apps</SectionTitle>
+      </Section>  
       <ProjectsGroup category="web"/>
-    </Section>
+    </>
   )
 }

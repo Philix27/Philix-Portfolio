@@ -51,23 +51,6 @@
  
 
 }
-.btn {
-  padding: 10px;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  color: #fff;
-  background-color: #022044;
-  max-width: 40vw;
-  border-radius: 20px;
-
-}
-.btn:hover {
- 
-  background-color: #022044c9;
-  /* max-width: 45vw; */
-
-}
 
 
 

@@ -5,7 +5,7 @@ import styles from './projects.module.css'
 import { projects } from './constants';
 import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './projectsStyles';
 import { Section, SectionTitle, SectionText } from '../../../styles';
-
+import {Btn } from '../../../styles'
 
 export default function Projects() {
 
@@ -62,11 +62,9 @@ export default function Projects() {
     </GridContainer>
            
          </Section>
-         <Section>
+        <Section>
           <Link href="/project">
-            <TitleContent className={styles.btn}>
-            View All Projects
-            </TitleContent>
+            <Btn>View All</Btn>
           </Link>
          </Section>
       </>

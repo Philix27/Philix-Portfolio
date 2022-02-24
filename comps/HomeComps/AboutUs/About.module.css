@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px 50px;
-    /* padding: 10px 20px; */
+    padding: 0px 20px;
     place-items: start;
     /* justify-content: space-evenly; */
     /* flex-direction: column; */
@@ -11,6 +11,8 @@
     /* justify-self: space-between; */
     /* align-self: space-between; */
 }
+
+
 .techList{list-style-type: decimal;}
 
 .ceo {
@@ -47,6 +49,9 @@
       padding: auto;
      
     }
+    .education{
+     padding-top: 20px;
+    }
   }
   
   
@@ -54,4 +59,8 @@
     .content{
       grid-template-columns: repeat(1, 1fr);
     }
+
+    .education{
+  padding-top: 20px;
+}
   }
