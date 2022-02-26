@@ -63,7 +63,7 @@ export default function Projects() {
            
          </Section>
         <Section>
-          <Link href="/project">
+          <Link href="/projects">
             <Btn>View All</Btn>
           </Link>
          </Section>
