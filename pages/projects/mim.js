@@ -21,31 +21,19 @@ export default function Mim() {
                 alt={title}
                 src={image}
             />  
-            {/* <div className={styles.imgBox}>
-                <Img src={image} />  
-            </div>   */}
                
             <div className={styles.description}>
-            <div className={styles.SectionText}>{description}</div>
-                <div className={styles.SectionText}>
-                     <ul>
-                    <a href={visit} target="_blank" rel="noreferrer"><li>View Source Code on Github</li></a>        
-                    <a><li>View on Playstore - Android</li></a>        
-                          
-                </ul>
-            </div>
-                <div className={styles.SectionText}>
-                    This app consist of several pages which will be discussed in a bit.
-                <ul>
-                    <li>Dashboard</li>        
-                    <li>Daily Sales</li>        
-                    <li>Expensens</li>        
-                    <li>Products List</li>        
-                    <li>Summary</li>        
-                    <li>Notification Page</li>        
-                </ul>
-            </div>
-
+               <SectionText>{description}</SectionText>
+                <SectionText>
+                    
+                    This app has been used in a pharmacy to track records such as daily sales,
+                    daily expenses, daily transfers and deposit, out-of-stock products, soon to expire items 
+                    and some essential contacts of customers and suppliers
+                </SectionText>
+                <SectionText>
+                   It also has a notification section for all staffs of the premises.
+                </SectionText>
+               
             </div>
         
          

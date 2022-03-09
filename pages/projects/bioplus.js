@@ -26,25 +26,15 @@ export default function Mim() {
             </div>   */}
                
             <div className={styles.description}>
-            <div className={styles.SectionText}>{description}</div>
-                <div className={styles.SectionText}>
+            <SectionText>{description}</SectionText>
+                {/* <div className={styles.SectionText}>
                      <ul>
                     <a href={visit} target="_blank" rel="noreferrer"><li>View Source Code on Github</li></a>        
                     <a><li>View on Playstore - Android</li></a>        
                           
                 </ul>
-            </div>
-                <div className={styles.SectionText}>
-                    This app consist of several pages which will be discussed in a bit.
-                <ul>
-                    <li>Dashboard</li>        
-                    <li>Daily Sales</li>        
-                    <li>Expensens</li>        
-                    <li>Products List</li>        
-                    <li>Summary</li>        
-                    <li>Notification Page</li>        
-                </ul>
-            </div>
+            </div> */}
+               
 
             </div>
         

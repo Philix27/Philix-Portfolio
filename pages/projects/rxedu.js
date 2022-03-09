@@ -26,15 +26,18 @@ export default function Mim() {
             </div>   */}
                
             <div className={styles.description}>
-            <div className={styles.SectionText}>{description}</div>
-                <div className={styles.SectionText}>
-                     <ul>
-                    <a href={visit} target="_blank" rel="noreferrer"><li>View Source Code on Github</li></a>        
-                    <a><li>View on Playstore - Android</li></a>        
-                          
-                </ul>
-            </div>
-                <div className={styles.SectionText}>
+            <SectionText>{description}</SectionText>
+            <SectionText>
+                    This is the mobile app
+                    for the website <a href='https://rxedu.online/' rel="noreferrer">rxedu.online</a>.
+            </SectionText>
+            <SectionText>
+                This app and the website is connected via an api hosted on Heroku.
+            </SectionText>
+            <SectionText>
+                    <a href={visit} rel="noreferrer">View on Playstore - Android</a>        
+            </SectionText>
+                {/* <div className={styles.SectionText}>
                     This app consist of several pages which will be discussed in a bit.
                 <ul>
                     <li>Dashboard</li>        
@@ -44,7 +47,7 @@ export default function Mim() {
                     <li>Summary</li>        
                     <li>Notification Page</li>        
                 </ul>
-            </div>
+            </div> */}
 
             </div>
         

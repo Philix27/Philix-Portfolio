@@ -26,25 +26,30 @@ export default function Mim() {
             </div>   */}
                
             <div className={styles.description}>
-            <div className={styles.SectionText}>{description}</div>
-                <div className={styles.SectionText}>
-                     <ul>
-                    <a href={visit} target="_blank" rel="noreferrer"><li>View Source Code on Github</li></a>        
-                    <a><li>View on Playstore - Android</li></a>        
-                          
+            <SectionText>{description}</SectionText>
+            <SectionText>
+                    Ideas for this app came from Royal Q (a trading bot system). It aims at using 
+                    quantitative analysis of historic data to predict the market movement and 
+                    make appropriate decision based on this information.
+            </SectionText>
+            <SectionText>
+                    Flutter is used to design the ui of the app while majority of the backend logic is 
+                    down with python. 
+            </SectionText>
+            <SectionText>
+                    Binance account is linked to the bot via account's api key
+            </SectionText>
+            <SectionText>
+                    This app consist of several sections:
+            </SectionText>
+            <SectionText>
+                   <ul>
+                    <li>Top Coins and Dashboard</li>        
+                    <li>Transactions history</li>        
+                    <li>Wallet Balance - For each coin</li>        
                 </ul>
-            </div>
-                <div className={styles.SectionText}>
-                    This app consist of several pages which will be discussed in a bit.
-                <ul>
-                    <li>Dashboard</li>        
-                    <li>Daily Sales</li>        
-                    <li>Expensens</li>        
-                    <li>Products List</li>        
-                    <li>Summary</li>        
-                    <li>Notification Page</li>        
-                </ul>
-            </div>
+            </SectionText>
+              
 
             </div>
         
