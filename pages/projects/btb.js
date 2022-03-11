@@ -2,10 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../../comps/HomeComps/projects/details.module.css'
 import { projects } from '../../comps/HomeComps/projects/constants';
-import { Section, SectionTitle, SectionText } from '../../styles';
-import {   Img } from '../../comps/HomeComps/projects/projectsStyles';
+import {  SectionTitle, SectionText } from '../../styles';
 
-export default function Mim() {
+export default function Btb() {
    
     const { title, image, description, visit} = projects[5];
     return (
@@ -21,14 +20,12 @@ export default function Mim() {
                 width={1040}
                 src={image}
             />  
-            {/* <div className={styles.imgBox}>
-                <Img src={image} />  
-            </div>   */}
+         
                
             <div className={styles.description}>
             <SectionText>{description}</SectionText>
             <SectionText>
-                    Ideas for this app came from Royal Q (a trading bot system). It aims at using 
+                    Ideas for this app came from Royal Q -a trading bot system. It aims at using 
                     quantitative analysis of historic data to predict the market movement and 
                     make appropriate decision based on this information.
             </SectionText>
@@ -37,7 +34,7 @@ export default function Mim() {
                     down with python. 
             </SectionText>
             <SectionText>
-                    Binance account is linked to the bot via account's api key
+                    Binance account is linked to the bot via account api key
             </SectionText>
             <SectionText>
                     This app consist of several sections:
