@@ -3,7 +3,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './projects.module.css'
 import { projects } from './constants';
-import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './projectsStyles';
+import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, Img } from './projectsStyles';
 import { Section, SectionTitle, SectionText } from '../../../styles';
 import {Btn } from '../../../styles'
 

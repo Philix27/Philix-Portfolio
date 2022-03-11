@@ -9,7 +9,7 @@ export default function Layout(props) {
              <Head>
                 <title>Eligbue Felix</title>
                 <meta name="portfolio" content="Created by Eligbue" />
-                <link rel="icon" href="/favicon.ico" />
+                {/* <link rel="stylesheet" href="/styles/index.css" /> */}
             </Head> 
             <Navbar />
             {props.children}    

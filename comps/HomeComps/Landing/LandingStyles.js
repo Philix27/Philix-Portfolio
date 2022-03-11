@@ -43,3 +43,10 @@ export const SectionTitle = styled.h1`
  
 `
 
+export const SmallText = styled.p`
+  color: #fff;
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+ 
+`
+

@@ -1,6 +1,5 @@
-import React from 'react'
 import styles from './Landing.module.css'
-import {Section, Content, SectionTitle } from './LandingStyles'
+import {Content, SectionTitle, SmallText } from './LandingStyles'
 import {Btn } from '../../../styles'
 
 export const HomeLanding = () => {
@@ -10,9 +9,9 @@ export const HomeLanding = () => {
        <Content>
               <SectionTitle>Hi, I'm Felix Eligbue</SectionTitle>
            
-          <p className={styles.smallText}>
+          <SmallText>
             Full Stack Developer and a Pharmacist  
-          </p> 
+          </SmallText> 
          
             <a href="/docs/res.pdf" download="philix_cv" >
             <Btn>Resume</Btn>

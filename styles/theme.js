@@ -7,7 +7,7 @@ const Theme = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyles />
     {children}
-  </ThemeProvider>
+  </ThemeProvider> 
 );
 
 export default Theme;
