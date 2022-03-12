@@ -1,18 +1,23 @@
+// ? ScreenSizes
+$mobileScreensize: 500px;
+$tabletScreensize: 800px;
+$laptopScreensize: 1040px;
 
-@mixin mobile() {
-    @media(max-width: 400px){
+
+@mixin mobileSS() {
+    @media(max-width: $mobileScreensize){
         @content;
     }
 }
 
-@mixin tablet() {
-    @media(max-width: 800px){
+@mixin tabletSS() {
+    @media(max-width: $tabletScreensize){
         @content;
     }
 }
 
-@mixin laptop() {
-    @media(max-width: 1040px){
+@mixin laptopSS() {
+    @media(max-width: $laptopScreensize){
         @content;
     }
 }

@@ -1,18 +1,18 @@
 import ProjectsGroup from '../../comps/HomeComps/projects/projectsList'
-import { Section, SectionTitle, SectionText } from '../../styles';
 
   
 export default function ProjectsPage() {
   return (
     < > 
       <br/>
-      <Section>
-      <SectionTitle>Mobile Apps</SectionTitle>
-      </Section>  
+      <div className='section'>
+      <h1 className='sectionTitle'>Mobile Apps</h1>
+      
+      </div>  
       <ProjectsGroup category="mobile"/>
-      <Section>
-      <SectionTitle>Web Apps</SectionTitle>
-      </Section>  
+      <div className='section'>
+      <h1 className='sectionTitle'>Web Apps</h1>
+      </div>  
       <ProjectsGroup category="web"/>
     </>
   )

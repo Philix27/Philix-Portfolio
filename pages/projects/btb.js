@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../../comps/HomeComps/projects/details.module.css'
 import { projects } from '../../comps/HomeComps/projects/constants';
-import {  SectionTitle, SectionText } from '../../styles';
+import {SectionText } from '../../styles';
 
 export default function Btb() {
    
@@ -10,7 +10,7 @@ export default function Btb() {
     return (
         <div className={styles.wrapper}>
                 <div>
-                <SectionTitle >{title}</SectionTitle>
+                <h1 className='sectionTitle'>{title}</h1>
                 </div>
                 <Image
                 layout="responsive"

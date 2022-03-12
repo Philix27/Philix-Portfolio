@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import styles from './projects.module.css'
 import { projects } from './constants';
 import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './projectsStyles';
-import { Section, SectionTitle, SectionText } from '../../../styles';
+import { Section,  SectionText } from '../../../styles';
 
 
 export default function ProjectsGroup({ category }) {
@@ -13,7 +13,7 @@ export default function ProjectsGroup({ category }) {
               });
   
     return (
-      <Section>
+      <div className='section'>
         
              <GridContainer>
             {
@@ -65,6 +65,6 @@ export default function ProjectsGroup({ category }) {
     </GridContainer>
            
           
-      </Section>
+      </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './About.module.css'
-import { Section, SectionTitle, SectionText } from '../../../styles';
+import {  SectionText } from '../../../styles';
 
 
 
@@ -8,8 +8,8 @@ import { Section, SectionTitle, SectionText } from '../../../styles';
 export default function About() {
 
     return (
-        <Section id="about">
-            <SectionTitle>About</SectionTitle>
+        <div className='section' id="about">
+            <h1 className='sectionTitle'>About</h1>
              <br/>
             <br/>
             <div className={styles.content}>
@@ -36,7 +36,7 @@ export default function About() {
             </div>
              <br/>
             {/* <br/> */}
-            <SectionTitle>Technologies</SectionTitle>
+            <h1 className='sectionTitle'>Technologies</h1>
              <br/>
             <div className={styles.content}>
                 <div>
@@ -102,6 +102,6 @@ export default function About() {
                 </div>
 
             </div>
-        </Section>
+        </div>
     )
 }

@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import styles from './projects.module.css'
 import { projects } from './constants';
 import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, Img } from './projectsStyles';
-import { Section, SectionTitle, SectionText } from '../../../styles';
+import { SectionText } from '../../../styles';
 import {Btn } from '../../../styles'
 
 export default function Projects() {
@@ -18,9 +18,9 @@ export default function Projects() {
   ];
     return (
       <>
-        <Section id="projects">
+        <div className='section' id="projects">
        
-          <SectionTitle>Projects</SectionTitle>
+          <h1 className='sectionTitle'>Projects</h1>
         
              <GridContainer>
       {listic.map(({
@@ -61,12 +61,12 @@ export default function Projects() {
       ))}
     </GridContainer>
            
-         </Section>
-        <Section>
+         </div>
+        <div className='section'>
           <Link href="/projects">
             <Btn>View All</Btn>
           </Link>
-         </Section>
+         </div>
       </>
     )
 }
