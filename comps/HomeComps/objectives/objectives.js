@@ -9,7 +9,8 @@ export default function Objectives() {
 
     return (
         <Section id="objectives">
-            <SectionTitle>Objectives</SectionTitle>
+            <h1 className='sectionTitle'>Objectives</h1>
+            {/* <h2 className='sectionTitle'>Objectives</h2> */}
             <div className={styles.content}>
                 <div >
                     <SectionJumbotron>

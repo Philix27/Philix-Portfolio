@@ -1,6 +1,6 @@
 import Layout from '../comps/Layout'
 import Theme from '../styles/theme';
-import '../styles/index.css'
+import '../styles/index.scss'
 
 
 function MyApp({ Component, pageProps }) {

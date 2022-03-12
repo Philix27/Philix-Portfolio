@@ -17,7 +17,13 @@ export default function Navbar() {
             </div>
 
            <div className={styles.nav_start}>
-           <img className={styles.logo} src="/images/logo.png" width={90} height={45}/>
+                    <Link href="/">
+                        <a>
+                        <img className={styles.logo}
+                            src="/images/logo.png"
+                            width={90} height={45} />
+                        </a>
+                    </Link>
            {/* <Image className={styles.logo} src="/images/logo.png" width={90} height={45}/> */}
                <div className={styles.nav_bg} >
                 

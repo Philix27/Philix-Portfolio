@@ -11,7 +11,7 @@ export default function Layout(props) {
                 <meta name="portfolio" content="Created by Eligbue" />
                 {/* <link rel="stylesheet" href="/styles/index.css" /> */}
             </Head> 
-            <Navbar />
+            {/* <Navbar /> */}
             {props.children}    
             <Footer/> 
         </>
