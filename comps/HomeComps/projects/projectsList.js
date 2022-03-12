@@ -3,7 +3,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './projects.module.css'
 import { projects } from './constants';
-import { GridContainer, HeaderThree, Tag, TagList, TitleContent, Img } from './projectsStyles';
+import { HeaderThree, Tag, TagList, TitleContent, } from './projectsStyles';
 
 
 export default function ProjectsGroup({ category }) {
@@ -14,7 +14,7 @@ export default function ProjectsGroup({ category }) {
     return (
       <div className='section'>
         
-             <GridContainer>
+             <div className={styles.gridContainer}>
             {
     projectll.map(({
     title,
@@ -36,10 +36,9 @@ export default function ProjectsGroup({ category }) {
           transition={{duration: 1.7, delay: 1, type: "tween", }}>
           {/* transition={{duration: 1.7, delay: 1, type: "spring", stiffness:"110"}}> */}
           {/* <Image src={image} width={500} height={300}/> */}
-        {/* <a href={visit} target="_blank"><Img src={image} /></a> */}
         
            {/* <Link href=`/project/1${id}`><a><Img src={image} /> </a></Link> */}
-           <Link href={detailsPage}><a><Img src={image} /> </a></Link>
+           <Link href={detailsPage}><a><img className={styles.img} src={image} /> </a></Link>
         
         <TitleContent>
           <HeaderThree >{title}</HeaderThree>
@@ -61,7 +60,7 @@ export default function ProjectsGroup({ category }) {
        {/* </BlogCard> */}
        </motion.div>
       ))}
-    </GridContainer>
+    </div>
            
           
       </div>

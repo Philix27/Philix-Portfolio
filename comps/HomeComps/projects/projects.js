@@ -3,7 +3,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './projects.module.css'
 import { projects } from './constants';
-import { HeaderThree, Hr, Tag, TagList, TitleContent, Img } from './projectsStyles';
+import { HeaderThree, Tag, TagList, TitleContent, } from './projectsStyles';
 
 
 export default function Projects() {

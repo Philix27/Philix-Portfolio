@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../../comps/HomeComps/projects/details.module.css'
 import { projects } from '../../comps/HomeComps/projects/constants';
-import {   Img } from '../../comps/HomeComps/projects/projectsStyles';
 
 export default function Mim() {
    
@@ -20,9 +19,7 @@ export default function Mim() {
                 width={1040}
                 src={image}
             />  
-            {/* <div className={styles.imgBox}>
-                <Img src={image} />  
-            </div>   */}
+           
                
             <div className={styles.description}>
             <div className={styles.SectionText}>{description}</div>

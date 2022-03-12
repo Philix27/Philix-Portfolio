@@ -19,9 +19,7 @@ export default function Mim() {
                 width={1040}
                 src={image}
             />  
-            {/* <div className={styles.imgBox}>
-                <Img src={image} />  
-            </div>   */}
+          
                
             <div className={styles.description}>
             <div className='sectionText'>{description}</div>
