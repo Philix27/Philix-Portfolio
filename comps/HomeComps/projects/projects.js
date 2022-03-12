@@ -3,9 +3,8 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './projects.module.css'
 import { projects } from './constants';
-import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, Img } from './projectsStyles';
-import { SectionText } from '../../../styles';
-import {Btn } from '../../../styles'
+import { HeaderThree, Hr, Tag, TagList, TitleContent, Img } from './projectsStyles';
+
 
 export default function Projects() {
 
@@ -22,7 +21,7 @@ export default function Projects() {
        
           <h1 className='sectionTitle'>Projects</h1>
         
-             <GridContainer>
+             <div className={styles.gridContainer}>
       {listic.map(({
     title,
     description,
@@ -39,13 +38,13 @@ export default function Projects() {
           initial={{ x: "-100vw", opacity: 0.1 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{duration: 1.7, delay: 1, type: "tween", }}>
-          <a href={detailsPage} ><Img src={image} /></a>
+          <a href={detailsPage} ><img className={styles.img} src={image} /></a>
         {/* <BlogCard> */}
         <TitleContent>
           <HeaderThree >{title}</HeaderThree>
         </TitleContent>
           <div style={{padding: "0px 20px"}}>
-            <SectionText>{description}</SectionText>
+            <div className='sectionText'>{description}</div>
         </div>
         <div>
           <TagList>
@@ -59,12 +58,12 @@ export default function Projects() {
        {/* </BlogCard> */}
        </motion.div>
       ))}
-    </GridContainer>
+    </div>
            
          </div>
         <div className='section'>
           <Link href="/projects">
-            <Btn>View All</Btn>
+            <a className='btn'>View All</a>
           </Link>
          </div>
       </>

@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../../comps/HomeComps/projects/details.module.css'
 import { projects } from '../../comps/HomeComps/projects/constants';
-import {SectionText } from '../../styles';
 
 export default function Btb() {
    
@@ -23,29 +22,29 @@ export default function Btb() {
          
                
             <div className={styles.description}>
-            <SectionText>{description}</SectionText>
-            <SectionText>
+            <div className='sectionText'>{description}</div>
+            <div className='sectionText'>
                     Ideas for this app came from Royal Q -a trading bot system. It aims at using 
                     quantitative analysis of historic data to predict the market movement and 
                     make appropriate decision based on this information.
-            </SectionText>
-            <SectionText>
+            </div>
+            <div className='sectionText'>
                     Flutter is used to design the ui of the app while majority of the backend logic is 
                     down with python. 
-            </SectionText>
-            <SectionText>
+            </div>
+            <div className='sectionText'>
                     Binance account is linked to the bot via account api key
-            </SectionText>
-            <SectionText>
+            </div>
+            <div className='sectionText'>
                     This app consist of several sections:
-            </SectionText>
-            <SectionText>
+            </div>
+            <div className='sectionText'>
                    <ul>
                     <li>Top Coins and Dashboard</li>        
                     <li>Transactions history</li>        
                     <li>Wallet Balance - For each coin</li>        
                 </ul>
-            </SectionText>
+            </div>
               
 
             </div>

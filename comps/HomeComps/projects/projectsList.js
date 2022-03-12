@@ -3,8 +3,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './projects.module.css'
 import { projects } from './constants';
-import { GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './projectsStyles';
-import { Section,  SectionText } from '../../../styles';
+import { GridContainer, HeaderThree, Tag, TagList, TitleContent, Img } from './projectsStyles';
 
 
 export default function ProjectsGroup({ category }) {
@@ -46,7 +45,7 @@ export default function ProjectsGroup({ category }) {
           <HeaderThree >{title}</HeaderThree>
         </TitleContent>
           <div style={{padding: "0px 20px"}}>
-            <SectionText>{description}</SectionText>
+            <div className='sectionText'>{description}</div>
             {/* <CardInfo>{description}</CardInfo> */}
         </div>
         <div>

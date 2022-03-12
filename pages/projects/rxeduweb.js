@@ -26,16 +26,16 @@ export default function Mim() {
             </div>   */}
                
             <div className={styles.description}>
-                <SectionText>
+                <div className='sectionText'>
                     <a href={visit} rel="noreferrer">
                         <li>
                             Visit Website
                         </li>
                     </a>
-                </SectionText>
-                <SectionText>
+                </div>
+                <div className='sectionText'>
                     {description}
-                </SectionText>
+                </div>
                 
             </div>        
         </div>

@@ -2,8 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../../comps/HomeComps/projects/details.module.css'
 import { projects } from '../../comps/HomeComps/projects/constants';
-import { SectionText } from '../../styles';
-import {   Img } from '../../comps/HomeComps/projects/projectsStyles';
 
 export default function Mim() {
    
@@ -26,8 +24,8 @@ export default function Mim() {
             </div>   */}
                
             <div className={styles.description}>
-            <SectionText>{description}</SectionText>
-                {/* <div className={styles.SectionText}>
+            <div className='sectionText'>{description}</div>
+                {/* <div className={styles.div}>
                      <ul>
                     <a href={visit} target="_blank" rel="noreferrer"><li>View Source Code on Github</li></a>        
                     <a><li>View on Playstore - Android</li></a>        

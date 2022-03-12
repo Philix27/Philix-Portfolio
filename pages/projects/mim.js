@@ -2,8 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../../comps/HomeComps/projects/details.module.css'
 import { projects } from '../../comps/HomeComps/projects/constants';
-import {  SectionText } from '../../styles';
-import {   Img } from '../../comps/HomeComps/projects/projectsStyles';
 
 export default function Mim() {
    
@@ -23,16 +21,16 @@ export default function Mim() {
             />  
                
             <div className={styles.description}>
-               <SectionText>{description}</SectionText>
-                <SectionText>
+               <div className='sectionText'>{description}</div>
+                <div className='sectionText'>
                     
                     This app has been used in a pharmacy to track records such as daily sales,
                     daily expenses, daily transfers and deposit, out-of-stock products, soon to expire items 
                     and some essential contacts of customers and suppliers
-                </SectionText>
-                <SectionText>
+                </div>
+                <div className='sectionText'>
                    It also has a notification section for all staffs of the premises.
-                </SectionText>
+                </div>
                
             </div>
         

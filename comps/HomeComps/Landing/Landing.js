@@ -1,23 +1,21 @@
 import styles from './Landing.module.css'
-import {Content, SectionTitle, SmallText } from './LandingStyles'
-import {Btn } from '../../../styles'
 
 export const HomeLanding = () => {
 
     return (
       <div id='home' className={styles.container}> 
-       <Content>
-              <SectionTitle>Hi, I'm Felix Eligbue</SectionTitle>
+       <div className={styles.content}>
+              <h1 className={styles.sectionTitle} >Hi, I'm Felix Eligbue</h1 >
            
-          <SmallText>
+          <p className={styles.smallText}>
             Full Stack Developer and a Pharmacist  
-          </SmallText> 
+          </p> 
          
             <a href="/docs/res.pdf" download="philix_cv" >
-            <Btn>Resume</Btn>
+            <div className='btn'>Resume</div>
           </a>
           
-        </Content>
+        </div>
       </div>
     )
 }
