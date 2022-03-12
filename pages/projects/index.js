@@ -1,13 +1,13 @@
 import ProjectsGroup from '../../comps/HomeComps/projects/projectsList'
 
+
   
 export default function ProjectsPage() {
   return (
     < > 
-      <br/>
+      {/* <br/> */}
       <div className='section'>
       <h1 className='sectionTitle'>Mobile Apps</h1>
-      
       </div>  
       <ProjectsGroup category="mobile"/>
       <div className='section'>
