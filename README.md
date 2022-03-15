@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Daily Actions | Developers Diary
 
-## Getting Started
+## Personal Journal
+### To document my daily personnal tech development.
+Visit my portfolio [Philix.tech](https://philix.tech/)
 
-First, run the development server:
+| Date | Action|
+|------|------|
+| March 7th | **Solidity Series**  Took some revision on solidity series by Julian - Eat The Blocks | 
+| March 11th | **Uniswap Clone:**  Took a course by CleverProgrammer on Uniswap Clone | 
+| March 15th | **Strappi ~ MongoDB:** Strapi no longer support Mongodb. Need to find an alternative. | 
+| March 15th | **BSC:**  Took a quick 1 hour course of Binance Smart Contract. This was designed  | 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Rxedu - API
+### Started Project on 23rd of January, 2022
+Visit the website [Rxedu](https://rxedu.online/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Date | Action|
+|------|------|
+| March 5th | **Started Project:**  Created the Node.js app | 
+| March 15th | **Strappi ~ MongoDB:** Strapi no longer support Mongodb. Need to find an alternative. | 
+ 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Rxedu - Website
+### Started Project on 23rd of January, 2022
+Visit the website [Rxedu](https://rxedu.online/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+| Date | Action|
+|------|------|
+| Jan 23rd | **Started Project:**  Created the next.js app | 
+| March 11th | **Removed Styled components:** Changed to sass because the css of the styled component did not loading in properly.| 
+| March 12th - 14th | **Strappi** Created a strappi cms app. To use for the articles and blog post. On futher research- Strapi v4 stopped supporting mongodb as an option for database. Avaliable options are mysql and postgresql.| 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Rxedu - CMS - Strappi
+### Started Project on 13th of March, 2022
+Visit the website [Rxedu](https://rxedu.online/)
 
-## Learn More
+| Date | Action|
+|------|------|
+| March 11th | **Setup Project:**  Created strappi app | 
+| March 12th | **Created Models:** Article Model was created | 
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
