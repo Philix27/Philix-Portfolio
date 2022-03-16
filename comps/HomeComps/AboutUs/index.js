@@ -2,9 +2,6 @@ import React from 'react'
 import styles from './About.module.css'
 
 
-
-
-
 export default function About() {
 
     return (
@@ -62,8 +59,48 @@ export default function About() {
                             <li className={styles.techList}> FastApi:  20201- 2022 </li>
                             <li className={styles.techList}> Pandas:  20201- 2022 </li>
                             <li className={styles.techList}> Matplotlib:  20201- 2022 </li>
-                            {/* <li className={styles.techList}> TensorFlow:  20201- 2022 </li> */}
                             <li className={styles.techList}> Github </li>
+                    </ul>
+                    </div>
+                </div> 
+                <div>
+                     <h3>CSS Technologies</h3>
+                    <div className='sectionText'>
+                        <ul>
+                            <li className={styles.techList}> Styled Components </li>
+                            <li className={styles.techList}> SASS - Preferred Choice</li>
+                            <li className={styles.techList}> Bootstrap </li>
+                            <li className={styles.techList}> CSS modules </li>
+                    </ul>
+                    </div>
+                </div> 
+                <div>
+                     <h3>Backend Technologies</h3>
+                    <div className='sectionText'>
+                        <ul>
+                            <li className={styles.techList}> Heroku </li>
+                            <li className={styles.techList}> Vercel - Preferred Choice</li>
+                            <li className={styles.techList}> Strapi - CMS</li>
+                    </ul>
+                    </div>
+                </div> 
+                <div>
+                     <h3>Cloud Technologies</h3>
+                    <div className='sectionText'>
+                        <ul>
+                            <li className={styles.techList}>Docker </li>
+                            <li className={styles.techList}> Kubernates</li>
+                            <li className={styles.techList}> GCP</li>
+                    </ul>
+                    </div>
+                </div> 
+                <div>
+                     <h3>Blockchain Technologies</h3>
+                    <div className='sectionText'>
+                        <ul>
+                            <li className={styles.techList}> Binance Smart Contract </li>
+                            <li className={styles.techList}> Moralis </li>
+                            <li className={styles.techList}> Hardhat </li>
                     </ul>
                     </div>
                 </div> 
@@ -74,6 +111,9 @@ export default function About() {
                             <li className={styles.techList}>Firebase:  2019 - 2022 </li>
                             <li className={styles.techList}> MongoDB:  2020 - 2022 </li>
                             <li className={styles.techList}> MySql:  2018 - 2022 </li>
+                            <li className={styles.techList}> Sqflite </li>
+                            <li className={styles.techList}> Postgres </li>
+                            <li className={styles.techList}> Sanity: 2022 </li>
                             
                     </ul>
                     </div>    
@@ -94,8 +134,7 @@ export default function About() {
                  <h3>Currently Learning</h3>
                     <div className='sectionText'>
                         <ul>
-                            <li className={styles.techList}>Aurduino </li>
-                            <li className={styles.techList}>Blockchain - Solidity</li>
+                            <li className={styles.techList}>Blockchain Technologies</li>
                             
                     </ul>
                     </div>    

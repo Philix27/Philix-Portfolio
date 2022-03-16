@@ -13,6 +13,9 @@ Visit my portfolio [philix.tech](https://philix.tech/)
 | March 15th | **Strappi ~ MongoDB:** Strapi no longer support Mongodb. Need to find an alternative. | 
 | March 15th | **BSC:**  Took a quick 1 hour course of Binance Smart Contract. | 
 | March 15th | **Docker:**  Revised Docker - Amigoscode. Planing on setting up a container for the Rxedu Project. This will contain the Postgresql image which will be used as the database of the strappi application since Strapi v4 does not support Mongo [only sqlite, mysql and postgresql]    | 
+| March 15th | **Docker:**  Revised Docker - Amigoscode. Planing on setting up a container for the Rxedu Project. This will contain the Postgresql image which will be used as the database of the strappi application since Strapi v4 does not support Mongo [only sqlite, mysql and postgresql]    | 
+| March 15th | **Docker:**  Revised Docker - Amigoscode. Planing on setting up a container for the Rxedu Project. This will contain the Postgresql image which will be used as the database of the strappi application since Strapi v4 does not support Mongo [only sqlite, mysql and postgresql]    |
+| March 16th | **Dear Diary:**  Cleaned and setup the skeleton of the project such as the theme and other basic styles. Installed moor_flutter for sqflite db |
 
 ## Rxedu - API
 ### Started Project on 23rd of January, 2022
