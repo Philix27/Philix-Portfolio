@@ -23,7 +23,7 @@ export default function Mim() {
                
             <div className={styles.description}>
                 <div className='sectionText'>
-                    <a href={visit} rel="noreferrer">
+                    <a href={visit}  rel="noreferrer">
                         <li>
                             Visit Website
                         </li>
