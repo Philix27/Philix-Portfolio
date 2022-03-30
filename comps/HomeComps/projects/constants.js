@@ -89,7 +89,7 @@ export const projects = [
   {
     title: 'SmattLife',
     group: "web",
-     detailsPage: '/',
+    detailsPage: "/projects/smattlife",
     description: "A website for selling health products, multivitiamins and other o.t.c drugs. Also offers health tips",
     image: '/images/project/smattlife.jpg',
     tags: ['Next.js',],
