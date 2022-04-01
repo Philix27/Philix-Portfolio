@@ -98,4 +98,16 @@ export const projects = [
     githubLink: "",
     id: 7,
   },
+  {
+    title: 'Diary',
+    group: "mobile",
+    detailsPage: "/projects/diary",
+    description: "An app to track daily activities and save notes for future use. Stores data on local memory.",
+    image: '/images/project/smattlife.jpg',
+    tags: ['Next.js',],
+    source: 'https://smattlife.com/',
+    visit: 'https://smattlife.com/',
+    githubLink: "",
+    id: 8,
+  },
 ];
