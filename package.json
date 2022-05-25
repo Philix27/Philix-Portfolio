@@ -2,7 +2,7 @@
   "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Philix.tech",
+  "homepage": "http://philix.tech",
   "author": "Eligbue Felix",
   "scripts": {
     "dev": "next dev",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "framer-motion": "^6.2.6",
+    "markdown-it": "^13.0.1",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

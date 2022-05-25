@@ -38,14 +38,7 @@ export default function Navbar() {
                         <li className={styles.nav_start_list_item}><Link href="/"><a className={styles.link}>Home</a></Link></li>
                         <li className={styles.nav_start_list_item}><Link href="#about"><a className={styles.link}>About</a></Link></li>
                         <li className={styles.nav_start_list_item}><Link href="/projects"><a className={styles.link}>Projects</a></Link></li>
-                        {/* <li className={styles.nav_start_list_item}><Link href="/products"><a className={styles.link}>Products</a></Link></li> */}
-                        <li className={styles.nav_start_list_item}><Link href="#blogs"><a className={styles.link}>Blogs</a></Link></li>
-                        {/* <li className={styles.nav_start_list_item}><Link href="/blog"><a className={styles.link}>Blog</a></Link></li> */}
-                        {/* <li className={styles.nav_start_list_item}><Link href="/products"><a className={styles.link}>Services</a></Link></li> */}
-                        {/* <li className={styles.nav_start_list_item}><Link href="/edu"><a className={styles.link}>Education</a></Link></li> */}
-                        {/* <li className={styles.nav_start_list_item}> <Link href="/contact_us"><a className={styles.link}>Contact Us</a></Link></li> */}
-                        {/* <li className={styles.nav_start_list_item}> <Link href="/fb"><a className={styles.link}>Testop</a></Link></li> */}
-                        
+                        <li className={styles.nav_start_list_item}><Link href="/blogs"><a className={styles.link}>Blogs</a></Link></li>                        
                     </ul>
                </div>
 
