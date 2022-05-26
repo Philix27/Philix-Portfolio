@@ -5,8 +5,8 @@
 
  export default function BlogComp({ posts })  {
       return (
-        <div className='section services' id="services">
-            <div className='sectionTitle' >Blogs</div >        
+        <div className='section postsSection' id="services">
+            <div className='sectionTitle' >Blog Posts</div >        
           <div className='gridContainer'>
         {posts.map((post, index) => (
           <motion.div
