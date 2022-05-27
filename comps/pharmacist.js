@@ -5,12 +5,17 @@ export default function About() {
 
     return (
         <div className='section pharmacist' id="pharmacist">
+            <div className='imgContainer'>
+                <img className='img' src="/pp.jpg" alt=""/>
+            </div>
+            
             <h1 className='sectionTitle'>Pharmacy Experience</h1>
              <br/>
             <br/>
           
            
             <div >
+                
                 <div>
                     <h3>Hospital Experience</h3>
                     <div className='sectionText'>
