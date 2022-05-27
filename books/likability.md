@@ -1,8 +1,8 @@
 ---
-title: 'Family Planning'
+title: 'The Science of Likability'
 date: 'March 4, 2021'
-excerpt: 'Why we really need family planning '
-cover_image: '/post_img/family.jpg'
+excerpt: 'By Patrick King '
+cover_image: '/books/likability.jpg'
 lastEdit: 'May 12, 2022'
 
 ---

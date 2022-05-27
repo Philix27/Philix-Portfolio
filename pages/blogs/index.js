@@ -13,6 +13,7 @@ export default function PostPage({ posts }) {
       </Head> */}
       <BlogComp
         title='Blogs'
+        page='blogs'
         posts={posts}/>
     </div>
   )

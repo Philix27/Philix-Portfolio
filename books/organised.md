@@ -1,9 +1,9 @@
 ---
-title: "Psycological Safety"
+title: "Get Organized"
 date: 'May 12, 2022'
 lastEdit: 'May 12, 2022'
-excerpt: 'How to organize a highly productive working environment'
-cover_image: '/post_img/africa.jpg'
+excerpt: 'By ...'
+cover_image: '/books/organised.jpg'
 ---
 
 1. Ethnicity

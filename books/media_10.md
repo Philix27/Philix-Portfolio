@@ -1,8 +1,8 @@
 ---
-title: "Babby Factory"
+title: "10 Arguments for deleting your social media accounts"
 date: 'March 7, 2021'
-excerpt: 'The external uterus'
-cover_image: '/post_img/baby.jpg'
+excerpt: 'By Jaron Lanier'
+cover_image: '/books/media_10.jpg'
 lastEdit: 'May 12, 2022'
 
 ---
