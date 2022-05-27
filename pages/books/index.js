@@ -12,7 +12,7 @@ export default function PostPage({ books }) {
         <title>Blog Categories</title>
       </Head> */}
       <BlogComp 
-        title='Book Review and Summary'
+        title='Book Reviews and Summaries'
         posts={books}/>
     </div>
   )
