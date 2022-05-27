@@ -30,9 +30,7 @@
   border-radius: 20px;
 }
 
-.card {
-  
-}
+
 
 .card:hover .title {
   background-color: #4642f8;
