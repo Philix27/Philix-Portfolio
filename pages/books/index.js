@@ -5,31 +5,31 @@ import matter from 'gray-matter'
 import BlogComp from '../../comps/blogs'
 import { sortByDate } from '../../utils'
 
-export default function PostPage({ posts }) {
+export default function PostPage({ books }) {
   return (
     <div>
       {/* <Head>
         <title>Blog Categories</title>
       </Head> */}
-      <BlogComp
-        title='Blogs'
-        posts={posts}/>
+      <BlogComp 
+        title='Book Review and Summary'
+        posts={books}/>
     </div>
   )
 }
 
 export async function getStaticProps() {
   // Get files from the posts dir
-  const files = fs.readdirSync(path.join('posts'))
+  const files = fs.readdirSync(path.join('books'))
 
   // Get slug and frontmatter from posts
-  const posts = files.map((filename) => {
+  const books = files.map((filename) => {
     // Create slug
     const slug = filename.replace('.md', '')
 
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
-      path.join('posts', filename),
+      path.join('books', filename),
       'utf-8'
     )
 
@@ -43,7 +43,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      books: books.sort(sortByDate),
     },
   }
 }

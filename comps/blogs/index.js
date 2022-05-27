@@ -3,10 +3,10 @@
   import {motion} from 'framer-motion'
 
 
- export default function BlogComp({ posts })  {
+ export default function BlogComp({ posts, title })  {
       return (
         <div className='section postsSection' id="services">
-            <div className='sectionTitle' >Blog Posts</div >        
+          <div className='sectionTitle' >{title}</div >        
           <div className='gridContainer'>
         {posts.map((post, index) => (
           <motion.div

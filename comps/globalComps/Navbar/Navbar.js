@@ -40,7 +40,7 @@ export default function Navbar() {
                         <li className={styles.nav_start_list_item}><Link href="/projects"><a className={styles.link}>Projects</a></Link></li>
                         <li className={styles.nav_start_list_item}><Link href="/pharmacist"><a className={styles.link}>Pharmacist</a></Link></li>
                         <li className={styles.nav_start_list_item}><Link href="/blogs"><a className={styles.link}>Blogs</a></Link></li>                        
-                        <li className={styles.nav_start_list_item}><Link href="/blogs"><a className={styles.link}>Book Reviews</a></Link></li>                        
+                        <li className={styles.nav_start_list_item}><Link href="/books"><a className={styles.link}>Book Reviews</a></Link></li>                        
                     </ul>
                </div>
 
