@@ -12,7 +12,7 @@ export default function About() {
             <div className={styles.content}>
                 <div className={styles.ceo}>
                     {/* <Image src="/pp.jpg" width={500} height={500}/> */}
-                <img className={styles.img} src="/pp.jpg" alt=""/>
+                <img className={styles.img} src="/pp.jpg" alt="Eligbue Felix"/>
                 </div>
                 <div className={styles.education}>
                     <h3>Education</h3>

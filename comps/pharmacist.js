@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className='section pharmacist' id="pharmacist">
             <div className='imgContainer'>
-                <img className='img' src="/pp.jpg" alt=""/>
+                <img className='img' src="/labcoat.jpg" alt="Eligbue Felix"/>
             </div>
             
             <h1 className='sectionTitle'>Pharmacy Experience</h1>
