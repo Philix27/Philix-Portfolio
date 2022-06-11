@@ -1,79 +1,143 @@
-  @import 'colors';
+@import "colors";
 
-  .postsSection{
-
-    .gridContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+.postsSection {
+  .gridContainer {
+    display: flex;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 20px;
+    flex-direction: column;
     padding: 3rem;
     align-self: center;
     align-content: center;
 
     @include tabletSS {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
-    padding-bottom: 0;
+      // grid-template-columns: repeat(2, 1fr);
+      padding: 2rem;
+      padding-bottom: 0;
     }
 
-    @include mobileSS{
-    grid-template-columns: repeat(1, 1fr);
-    // display: flex;
-    // flex-direction: column;
-    padding: 2rem;
-    padding-bottom: 0;
+    @include mobileSS {
+      // grid-template-columns: repeat(1, 1fr);
+      padding: 2rem;
+      padding-bottom: 0;
     }
-
   }
 
-  .img{
-  width:100%;
-  // max-height: 80%; 
-  object-fit: cover;
-  /* overflow: hidden; */
+  .img {
+    height: 100px;
+    width: 120px;
+    object-fit: fit;
   }
-  
+  hr{
+    display: none;
+  }
   .card {
+    max-height: 100px;
+    margin-bottom: 20px;
     background-color: #fff;
-    // padding: 10px;
-    // max-height: 45vh;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-   border-radius: 10px;
-}
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-items: center;
+    // text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
 
-    .headerThree{
+  .headerThree {
     color: #414143;
     padding: 10px;
     font-size: 1.2rem;
-    }
+  }
 
-    .categories{
-      color: #fff;
-      background: $primaryColor;
-      padding: 10px 15px;
-      margin: 10px 4px;
-      border-radius: 10px;
+  .categories {
+    color: #fff;
+    background: $primaryColor;
+    padding: 10px 15px;
+    margin: 10px 4px;
+    border-radius: 10px;
 
-      @include mobileSS{
-        //  align-self: center;
+    @include mobileSS {
+      //  align-self: center;
       margin: 0;
       border-radius: 5px;
-       text-align: center;
-       }
-      
+      text-align: center;
     }
-    .categoryContainer{
-      display: flex;
-       @include mobileSS{
-        display: grid; 
-         grid-template-columns: repeat(2, 1fr);
-         grid-gap: 5px;
-       }
+  }
+  .categoryContainer {
+    display: flex;
+    @include mobileSS {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
     }
+  }
 }
+
+// .postsSection {
+//   .gridContainer {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 20px;
+//     padding: 3rem;
+//     align-self: center;
+//     align-content: center;
+
+//     @include tabletSS {
+//       grid-template-columns: repeat(2, 1fr);
+//       padding: 2rem;
+//       padding-bottom: 0;
+//     }
+
+//     @include mobileSS {
+//       grid-template-columns: repeat(1, 1fr);
+//       padding: 2rem;
+//       padding-bottom: 0;
+//     }
+//   }
+
+//   .img {
+//     width: 100%;
+//     object-fit: cover;
+//   }
+
+//   .card {
+//     background-color: #fff;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-items: center;
+//     text-align: center;
+//     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+//     border-radius: 10px;
+//   }
+
+//   .headerThree {
+//     color: #414143;
+//     padding: 10px;
+//     font-size: 1.2rem;
+//   }
+
+//   .categories {
+//     color: #fff;
+//     background: $primaryColor;
+//     padding: 10px 15px;
+//     margin: 10px 4px;
+//     border-radius: 10px;
+
+//     @include mobileSS {
+//       //  align-self: center;
+//       margin: 0;
+//       border-radius: 5px;
+//       text-align: center;
+//     }
+//   }
+//   .categoryContainer {
+//     display: flex;
+//     @include mobileSS {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//       grid-gap: 5px;
+//     }
+//   }
+// }

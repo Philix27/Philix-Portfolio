@@ -18,9 +18,9 @@ export default function PostContentPage({
         <title>Tinq | {title}</title>
       </Head> */}
       <div className='section post_page'>
+        <img src={cover_image} alt='' className='img' />
         <h1 className='sectionTitle'>{title}</h1>
         <div className='sectionText'>Posted on {date}</div>
-        <img src={cover_image} alt='' className='img' />
         <div className='content'>
           <div dangerouslySetInnerHTML={{ __html: cc }}></div>
           {/* <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div> */}
