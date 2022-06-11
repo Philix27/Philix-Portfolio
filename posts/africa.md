@@ -4,6 +4,7 @@ date: 'May 12, 2022'
 lastEdit: 'May 12, 2022'
 excerpt: 'Crisis associated with Africa'
 cover_image: '/post_img/africa.jpg'
+category: 'Africa'
 ---
 
 1. Ethnicity

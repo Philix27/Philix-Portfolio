@@ -6,14 +6,14 @@ import BlogComp from '../../comps/blogs'
 import { sortByDate } from '../../utils'
 
 export default function PostPage({ posts }) {
-   const _category = ["All", "Psycology", "Self Development"];
+   const _category = ["All", "Africa", "Think", "Productivity"];
   return (
     <div>
       {/* <Head>
         <title>Blog Categories</title>
       </Head> */}
       <BlogComp
-        title='Blogs'
+        title='Blogs and Articles'
         page='blogs'
          categoryList={_category}
         posts={posts}/>

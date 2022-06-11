@@ -4,6 +4,7 @@ date: 'March 12, 2022'
 excerpt: 'Why we must bear children. Rsponsibilities of parenting'
 cover_image: '/post_img/family.jpg'
 lastEdit: 'May 12, 2022'
+category: 'Think'
 
 ---
 

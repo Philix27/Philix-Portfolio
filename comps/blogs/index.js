@@ -17,9 +17,12 @@ export default function BlogComp({ posts, title, page, categoryList, }) {
     console.log('Before');
     console.log(selectedCategory);
     const tempList = [];
-      posts.forEach(post => {
-        if (post.frontmatter.category == _category) {
-          tempList.add(post)
+    posts.forEach(post => {
+        
+      if (_category == "All") { 
+        tempList = posts;
+      } else if (post.frontmatter.category == _category) {
+          tempList.push(post)
         }
       });
       setSelectedCategory(tempList);

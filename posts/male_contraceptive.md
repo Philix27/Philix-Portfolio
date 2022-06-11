@@ -4,6 +4,7 @@ date: 'May 10, 2021'
 excerpt: 'Is it a potential blessing or a course'
 cover_image: '/post_img/condom.jpg'
 lastEdit: 'May 12, 2022'
+category: 'Think'
 
 ---
 

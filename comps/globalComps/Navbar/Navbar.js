@@ -36,12 +36,13 @@ export default function Navbar() {
                             </div>
                         </li>
                         <li className={styles.nav_start_list_item}><Link href="/"><a className={styles.link}>Home</a></Link></li>
-                        <li className={styles.nav_start_list_item}><Link href="#about"><a className={styles.link}>About</a></Link></li>
+                        <li className={styles.nav_start_list_item}><Link href="/#about"><a className={styles.link}>About</a></Link></li>
                         <li className={styles.nav_start_list_item}><Link href="/projects"><a className={styles.link}>Projects</a></Link></li>
                         <li className={styles.nav_start_list_item}><Link href="/pharmacist"><a className={styles.link}>Pharmacist</a></Link></li>
                         <li className={styles.nav_start_list_item}><Link href="/blogs"><a className={styles.link}>Blogs</a></Link></li>                        
                         <li className={styles.nav_start_list_item}><Link href="/books"><a className={styles.link}>Book Reviews</a></Link></li>                        
                         <li className={styles.nav_start_list_item}><Link href="/"><a className={styles.link}>Courses</a></Link></li>                        
+                        <li className={styles.nav_start_list_item}><Link href="/videos"><a className={styles.link}>Videos</a></Link></li>                        
                         {/* <li className={styles.nav_start_list_item}><Link href="/"><a className={styles.link}>News Letter</a></Link></li>                         */}
                     </ul>
                </div>

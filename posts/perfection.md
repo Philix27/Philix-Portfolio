@@ -4,6 +4,7 @@ date: 'March 7, 2021'
 excerpt: 'Reasons why perfection can be deluding'
 cover_image: '/post_img/pefect.jpg'
 lastEdit: 'May 12, 2022'
+category: 'Productivity'
 
 ---
 1. Perfection
