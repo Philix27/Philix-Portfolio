@@ -1,9 +1,9 @@
   import Link from 'next/link'
-  import {useEffect, useState} from 'react' 
+  import {useState} from 'react' 
   import {motion} from 'framer-motion'
 
 
-export default function BlogComp({ posts, title, page, categoryList, }) {
+export default function BooksComp({ posts, title, page, categoryList, }) {
     const [selectedCategory, setSelectedCategory] = useState(posts);
 
   const changeToCateory = (_category) => {
@@ -20,7 +20,7 @@ export default function BlogComp({ posts, title, page, categoryList, }) {
   }
   
       return (
-        <div className='section postsSection' id="services">
+        <div className='section booksListPage' id="books">
           <div className='sectionTitle' >{title}</div >
           <div className='categoryContainer'>
             {categoryList.map((cat, index) => (
@@ -43,18 +43,19 @@ export default function BlogComp({ posts, title, page, categoryList, }) {
             <Link href={`/${page}/${post.slug}`} target="_blank">
               <img className='img' src={post.frontmatter.cover_image} />
             </Link>
-          {/* <BlogCard> */}
-            <h3 className='headerThree'>{post.frontmatter.title}</h3>
-              <div className='sectionText'>
+            
+            <div className='texty'>
+
+              <h3 className='bookTitle'>{post.frontmatter.title}</h3>
+              
+              <div className='bookAuthor'>
                 {post.frontmatter.excerpt}
               </div>
-              <hr />
-              <div className='sectionSmallText'>
+              
+              <div className='bookPostedDate'>
                 Posted on {post.frontmatter.date}
               </div>
-         
-        
-         {/* </BlogCard> */}
+            </div>
          </motion.div>
         ))}
       </div>

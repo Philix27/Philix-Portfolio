@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 // import Head from 'next/head'
-import BlogComp from '../../comps/blogs'
+import BooksComp from '../../comps/books'
 import { sortByDate } from '../../utils'
 
 export default function PostPage({ books }) {
@@ -12,7 +12,7 @@ export default function PostPage({ books }) {
       {/* <Head>
         <title>Blog Categories</title>
       </Head> */}
-      <BlogComp 
+      <BooksComp 
         title='Book Reviews and Summaries'
         page='books' 
         categoryList={_category}
