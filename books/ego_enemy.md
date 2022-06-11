@@ -1,9 +1,11 @@
 ---
 title: "Ego is the enemy"
-date: 'May 12, 2022'
+date: 'June 8, 2022'
 lastEdit: 'June 10, 2022'
 excerpt: 'By Ryan Holiday'
 cover_image: '/books/ego.jpg'
+category: 'Self Development'
+
 ---
 
 ## Painful Prologue
@@ -43,3 +45,7 @@ helps you in this book, it will be because of them and not me.
 *A person who thinks all the time has nothing to think about except thoughts, so he loses touch
 with reality and lives in a world of illusions.*
 — **ALAN WATTS**
+### The Danger of Early Pride
+*A proud man is always looking down on things and people; and, of course, as long as you are
+looking down, you cannot see something that is above you.*
+**—C. S. LEWIS**

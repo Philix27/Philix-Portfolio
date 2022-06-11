@@ -1,9 +1,11 @@
 ---
-title: "Get Organized"
+title: "Get Organized "
 date: 'May 12, 2022'
 lastEdit: 'May 12, 2022'
-excerpt: 'By ...'
+excerpt: 'By Ciara Conlon'
 cover_image: '/books/organised.jpg'
+category: 'Self Development'
+
 ---
 
 1. Ethnicity

@@ -6,6 +6,7 @@ import BlogComp from '../../comps/blogs'
 import { sortByDate } from '../../utils'
 
 export default function PostPage({ books }) {
+  const _category = ["All", "Psycology", "Self Development"];
   return (
     <div>
       {/* <Head>
@@ -14,6 +15,7 @@ export default function PostPage({ books }) {
       <BlogComp 
         title='Book Reviews and Summaries'
         page='books' 
+        categoryList={_category}
         posts={books}/>
     </div>
   )

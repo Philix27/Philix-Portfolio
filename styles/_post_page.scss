@@ -23,7 +23,7 @@
          padding-left: 30px;
        }
       li{
-        list-style: decimal;
+        list-style: square;
       }
     }
     ul{
@@ -33,6 +33,14 @@
        @include mobileSS{
          padding-left: 30px;
        }
+        li{
+        list-style: circle;
+      }
+    }
+    h1{
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-size: 2.3rem;
     }
     h2{
       padding-bottom: 10px;
@@ -42,7 +50,7 @@
     h3{
       padding-bottom: 8px;
       padding-top: 8px;
-      font-size: 1.6rem;
+      font-size: 1.7rem;
     }
     p{
       line-height: 2.5rem;

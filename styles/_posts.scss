@@ -1,3 +1,5 @@
+  @import 'colors';
+
   .postsSection{
 
     .gridContainer {
@@ -49,5 +51,20 @@
     color: #414143;
     padding: 10px;
     font-size: 1.2rem;
+    }
+
+    .categories{
+      color: #fff;
+      background: $primaryColor;
+      padding: 10px 15px;
+      margin: 10px 4px;
+      border-radius: 10px;
+      
+    }
+    .categoryContainer{
+      display: flex;
+       @include mobileSS{
+        display: block; 
+       }
     }
 }

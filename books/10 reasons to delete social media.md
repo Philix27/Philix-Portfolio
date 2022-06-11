@@ -4,6 +4,7 @@ date: 'March 7, 2021'
 excerpt: 'By Jaron Lanier'
 cover_image: '/books/media_10.jpg'
 lastEdit: 'May 12, 2022'
+category: 'Self Development'
 
 ---
 1. How are babies made?

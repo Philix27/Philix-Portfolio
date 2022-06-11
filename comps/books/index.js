@@ -1,45 +1,15 @@
   import Link from 'next/link'
-  import {useEffect, useState} from 'react' 
+  import React from 'react'
   import {motion} from 'framer-motion'
 
 
-export default function BlogComp({ posts, title, page, categoryList, }) {
-    const [selectedCategory, setSelectedCategory] = useState(posts);
-
-    // useEffect(() => {
-    // effect
-    // return () => {
-    //   cleanup
-    // }
-    // }, [input]);
-  
-  const changeToCateory = (_category) => {
-    console.log('Before');
-    console.log(selectedCategory);
-    const tempList = [];
-      posts.forEach(post => {
-        if (post.frontmatter.category == _category) {
-          tempList.add(post)
-        }
-      });
-      setSelectedCategory(tempList);
-      console.log('After');
-      console.log(selectedCategory);
-  }
-  
+ export default function BookComp({ posts, title, page })  {
       return (
         <div className='section postsSection' id="services">
           <div className='sectionTitle' >{title}</div >
-          <div className='categoryContainer'>
-            {categoryList.map((cat, index) => (
-              <div className='categories' onClick={() => changeToCateory(cat)}>
-                {cat}
-              </div>
-            ))}
-
-          </div>        
+          <div>All, Psycology, Self Development</div>        
           <div className='gridContainer'>
-        {selectedCategory.map((post, index) => (
+        {posts.map((post, index) => (
           <motion.div
             key={index}
             className='card'
