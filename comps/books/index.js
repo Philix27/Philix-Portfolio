@@ -29,7 +29,8 @@ export default function BooksComp({ posts, title, page, categoryList, }) {
               </div>
             ))}
 
-          </div>        
+          </div>
+          {/* //! Consider designing a dropdown select option especially for mobile view */}
           <div className='gridContainer'>
         {selectedCategory.map((post, index) => (
           <motion.div

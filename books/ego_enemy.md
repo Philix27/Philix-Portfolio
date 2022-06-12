@@ -26,7 +26,7 @@ which is often associated with success, ambitions and accomplishments.
 ## Introduction
 Wherever you are, whatever you’re doing, your worst enemy already lives inside you: your ego.
 
-## Part I - ASPIRE
+# Part I - ASPIRE
 
 We are setting out to do something new, something innovative
 after coming up with a great idea, many a times we tend not to 
@@ -103,3 +103,27 @@ It is not enough to have big dreams and aspirations but rather
 put in the hardwork to make that awesome idea a reality.
 
 ## For everything that comes next, ego is the enemy
+
+# Part II - SUCCCESS
+
+## Always Stay a Student
+
+- *Every man I meet is my master in some point, and in that I learn of him. —RALPH WALDO EMERSON*
+
+## Don't Tell Yourself a Story
+
+- *Myth becomes myth not in the living but in the retelling. —DAVID MARANISS*
+
+## What is important to you?
+- *To know what you like is the beginning of wisdom and of old age. —ROBERT LOUIS STEVENSON*
+  
+## Entitlement, Control, and Paranoia
+- *One of the symptoms of approaching nervous breakdown is the belief that one’s work is terribly important. —BERTRAND RUSSELL*
+  
+## Managing Yourself
+- *It is not enough to have great qualities; we should also have the management of them. —LA ROCHEFOUCAULD*
+
+## Beware the disease of me
+- *If I am not for myself who will be for me? If I am only for myself, who am I? —HILLEL*
+- 
+

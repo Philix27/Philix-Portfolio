@@ -71,6 +71,11 @@
   
   }
 
+  .active_list_item {
+    background-color: #174a88;
+     padding: 15px 12px;
+  }
+
 @media (max-width: 700px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -115,7 +120,6 @@
     margin-right: 50px;
     margin-left: 20px;
   }
-
   
   .nav_start_list li:last-child {
     border-bottom: 0;

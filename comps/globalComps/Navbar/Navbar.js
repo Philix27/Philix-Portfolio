@@ -1,10 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
+import {useRouter} from 'next/router'
 import styles from './Navbar.module.css'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 
 export default function Navbar() {
+    const router = useRouter();
+    const _path = router.pathname;
     return (
         <>    
         <div className={styles.nav}>
@@ -35,15 +38,48 @@ export default function Navbar() {
                                 </label>
                             </div>
                         </li>
-                        <li className={styles.nav_start_list_item}><Link href="/"><a className={styles.link}>Home</a></Link></li>
-                        <li className={styles.nav_start_list_item}><Link href="/#about"><a className={styles.link}>About</a></Link></li>
-                        <li className={styles.nav_start_list_item}><Link href="/projects"><a className={styles.link}>Projects</a></Link></li>
-                        <li className={styles.nav_start_list_item}><Link href="/pharmacist"><a className={styles.link}>Pharmacist</a></Link></li>
-                        <li className={styles.nav_start_list_item}><Link href="/blogs"><a className={styles.link}>Blogs</a></Link></li>                        
-                        <li className={styles.nav_start_list_item}><Link href="/books"><a className={styles.link}>Book Reviews</a></Link></li>                        
-                        <li className={styles.nav_start_list_item}><Link href="/"><a className={styles.link}>Courses</a></Link></li>                        
-                        <li className={styles.nav_start_list_item}><Link href="/videos"><a className={styles.link}>Videos</a></Link></li>                        
-                        {/* <li className={styles.nav_start_list_item}><Link href="/"><a className={styles.link}>News Letter</a></Link></li>                         */}
+                            <li className={ _path == "/" ? styles.active_list_item : styles.nav_start_list_item}>
+                                <Link href="/">
+                                    <a className={styles.link}>Home</a>
+                                </Link>
+                            </li>
+                                                    
+                            <li className={_path == "/#about" ? styles.active_list_item : styles.nav_start_list_item}>
+                                <Link href="/#about">
+                                    <a className={styles.link}>About</a>
+                                </Link>
+                            </li>
+                            <li className={_path == "/projects" ? styles.active_list_item : styles.nav_start_list_item}>
+                                <Link href="/projects">
+                                    <a className={styles.link}>Projects</a>
+                                </Link>
+                            </li>
+                            <li className={_path == "/pharmacist" ? styles.active_list_item : styles.nav_start_list_item}>
+                                <Link href="/pharmacist">
+                                    <a className={styles.link}>Pharmacist</a>
+                                </Link>
+                            </li>
+                            <li className={_path == "/blogs" ? styles.active_list_item : styles.nav_start_list_item}>
+                                <Link href="/blogs">
+                                    <a className={styles.link}>Blogs</a>
+                                </Link>
+                            </li>
+                            <li className={_path == "/books" ? styles.active_list_item : styles.nav_start_list_item}>
+                                <Link href="/books">
+                                    <a className={styles.link}>Book Reviews</a>
+                                </Link>
+                            </li>
+                            <li className={_path == "/videos" ? styles.active_list_item : styles.nav_start_list_item}>
+                                <Link href="/videos">
+                                    <a className={styles.link}> Videos</a>
+                                </Link>
+                            </li>
+                            <li className={_path == "/#courses" ? styles.active_list_item : styles.nav_start_list_item}>
+                                <Link href="/#courses">
+                                    <a className={styles.link}> Courses</a>
+                                </Link>
+                            </li>
+                                               
                     </ul>
                </div>
 
