@@ -4,9 +4,12 @@
   .gridContainer {
     display: block;
     // flex-direction: column;
-    padding: 3rem;
     align-self: center;
     align-content: center;
+    @include mobileSS {
+      padding: 10px;
+
+     }
 
   }
 
