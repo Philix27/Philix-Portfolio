@@ -46,12 +46,12 @@ export default function BooksComp({ posts, title, page, categoryList, }) {
             
             <div className='texty'>
 
-              <h3 className='bookTitle'>{post.frontmatter.title}</h3>
+              <h3 className='bookTitle'>{index + 1}. {post.frontmatter.title}</h3>
               
               <div className='bookAuthor'>
                 {post.frontmatter.excerpt}
               </div>
-              
+
               <div className='bookPostedDate'>
                 Posted on {post.frontmatter.date}
               </div>

@@ -2,8 +2,8 @@
 
 .booksListPage {
   .gridContainer {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    // flex-direction: column;
     padding: 3rem;
     align-self: center;
     align-content: center;
@@ -11,17 +11,19 @@
   }
 
   .img {
-    // height: 100px;
     width: 120px;
     object-fit: fit;
+    @include mobileSS {
+      width: 75px;
+
+     }
   }
-  hr{
-    display: none;
-  }
+ 
   .card {
     margin-bottom: 20px;
     background-color: #fff;
     display: flex;
+    // width: 100%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
   }
@@ -34,10 +36,11 @@
 
   .bookTitle {
     color: $primaryColor;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight: 800;
   }
   .bookAuthor {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .bookPostedDate {
     margin-top: 8px;
