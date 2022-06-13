@@ -6,14 +6,14 @@ import BooksComp from '../../comps/books'
 import { sortByDate } from '../../utils'
 
 export default function PostPage({ books }) {
-  const _category = ["All", "Psycology", "Self Development"];
+  const _category = ["All", "Psycology", "Self Development", "Business"];
   return (
     <div>
       {/* <Head>
         <title>Blog Categories</title>
       </Head> */}
       <BooksComp 
-        title='Book Reviews and Summaries'
+        title='Book Summaries'
         page='books' 
         categoryList={_category}
         posts={books}/>

@@ -6,8 +6,12 @@
 export default function BooksComp({ posts, title, page, categoryList, }) {
     const [selectedCategory, setSelectedCategory] = useState(posts);
 
-  const changeToCateory = (_category) => {
+  
+  const changeToCateorySelect = (e) => {
+    const _category = e.target.value 
     const tempList = [];
+    console.log('Checking category')
+    console.log(_category)
     posts.forEach(post => {
         
       if (_category == "All") { 
@@ -22,14 +26,20 @@ export default function BooksComp({ posts, title, page, categoryList, }) {
       return (
         <div className='section booksListPage' id="books">
           <div className='sectionTitle' >{title}</div >
-          <div className='categoryContainer'>
-            {categoryList.map((cat, index) => (
-              <div className='categories' onClick={() => changeToCateory(cat)}>
-                {cat}
-              </div>
-            ))}
-
-          </div>
+        
+            <select name="category"
+                            defaultValue='All' onChange={changeToCateorySelect}>
+                            
+                            {categoryList.map((_category, index) => {
+                                return (
+                                  <option value={_category} key={index}>
+                                    {_category}
+                                  </option>
+                                );
+                            })}
+                           
+          </select>
+          
           {/* //! Consider designing a dropdown select option especially for mobile view */}
           <div className='gridContainer'>
         {selectedCategory.map((post, index) => (

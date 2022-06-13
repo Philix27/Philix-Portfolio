@@ -66,7 +66,7 @@ export default function Navbar() {
                             </li>
                             <li className={_path == "/books" ? styles.active_list_item : styles.nav_start_list_item}>
                                 <Link href="/books">
-                                    <a className={styles.link}>Book Reviews</a>
+                                    <a className={styles.link}>Book</a>
                                 </Link>
                             </li>
                             <li className={_path == "/videos" ? styles.active_list_item : styles.nav_start_list_item}>

@@ -125,5 +125,9 @@ put in the hardwork to make that awesome idea a reality.
 
 ## Beware the disease of me
 - *If I am not for myself who will be for me? If I am only for myself, who am I? —HILLEL*
-- 
 
+
+## Meditate on the Immensity
+- *A monk is a man who is separated from all and who is in harmony with all. —EVAGRIUS PONTICUS*
+ 
+## Maintain your sobriety
