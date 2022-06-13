@@ -131,3 +131,17 @@ put in the hardwork to make that awesome idea a reality.
 - *A monk is a man who is separated from all and who is in harmony with all. —EVAGRIUS PONTICUS*
  
 ## Maintain your sobriety
+
+## For what often comes next, ego is the enemy...
+We must try to avoid the undeiscplined pursuit for more. Once we are successful the need for
+publicity, attention, celerity lifestyle usually arises, and it is at this stage Ego is capable 
+of destroying a man.We become delusional and assume the world revovles around us. A brief reminder
+is that just because you did something once, doesn’t mean you’ll
+be able to do it successfully forever. 
+
+# Part II - FAILURE
+
+As we work towards our aspirations we should bear it in mind that
+no one is permanently successful and not everyone finds success on
+first attempt.
+
