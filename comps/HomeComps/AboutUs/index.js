@@ -94,16 +94,7 @@ export default function About() {
                     </ul>
                     </div>
                 </div> 
-                <div>
-                     <h3>Blockchain Technologies</h3>
-                    <div className='sectionText'>
-                        <ul>
-                            <li className={styles.techList}> Binance Smart Contract </li>
-                            <li className={styles.techList}> Moralis </li>
-                            <li className={styles.techList}> Hardhat </li>
-                    </ul>
-                    </div>
-                </div> 
+               
                 <div>
                  <h3>Databases</h3>
                     <div className='sectionText'>
@@ -113,7 +104,7 @@ export default function About() {
                             <li className={styles.techList}> MySql:  2018 - 2022 </li>
                             <li className={styles.techList}> Sqflite </li>
                             <li className={styles.techList}> Postgres </li>
-                            <li className={styles.techList}> Sanity: 2022 </li>
+                            {/* <li className={styles.techList}> Sanity: 2022 </li> */}
                             
                     </ul>
                     </div>    
@@ -130,16 +121,31 @@ export default function About() {
                     </ul>
                     </div>    
                 </div>
-                 <div>
-                 <h3>Currently Learning</h3>
+            </div>
+           
+             <h1 className='sectionTitle'>Graphics</h1>
+             <br/>
+            <div className={styles.content}>
+                <div>
+                 <h3>2D Graphics</h3>
                     <div className='sectionText'>
                         <ul>
-                            <li className={styles.techList}>Blockchain Technologies</li>
-                            
+                             <li className={styles.techList}>Photoshop:  2015 - 2022 </li>
+                            <li className={styles.techList}> Illustrator:  2015 - 2022 </li>
+                            <li className={styles.techList}> Indesign:  2015 - 2022 </li>
                     </ul>
                     </div>    
-                </div>
-
+                </div> 
+                
+                <div>
+                 <h3>Motion Graphics</h3>
+                    <div className='sectionText'>
+                        <ul>
+                             <li className={styles.techList}>Premier Pro </li>
+                            <li className={styles.techList}>After Effects </li>
+                    </ul>
+                    </div>    
+                </div> 
             </div>
         </div>
     )
