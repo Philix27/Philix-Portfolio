@@ -5,7 +5,8 @@ excerpt: 'By David McRaney'
 cover_image: '/books/not_smart.jpg'
 lastEdit: 'May 12, 2022'
 category: 'Psycology'
-
+completed: false
+started: false
 ---
 
 ## Reading

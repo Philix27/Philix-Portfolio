@@ -5,7 +5,8 @@ lastEdit: 'June 10, 2022'
 excerpt: 'By Ryan Holiday'
 cover_image: '/books/ego.jpg'
 category: 'Self Development'
-
+completed: false
+started: true
 ---
 ## Painful Prologue
 I wrote this book not because I have attained some wisdom I feel qualified to
@@ -144,4 +145,20 @@ be able to do it successfully forever.
 As we work towards our aspirations we should bear it in mind that
 no one is permanently successful and not everyone finds success on
 first attempt.
+
+At any point in our journey life can take a twist, fate could happen, what 
+you least expect can happen to you, even your greatest fears do come into reality.
+Sabotage, Unfairness, Adversity, Trials, Tragedy, all these should be seen as a trial
+which are meant to build you else one might get sunk by it.
+
+Sometimes failure has it advantages because it helps refine us, build and prepare us for 
+the future and futher unforseen circumstances. So the way we react towards failure matters 
+a lot.
+
+In times of failure we need to be strong and posses the confidence and willingness to endure and
+also a sense of purpose else our ego betray us.
+
+## Alive or Dead Time
+
+- *Live without wasted time - PARISIAN POLITICAL SLOGAN*
 

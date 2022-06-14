@@ -5,6 +5,7 @@ excerpt: 'By Peter Thiel'
 cover_image: '/books/zero.jpg'
 lastEdit: 'May 12, 2022'
 category: 'Self Development'
-
+completed: false
+started: false
 ---
 

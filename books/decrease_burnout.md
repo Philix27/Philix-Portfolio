@@ -5,6 +5,7 @@ excerpt: 'By Bruce Daisley'
 cover_image: '/books/decrease burnout.jpg'
 lastEdit: 'May 12, 2022'
 category: 'Self Development'
-
+completed: false
+started: false
 ---
 

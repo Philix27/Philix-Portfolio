@@ -5,5 +5,6 @@ excerpt: 'By James Williams'
 cover_image: '/books/dark_psycology.jpg'
 lastEdit: 'May 12, 2022'
 category: 'Psycology'
-
+completed: false
+started: false
 ---

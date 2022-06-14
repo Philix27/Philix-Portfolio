@@ -5,7 +5,8 @@ lastEdit: 'June 13, 2022'
 excerpt: 'By Tom Gegax with Phil Bolsta'
 cover_image: '/books/small business.jpg'
 category: 'Business'
-
+completed: false
+started: true
 ---
 
 ## PART 1 - Setting up Shop
@@ -52,3 +53,7 @@ will be so glaring in no distant time. The following are some of the areas to ca
 
 ## Chapter 3 - Write your business plan
 ### Building your blueprint for success
+
+Mere having the greatest business idea is not enough, one has to take the extra step to develop 
+a business plan which enables you see things more clearly and also makes it easy for others (investors)
+to understand what your business is all about.

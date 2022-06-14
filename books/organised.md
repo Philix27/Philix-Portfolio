@@ -5,7 +5,8 @@ lastEdit: 'May 12, 2022'
 excerpt: 'By Ciara Conlon'
 cover_image: '/books/organised.jpg'
 category: 'Self Development'
-
+completed: false
+started: false
 ---
 
 1. Ethnicity
