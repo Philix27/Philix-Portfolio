@@ -289,8 +289,48 @@ Ego would make one see only the positive feedback, and
 rationalize every other opposing opinions to suit his feeling.
 
 ## Don't be Passionate
+
+While one maybe passionate about their desires and aspirations, we are 
+to note that sometimes it could hinder us from accomplishments. We should be driven
+by reasons rather than passion.
+
+Being passionate may make one blind to the world of reality and deaf to the opinions 
+of friends. The origin of passion may be earnest and good, but its effect 
+maybe comical and monstrous.
+
+Being passionate can be paradoxical, where a person can say things he/she wish to 
+accomplish, display the plans they have and have no significant progress to show for it.
+
+What we need in place of *Passion* is *Purpose*. Purpose is like passion, but with boundaries.
+Realism is detachment from this passion and with varied perspective to see things more clearly.
+
+
 ## Follow the canvas strategy
+
+Encourages one to be a humble apprentice/intern. Most great artist in history such as
+Michealangelo and Leonardo Davinci started off as an apprentice.
+
+Forget about the glory and the praises at the early stage. Meanwhile, 
+this shouldn't be mistaken for kissing asses but rather others the opportunity to take the lead.
+Obeisance is the way forward. When starting out you are most likely to 
+overestimate your abilities.
+The Canvas Strategy is teaches us about helping others to help you.
+Whenever you are in a place, look for how to add value to them and in return 
+you will benefit from it.
+
+Sacrifice short-term gratification for long-term pay-offs.
+
+
 ## Restrain Yourself
+Sometimes we have to retrain ourselves from attacking even when we 
+feel we mustor we are being oppressed. All for the bigger picture/goal.
+One needs to tolorate and endure a certain some shit in order to acheive a a certain goal.
+Be ready to put aside basic sense of fairness and rights you deserve as a human being.
+
+Whatever we aspire to acheive in some ways is defined by the amount of nonsense we are willing to deal with.
+Ignore the noise; Quietly brush it off and work harder.
+
+
 
 ## Get out of your own head
 *A person who thinks all the time has nothing to think about except thoughts, so he loses touch
@@ -301,7 +341,8 @@ with reality and lives in a world of illusions.*  **ALAN WATTS**
 looking down, you cannot see something that is above you.*
 **—C. S. LEWIS**
 
-This section focuses on how pride can lead to ones downfall. Especially pride that comes after temporary success. Pride can lead to a myopic view of a situation.
+This section focuses on how pride can lead to ones downfall. 
+Especially pride that comes after temporary success. Pride can lead to a myopic view of a situation.
 
 ## Work, Work Work
 - *The best plan is only good intentions unless it degenerates into work. —PETER DRUCKER*

@@ -38,12 +38,6 @@ export default function Navbar() {
                                 </label>
                             </div>
                         </li>
-                            <li className={ _path == "/" ? styles.active_list_item : styles.nav_start_list_item}>
-                                <Link href="/">
-                                    <a className={styles.link}>Home</a>
-                                </Link>
-                            </li>
-                                                    
                             <li className={_path == "/#about" ? styles.active_list_item : styles.nav_start_list_item}>
                                 <Link href="/#about">
                                     <a className={styles.link}>About</a>
@@ -69,7 +63,7 @@ export default function Navbar() {
                                     <a className={styles.link}>Book</a>
                                 </Link>
                             </li>
-                            <li className={_path == "/videos" ? styles.active_list_item : styles.nav_start_list_item}>
+                            {/* <li className={_path == "/videos" ? styles.active_list_item : styles.nav_start_list_item}>
                                 <Link href="/videos">
                                     <a className={styles.link}> Videos</a>
                                 </Link>
@@ -78,7 +72,7 @@ export default function Navbar() {
                                 <Link href="/#courses">
                                     <a className={styles.link}> Courses</a>
                                 </Link>
-                            </li>
+                            </li> */}
                                                
                     </ul>
                </div>
