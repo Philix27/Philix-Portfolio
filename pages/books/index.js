@@ -19,7 +19,7 @@ export default function PostPage({ books }) {
         <title>Blog Categories</title>
       </Head> */}
       <BooksComp 
-        title='Book Summaries'
+        title='Books & Notes'
         page='books' 
         categoryList={_category}
         posts={books}/>

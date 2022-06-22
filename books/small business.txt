@@ -57,3 +57,22 @@ will be so glaring in no distant time. The following are some of the areas to ca
 Mere having the greatest business idea is not enough, one has to take the extra step to develop 
 a business plan which enables you see things more clearly and also makes it easy for others (investors)
 to understand what your business is all about.
+
+### Some Standard Features of a Business Plan
+
+1. Executive summary: Company’s mission, business objectives, target market, points of differentiation, 
+marketing strategy, funding needs, and why it’s time to bring your vision to market.
+2. Business breakdown: Begin with your *elevator speech*.  Next, detail your
+products and services, market niches, and what makes you unique. Detail the size 
+and demographics of your target market, the demand
+for your offering, your expected market share, and the type of legal
+business entity you plan to operate.
+3. Competitive analysis: List your competitors’ locations, estimated
+revenues, and marketplace history. Report on what they’re doing
+right and wrong, how they’re meeting or not meeting their custom-
+ers’ needs, and explain how you intend to neutralize their strengths
+and exploit their vulnerabilities. Spell out why your offering gives you
+a competitive advantage. Is it a patented new technology? A better
+location? Greater convenience? Do your prices, service, or quality
+give you an edge? How? Most important, how do you convince your
+rivals’ customers to jump over to your side?
