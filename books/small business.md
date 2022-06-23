@@ -76,3 +76,54 @@ a competitive advantage. Is it a patented new technology? A better
 location? Greater convenience? Do your prices, service, or quality
 give you an edge? How? Most important, how do you convince your
 rivals’ customers to jump over to your side?
+4. Management team: You need to assess each member of your team and make sure they are all providing 
+adequate and quality value to the company, beacuse they will serve as a burden if
+they are not competent.
+5. Marketing strategy: Begin with an analysis of the space you’re enter-
+ing: the competitive landscape, the growth opportunities, the niches
+that make up the market. Plans on how you intend to advertise and promete this company.
+6. Daily operations: Offer a glimpse into your day-to-day business,
+starting with the workforce.
+7. Risk assessment: Time to remove your rose-colored glasses and 
+assume the role of devil’s advocate. Try to look out for any possible problem 
+and see how it can affect this business and come up with plans on how to resolve it.
+Explain how
+you’ll avert the preventable crises and deal with the inevitable ones.
+8. Sales forecast:  Estimate monthly revenue
+and units sold for the first year. Do the same, but on an annual basis,
+for the following four years. Then back up the numbers with detailed
+underlying assumptions. Where to get the data? Start with competi-
+tor and marketplace analysis, field research, trade associations, per-
+haps focus groups. Pit the numbers against your sales objectives, and
+account for any discrepancies.
+9. Financial Analysis: Start with the pro forma profit-and-
+loss (P&L) statement, projecting monthly income and expenses for
+the first year. Do the same for the next couple of years, but on a quar-
+terly basis. (Develop both conservative-case and best-case scenarios).
+Put a number on how much funding you
+need, and how you’ll spend and repay it. Finally, disclose your own
+financial circumstances and how much you’ll personally contribute
+to the business. Lenders and investors like to see entrepreneurs with
+some skin in the game.
+
+## Chapter 4 - Fund Finding
+### Raising Capital Without Relinquishing Control
+
+
+1. Bootstrapping. Funding your company with personal assets is
+ideal for maintaining control but it can stall growth—and jeopardize
+your financial future—if your pockets aren’t deep.
+2. Family and Friends: Tapping loved ones for
+funding is as common as it is dicey. If it turns out well, life is good.
+If it doesn’t, lifelong relationships can turn sour. Treat these loans
+like the serious business agreements they are. Present your case as if
+your relatives were bankers: Quote a competitive interest rate and
+payback terms, explain the risks. 
+3. Banks. It’s all about collateral.
+4. Angel Investors.
+5. Venture Capitalists.
+
+## Chapter 5 - Position Yourself
+### Nailing Your Name, Location, and Differentiation
+
+

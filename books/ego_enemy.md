@@ -377,31 +377,108 @@ practising, and when you met him, he will win".
 
 # Part II - SUCCCESS
 
-## Always Stay a Student
+Having acheived our desired goals and aspirations we are 
+faced with another form of challenge, 
+temptation and problems. We stop learning, stop listening, 
+stop growing and we loose our grasp on what matters.
 
+We become victims of ourselves and the competitions.
+Sobriety, open-mindedness, organisation and purpose are the great stabilizers.
+
+We tend to forget the factors which made us successful right after we have acheived our goals.
+Ego wants us to think *I'm special. I'm better. The rules don't apply to me.*
+
+No matter how hard you may have worked, the hurdles you may have overcome, once
+you attain success ego is coming for you - especially at your highest moment.
+
+Can you handle success? Or will it be the worst thing that ever happeed to you?
+
+
+## Always Stay a Student
 - *Every man I meet is my master in some point, and in that I learn of him. —RALPH WALDO EMERSON*
+
+It takes a special kind of humility to acknowledge that you know less even
+as you learn moree and more. With accomplishments comes a growing pressure to show
+that we know more than we do.
+A humble person consistently observe and listen so as to improve. Learn cocnsistently, even as a boss.
+Learn from everyone and everything. 
+
+When we are conviced of our intellegience we remain in our comfort zone which makes 
+us feel safe and we are never challenged to learn something new.
+From time to time pick a book about a new topic/field, smething you are less knowledgable of. 
+Push yourself hard against that uncomfortable feeling that comes with learning something new.
 
 ## Don't Tell Yourself a Story
 
 - *Myth becomes myth not in the living but in the retelling. —DAVID MARANISS*
 
+Do not focus on the goal, but rather the process. Develop a standard of performance which ensures
+the process is done properly. 
+
+By telling ourselves stories made up in our head we begin to feel like our
+success was predictable and we saw it coming.
+
+Facts are better than stories. We should stop going with the claim that things 
+went exactly as we planned it. 
+
+
 ## What is important to you?
 - *To know what you like is the beginning of wisdom and of old age. —ROBERT LOUIS STEVENSON*
   
+We startoff with a clear picture of what we want and desire, 
+but once we have acheived it or come close we loose sight of our
+priorities and our core principles. We forget what is truly important.
+
+Find out what is truly important to you, then fosake the rest.
+Steve Jobs once said "Focus is sacrificing all other good and nice goals for one".
+
+
+
 ## Entitlement, Control, and Paranoia
-- *One of the symptoms of approaching nervous breakdown is the belief that one’s work is terribly important. —BERTRAND RUSSELL*
+- *One of the symptoms of approaching nervous breakdown is 
+    the belief that one’s work is terribly important. —BERTRAND RUSSELL*
   
+Entitlement: This is mine.  I have earned it. We overestimate/overstate our 
+abilities and lookdown on others.
+
+Control: It must be done my way - even little things and inconsequential things. 
+Excessive control end up creating a toxic air around us and those who we work with.
+
+Paranoia: I can’t trust anyone. I'm totally by myself and for myself.
+- *He who indulges empty fears earns himeself real fears - Seneca*
+
+
 ## Managing Yourself
 - *It is not enough to have great qualities; we should also have the management of them. —LA ROCHEFOUCAULD*
 
+Delegate task and functions and know the difference between urgency and important. 
+You don’t have to do all the job else you overwork yourself.
+As you become more successful your job begins to chnage gradually, from doing less to making 
+more decisions. The transition requires reevaluating and updating your role.
+
+You would need to trust people to do some jobs for you. 
+Responsibility requires readjustment and increased clarity and purpose.
+- Setting top-level goals and priorities.
+
 ## Beware the disease of me
 - *If I am not for myself who will be for me? If I am only for myself, who am I? —HILLEL*
+
+Disease of me is an act of constantly thinking of oneself, as a very important person and 
+deserving of all forms of recognition, honor and attention.
+This stops you from seeing things for what the truly are and gives you this tendency to
+satisfy your intrest at the expense of everyone else.
+
+One of the most dangerous ironies of success is that we can become someone we never wanted after acheiving it.
 
 
 ## Meditate on the Immensity
 - *A monk is a man who is separated from all and who is in harmony with all. —EVAGRIUS PONTICUS*
  
 ## Maintain your sobriety
+
+Striggle to remain sober. Don't be carried away or deceived by the recognition you have gotten 
+or the amount of money you have gotten in your bank account.
+Ego clouds your mind and sobriety can be a cue.
 
 ## For what often comes next, ego is the enemy...
 We must try to avoid the undeiscplined pursuit for more. Once we are successful the need for
