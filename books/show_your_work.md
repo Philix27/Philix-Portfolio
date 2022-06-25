@@ -159,3 +159,18 @@ like your name, come up with a pseudonym or an alias, and register that.
 
 Setup a blog and keep posting consistently. Do not neglect it for other social 
 media platforms. This should represent all your works. 
+
+4. Open up your cabinent of curiosities.
+
+### Don't be a hoarder.
+
+- “The problem with hoarding is you end up living off your reserves.
+Eventually, you’ll become stale. If you give away everything you have, you
+are left with nothing. This forces you to look, to be aware, to replenish. . . .
+Somehow the more you give away, the more comes back to you.” —Paul Arden
+
+“You’re only as good as your record collection.” —DJ Spooky
+
+### No Guilty Pleasures.
+
+“I don’t believe in guilty pleasures. If you f---ing like something, like it.” —Dave Grohl
