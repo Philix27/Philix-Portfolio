@@ -29,7 +29,7 @@ export default function PostPage({ books }) {
 
 export async function getStaticProps() {
   // Get files from the posts dir
-  const files = fs.readdirSync(path.join('books'))
+  const files = fs.readdirSync(path.join('_books'))
 
   // Get slug and frontmatter from posts
   const books = files.map((filename) => {
@@ -38,7 +38,7 @@ export async function getStaticProps() {
 
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
-      path.join('books', filename),
+      path.join('_books', filename),
       'utf-8'
     )
 
