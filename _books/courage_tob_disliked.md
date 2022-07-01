@@ -2,8 +2,8 @@
 title: "The courage to be disliked"
 date: 'March 7, 2021'
 excerpt: 'By Fumitake Koga, Ichiro Kishimi'
-cover_image: '/books/media_10.jpg'
-lastEdit: 'May 12, 2022'
+cover_image: '/books/courage_dislike.jpg'
+lastEdit: 'July 1, 2022'
 category: 'Self Development'
 completed: false
 started: false
