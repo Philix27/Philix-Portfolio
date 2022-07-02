@@ -75,4 +75,21 @@
   /* margin: 10px 0; */
 }
 
+  input {
+  height: 100%;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  // color: #fff;
+  // background: $primaryColor; 
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 15px 12px;
+  margin: 20px 0; 
+  text-align: center;
+   @include mobileSS {
+     width: 75%;
+   }
+  }
+
 }

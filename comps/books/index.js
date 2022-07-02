@@ -10,8 +10,6 @@ export default function BooksComp({ posts, title, page, categoryList, }) {
   const changeToCateorySelect = (e) => {
     const _category = e.target.value 
     const tempList = [];
-    console.log('Checking category')
-    console.log(_category)
     posts.forEach(post => {
         
       if (_category == "All") { 
@@ -22,11 +20,20 @@ export default function BooksComp({ posts, title, page, categoryList, }) {
       });
       setSelectedCategory(tempList);
   }
+  const onSearch = (e) => {
+    const searchTerm = e.target.value 
+    const tempList = [];
+    tempList = posts.filter((post) => post.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    
+      setSelectedCategory(tempList);
+  }
+
+
   
       return (
         <div className='section booksListPage' id="books">
           <div className='sectionTitle' >{title}</div >
-        
+            <input type='search' placeholder="Find a book..." onChange={onSearch} />
             <select name="category"
                             defaultValue='All' onChange={changeToCateorySelect}>
                             

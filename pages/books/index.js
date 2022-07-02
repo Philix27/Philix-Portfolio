@@ -7,7 +7,7 @@ import { sortByDate } from '../../utils'
 
 export default function PostPage({ books }) {
   const _category = [
-    "All", "Psycology",
+    "All", "Psychology",
     "Self Development",
     "Business", "Productivity",
     "Health"

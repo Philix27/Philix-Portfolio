@@ -4,7 +4,7 @@ date: 'March 7, 2021'
 excerpt: 'By Fumitake Koga, Ichiro Kishimi'
 cover_image: '/books/courage_dislike.jpg'
 lastEdit: 'July 1, 2022'
-category: 'Self Development'
+category: 'Psychology'
 completed: false
 started: false
 ---
