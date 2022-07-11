@@ -27,9 +27,7 @@ export default function BooksComp({ posts, title, page, categoryList, }) {
     
       setSelectedCategory(tempList);
   }
-
-
-  
+ 
       return (
         <div className='section booksListPage' id="books">
           <div className='sectionTitle' >{title}</div >
