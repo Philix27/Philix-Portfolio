@@ -30,7 +30,8 @@ export default function About() {
                      <h3>Community Pharmacy Practice</h3>
                     <div className='sectionText'>
                         <ul>
-                            <li className='techList'>Care First Pharmacy, Delta State: 2020 - 2021 </li>
+                            <li className='techList'>Care First Pharmacy, Abraka Delta State: 2020 - 2021 </li>
+                            <li className='techList'>Kareda Pharmacy, Asaba Delta State: 2022 - Currently </li>
                     </ul>
                     </div>
                 </div> 

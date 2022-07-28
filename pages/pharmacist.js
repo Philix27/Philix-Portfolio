@@ -5,7 +5,7 @@ import About from '../comps/pharmacist'
 export default function Home() {
   return (
     < >    
-      <HomeLanding />
+      {/* <HomeLanding /> */}
       <About/>
     </>
   )
