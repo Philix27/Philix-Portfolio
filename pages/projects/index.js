@@ -1,4 +1,4 @@
-import ProjectsGroup from "../../comps/HomeComps/projects/allProjectsList";
+import ProjectsGroup from "../../comps/projects/allProjectsList";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";

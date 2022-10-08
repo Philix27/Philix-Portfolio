@@ -1,5 +1,3 @@
-import Home from "../../../pages/index";
-
 export const projects = [
   {
     title: "Mims",

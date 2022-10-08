@@ -45,6 +45,8 @@ Yes Diversity,
 
 Diversity is one thing that has shaped every part of Africa to the way it is now, either directly or indirectly. Diversity can have both it’s positive and negative effect on a population. To elaborate more on this think for a moment, how can the most diverse nation be the United State (has at least one person from every tribe and nation in the world.
 
+![ethnic group](https://firebasestorage.googleapis.com/v0/b/delsu-learn.appspot.com/o/portfolio%2Fethnic.png?alt=media&token=e76a4316-5560-4674-aae7-f41614dd5a00)
+
 - **Positive Side of Diversity**
   A survey carried out over the years has reflected that US has been the country with the most immigrants for the past 100 years) while the most diverse continent be Africa.
   The US and other world leading countries (such as France, ) have a high level of diversity, possessing a structure that welcomes people from other part of the globe. This has lead to lots of successful business collaboration and in a long run growth is all these parts of the world. A nation occupied by a wide range of diverse people has to always make policies that would be favourable to everyone and treat people more like equals.

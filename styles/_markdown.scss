@@ -15,9 +15,23 @@
     text-align: justify;
     text-justify: inter-word;
     margin: 10px 0;
-    color: rgb(32, 35, 37);
+    color: rgb(14, 15, 15);
     line-height: 1.6;
     font-weight: 200;
+    img {
+      padding: 10 auto;
+      width: fit-content;
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+    }
+    @include tabletSS {
+      font-weight: 300;
+    }
+
+    @include mobileSS {
+      font-weight: 300;
+    }
   }
 
   ul {
