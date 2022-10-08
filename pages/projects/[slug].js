@@ -13,14 +13,10 @@ export default function ProjectContentPage({
 
   return (
     <>
-      {/* <Head>
-        <title>Tinq | {title}</title>
-      </Head> */}
       <div className="section post_page">
         <img src={cover_image} alt="" className="img" />
-        <h1 className="sectionTitle">{title}</h1>
-        {/* <div className="sectionText">Posted on {date}</div> */}
-        <div className="content">
+
+        <div className="markdown-section">
           <div dangerouslySetInnerHTML={{ __html: cc }}></div>
         </div>
       </div>

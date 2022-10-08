@@ -7,13 +7,13 @@ import { HeaderThree, Tag, TagList, TitleContent } from "./projectsStyles";
 
 export default function ProjectsGroup({ category, projectCol }) {
   const projectll = projectCol.filter((project) => {
-    return project.group == category;
+    return project.frontmatter.category == category;
   });
 
   return (
     <div className="section">
       <div className={styles.gridContainer}>
-        {projectCol.map(({ slug, frontmatter }, index) => (
+        {projectll.map(({ slug, frontmatter }, index) => (
           <motion.div
             key={index}
             className={styles.card}

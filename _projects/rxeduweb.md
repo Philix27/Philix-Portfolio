@@ -1,12 +1,15 @@
 ---
 title: "Rxedu - Website"
-summary: "Crisis associated with Africa"
+summary: "Educational Website for Pharmacists"
 cover_image: "/images/project/rxedu_web.jpg"
-category: "Africa"
-group: "web"
+category: "web"
 id: 1;
+---
+
+# Rxedu Website
+
 ---
 
 An Educaational App for Pharmacists preparing for various exams. Contains MCQs, and related materials need to ace pharmaceutical exams.
 
-Willo
+- [🌐 Visit Website](https://rxedu.org/)

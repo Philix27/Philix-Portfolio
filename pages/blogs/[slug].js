@@ -1,8 +1,7 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import MarkdownIt from 'markdown-it'
-
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import MarkdownIt from "markdown-it";
 
 export default function PostContentPage({
   frontmatter: { title, date, cover_image },
@@ -14,44 +13,44 @@ export default function PostContentPage({
 
   return (
     <>
-       {/* <Head>
+      {/* <Head>
         <title>Tinq | {title}</title>
       </Head> */}
-      <div className='section post_page'>
-        <h1 className='sectionTitle'>{title}</h1>
-        <div className='sectionText'>Posted on {date}</div>
-        <img src={cover_image} alt='' className='img' />
-        <div className='content'>
+      <div className="section post_page">
+        {/* <h1 className='sectionTitle'>{title}</h1> */}
+        <div className="sectionText">Posted on {date}</div>
+        <img src={cover_image} alt="" className="img" />
+        <div className="markdown-section">
           <div dangerouslySetInnerHTML={{ __html: cc }}></div>
           {/* <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div> */}
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join('_posts'))
+  const files = fs.readdirSync(path.join("_posts"));
 
   const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace('.md', ''),
+      slug: filename.replace(".md", ""),
     },
-  }))
+  }));
 
   return {
     paths,
     fallback: false,
-  }
+  };
 }
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join('_posts', slug + '.md'),
-    'utf-8'
-  )
+    path.join("_posts", slug + ".md"),
+    "utf-8"
+  );
 
-  const { data: frontmatter, content } = matter(markdownWithMeta)
+  const { data: frontmatter, content } = matter(markdownWithMeta);
 
   return {
     props: {
@@ -59,5 +58,5 @@ export async function getStaticProps({ params: { slug } }) {
       slug,
       content,
     },
-  }
+  };
 }

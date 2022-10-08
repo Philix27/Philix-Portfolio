@@ -10,7 +10,7 @@ export default function ProjectsPage({ projects }) {
       <div className="section">
         <h1 className="sectionTitle">Flutter UI</h1>
       </div>
-      <ProjectsGroup category="flutter-ui" projectCol={projects} />
+      <ProjectsGroup category="fui" projectCol={projects} />
       <div className="section">
         <h1 className="sectionTitle">Mobile Apps</h1>
       </div>
