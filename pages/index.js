@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <HomeLanding />
       <Objectives />
-      <Projects />
+      {/* <Projects /> */}
       <About />
     </>
   );

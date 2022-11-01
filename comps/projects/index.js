@@ -1,9 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-// import styles from "./projects.module.css";
-// import { projects } from "./constants";
-// import { HeaderThree, Tag, TagList, TitleContent } from "./projectsStyles";
 
 export default function ProjectsGroup({ category, projectCol }) {
   const projectll = projectCol.filter((project) => {
