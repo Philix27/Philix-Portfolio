@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
+import { Landing } from "../../comps/globalComps/Landing";
 
 export default function ProjectContentPage({
   frontmatter: { title, cover_image },
@@ -13,9 +14,8 @@ export default function ProjectContentPage({
 
   return (
     <>
+      <Landing title={title} imgUrl={cover_image} subtitle="Web projects" />
       <div className="section post_page">
-        <img src={cover_image} alt="" className="img" />
-
         <div className="markdown-section">
           <div dangerouslySetInnerHTML={{ __html: cc }}></div>
         </div>

@@ -41,16 +41,38 @@ export default function Navbar() {
 
               <li
                 className={
-                  _path == "/projects"
+                  _path == "/projects/web"
                     ? styles.active_list_item
                     : styles.nav_start_list_item
                 }
               >
-                <Link href="/projects">
-                  <a className={styles.link}>Projects</a>
+                <Link href="/projects/web">
+                  <a className={styles.link}>Web Projects</a>
                 </Link>
               </li>
               <li
+                className={
+                  _path == "/projects/mobile"
+                    ? styles.active_list_item
+                    : styles.nav_start_list_item
+                }
+              >
+                <Link href="/projects/mobile">
+                  <a className={styles.link}>Mobile Projects</a>
+                </Link>
+              </li>
+              <li
+                className={
+                  _path == "/projects/desktop"
+                    ? styles.active_list_item
+                    : styles.nav_start_list_item
+                }
+              >
+                <Link href="/projects/desktop">
+                  <a className={styles.link}>Desktop Projects</a>
+                </Link>
+              </li>
+              {/* <li
                 className={
                   _path == "/pharmacist"
                     ? styles.active_list_item
@@ -60,8 +82,8 @@ export default function Navbar() {
                 <Link href="/pharmacist">
                   <a className={styles.link}>Pharmacist</a>
                 </Link>
-              </li>
-              <li
+              </li> */}
+              {/* <li
                 className={
                   _path == "/blogs"
                     ? styles.active_list_item
@@ -71,8 +93,8 @@ export default function Navbar() {
                 <Link href="/blogs">
                   <a className={styles.link}>Blogs</a>
                 </Link>
-              </li>
-              <li
+              </li> */}
+              {/* <li
                 className={
                   _path == "/books"
                     ? styles.active_list_item
@@ -82,17 +104,7 @@ export default function Navbar() {
                 <Link href="/books">
                   <a className={styles.link}>Book</a>
                 </Link>
-              </li>
-              {/* <li className={_path == "/videos" ? styles.active_list_item : styles.nav_start_list_item}>
-                                <Link href="/videos">
-                                    <a className={styles.link}> Videos</a>
-                                </Link>
-                            </li>
-                            <li className={_path == "/#courses" ? styles.active_list_item : styles.nav_start_list_item}>
-                                <Link href="/#courses">
-                                    <a className={styles.link}> Courses</a>
-                                </Link>
-                            </li> */}
+              </li> */}
             </ul>
           </div>
         </div>

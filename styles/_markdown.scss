@@ -25,11 +25,11 @@
       max-width: 100%;
       height: auto;
     }
-    @include tabletSS {
+    @include tablet {
       font-weight: 300;
     }
 
-    @include mobileSS {
+    @include mobile {
       font-weight: 300;
     }
   }

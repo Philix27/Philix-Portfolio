@@ -1,12 +1,18 @@
-import ProjectsGroup from "../../comps/projects/allProjectsList";
+import ProjectsGroup from "../../comps/projects";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "../../utils";
+import { Landing } from "../../comps/globalComps/Landing";
 
 export default function ProjectsPage({ projects }) {
   return (
     <>
+      <Landing
+        title="Contact us"
+        imgUrl="images/dark.jpg"
+        subtitle="We run a 247 customer care technical support services."
+      />
       <div className="section">
         <h1 className="sectionTitle">Flutter UI</h1>
       </div>

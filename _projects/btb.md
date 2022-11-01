@@ -2,7 +2,7 @@
 title: "BTB"
 summary: "Binance Trading Bot"
 cover_image: "/images/project/btb.jpg"
-category: "fui"
+category: "mobile"
 id: 1;
 ---
 

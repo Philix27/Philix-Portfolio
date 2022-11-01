@@ -48,26 +48,24 @@
 
 .title {
   padding: 10px;
- 
-
 }
 
-.img{
-  width:100%;
-  height:100%;
+.img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   overflow: hidden;
 }
 
 .gridContainer {
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
- padding: 3rem;
- column-gap: 2rem;
- row-gap: 3rem;
-}
- 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
+  /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+  padding: 3rem;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
 
 .subtitle {
   padding: 10px;
@@ -95,10 +93,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .gridContainer{
-      display: flex;
-   flex-direction: column;
-   padding: 2rem;
-   padding-bottom: 0;
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 0;
   }
 }
