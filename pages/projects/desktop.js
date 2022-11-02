@@ -10,8 +10,9 @@ export default function ProjectsPage({ projects }) {
     <>
       <Landing
         title="Desktop Applications"
-        imgUrl="../images/dark.jpg"
-        subtitle="Desktop App Projects"
+        imgUrl="../images/desk.jpg"
+        subtitle="Desktop Applications"
+        opacity={0.5}
       />
       <ProjectsGroup category="fui" projectCol={projects} />
     </>

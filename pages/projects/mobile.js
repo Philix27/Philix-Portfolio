@@ -11,7 +11,7 @@ export default function ProjectsPage({ projects }) {
       <Landing
         title="Mobile Applications"
         imgUrl="../images/mobile.jpg"
-        subtitle="Web projects"
+        subtitle="Mobile application projects"
       />
       <ProjectsGroup category="mobile" projectCol={projects} />
     </>

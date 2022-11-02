@@ -1,5 +1,5 @@
 ---
-title: "Rxedu - Website"
+title: "Rxedu"
 summary: "Educational Website for Pharmacists"
 cover_image: "/images/project/rxedu_web.jpg"
 category: "web"
