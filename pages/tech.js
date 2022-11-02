@@ -6,7 +6,7 @@ export default function Tech() {
     <>
       <Landing
         title="Tech Stack"
-        imgUrl="../images/json.jpg"
+        imgUrl="../images/dark.jpg"
         subtitle="Technological Stacks"
         opacity={0.3}
       />
