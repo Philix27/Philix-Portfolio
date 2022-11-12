@@ -1,7 +1,7 @@
 ---
 title: "APCAIMS"
 summary: "A Data Capture Application"
-cover_image: "/images/project/smattlife.jpg"
+cover_image: "/images/project/aims.png"
 category: "web"
 id: 11;
 ---

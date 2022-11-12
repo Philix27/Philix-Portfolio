@@ -1,7 +1,7 @@
 ---
 title: "APCMIMS"
 summary: "Membership Data Capture Application"
-cover_image: "/images/project/smattlife.jpg"
+cover_image: "/images/project/mims-web.png"
 category: "web"
 id: 11;
 ---
