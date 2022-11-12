@@ -12,6 +12,7 @@ export default function Tech() {
       />
 
       <div className="tech">
+        <h1 className="sectionTitle">Programming</h1>
         <div className="content">
           <div>
             <h3>Programming Languages</h3>
@@ -21,6 +22,7 @@ export default function Tech() {
                 <li className="techList"> Javascript: 2020 - 2022 </li>
                 <li className="techList"> Python: 2021 - 2022 </li>
                 <li className="techList"> Solidity: 2021 - 2022 </li>
+                <li className="techList"> Rust: 2022 </li>
                 <li className="techList"> SQL 2018: - 2022 </li>
               </ul>
             </div>
