@@ -6,13 +6,11 @@ export const HomeLanding = () => {
       <div className={styles.content}>
         <h1 className={styles.sectionTitle}>Hi, I'm Felix Eligbue</h1>
 
-        <p className={styles.smallText}>
-          Full Stack Developer and a Pharmacist
-        </p>
+        <p className={styles.smallText}>Full Stack Developer</p>
 
-        <a href="/docs/res.pdf" download="philix_cv">
+        {/* <a href="/docs/res.pdf" download="philix_cv">
           <div className="btn">Resume</div>
-        </a>
+        </a> */}
       </div>
     </div>
   );

@@ -18,11 +18,23 @@ export default function TechView() {
             </div>
           </div>
           <div>
-            <h3>Frontend</h3>
+            <h3>Web</h3>
             <div className="sectionText">
-              <TechList title="Flutter: 2019 - Current Date" />
               <TechList title="React: 2020 - Current Date" />
               <TechList title="Next.js: 2020 - Current Date" />
+            </div>
+          </div>
+          <div>
+            <h3>Mobile</h3>
+            <div className="sectionText">
+              <TechList title="Flutter: 2019 - Current Date" />
+              <TechList title="React Native" />
+            </div>
+          </div>
+          <div>
+            <h3>Desktop</h3>
+            <div className="sectionText">
+              <TechList title="Tauri" />
             </div>
           </div>
           <div>
@@ -52,29 +64,36 @@ export default function TechView() {
             </div>
           </div>
           <div>
-            <h3>Cloud</h3>
+            <h3>Devops</h3>
             <div className="sectionText">
               <TechList title="Docker" />
               <TechList title="Kubernates" />
-              <TechList title="Apache Kafka" />
+              <TechList title="Helm Chart" />
               <TechList title="GCP" />
+            </div>
+          </div>
+          <div>
+            <h3>Microservices</h3>
+            <div className="sectionText">
+              <TechList title="Apache Kafka" />
+              <TechList title="gRPC" />
+              <TechList title="TCP" />
             </div>
           </div>
 
           <div>
             <h3>Databases</h3>
             <div className="sectionText">
+              <TechList title="Postgres" />
               <TechList title="Firebase: 2019 - Current Date" />
               <TechList title="MongoDB: 2020 - Current Date" />
               <TechList title="MySql: 2018 - Current Date" />
               <TechList title="Sqflite" />
-              <TechList title="Postgres" />
-              {/* <TechList title="Sanity: Current Date" /> */}
             </div>
           </div>
 
           <div>
-            <h3>Other Skills</h3>
+            <h3>CI/CD</h3>
             <div className="sectionText">
               <TechList title="Github" />
               <TechList title="Jenkins" />
