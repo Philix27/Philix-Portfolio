@@ -17,9 +17,13 @@ id: 11;
 #### ALL PROGRESSIVES CONGRESS MEMBERSHIP INVENTORY MEMBERS
 
 This is a data collection application, used to collect,
-track and manage data of agents under the All Progressives Congress (APC)
+track and manage data of members under the All Progressives Congress (APC)
 which is one of the two major
 contemporary political parties in Nigeria,
 along with the Peoples Democratic Party (PDP).
 
-### Challenges
+### Goals
+
+- Register new member
+- Handle payment of monthly dues
+-
