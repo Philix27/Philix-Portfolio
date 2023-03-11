@@ -7,7 +7,7 @@ export default function TechPage() {
       <Landing
         title="Tech Stack"
         imgUrl="../images/dark.jpg"
-        subtitle="Technological Stacks"
+        subtitle=""
         opacity={0.3}
       />
       <TechView />

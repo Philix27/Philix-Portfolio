@@ -78,7 +78,7 @@ export default function Navbar() {
                 }
               >
                 <Link className={styles.link} href="/tech">
-                  Technologies
+                  Stack
                 </Link>
               </li>
               <li
