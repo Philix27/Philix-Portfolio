@@ -6,7 +6,7 @@ export const HomeLanding = () => {
       <div className={styles.content}>
         <h1 className={styles.sectionTitle}>Hi, I'm Felix Eligbue</h1>
 
-        <p className={styles.smallText}>Full Stack Developer</p>
+        <p className={styles.smallText}>A Full Stack Developer</p>
 
         {/* <a href="/docs/res.pdf" download="philix_cv">
           <div className="btn">Resume</div>
