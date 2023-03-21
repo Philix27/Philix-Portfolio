@@ -28,7 +28,8 @@ export default function BooksComp({ posts, title, page, categoryList }) {
   };
 
   return (
-    <div className="section booksListPage" id="books">
+    // <div className="section booksListPage" id="books">
+    <div className="section postsSection" id="books">
       {/* <div className='sectionTitle' >{title}</div > */}
       <input type="search" placeholder="Find a book..." onChange={onSearch} />
       <select
@@ -67,9 +68,9 @@ export default function BooksComp({ posts, title, page, categoryList }) {
             </Link>
 
             <div className="texty">
-              <h3 className="bookTitle">
+              <h5 className="bookTitle">
                 {index + 1}. {post.frontmatter.title}
-              </h3>
+              </h5>
 
               <div className="bookAuthor">{post.frontmatter.excerpt}</div>
 

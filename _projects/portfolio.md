@@ -12,4 +12,4 @@ id: 7;
 
 Where I document my projects
 
-- [🌐 Visit Website](https://philix.tech/)
+- [🌐 Visit Website](https://philix.dev/)

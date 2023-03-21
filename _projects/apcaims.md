@@ -3,6 +3,7 @@ title: "APCAIMS"
 summary: "A Data Capture Application"
 cover_image: "/images/project/aims.png"
 category: "web"
+date: "September 2, 2022"
 id: 11;
 ---
 
@@ -10,7 +11,7 @@ id: 11;
 
 ---
 
-- [🌐 Visit on Website](https:apcaims.org)
+[🌐 Visit on Website](https://apcaims.org/)
 
 ### Introduction
 

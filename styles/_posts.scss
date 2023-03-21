@@ -36,6 +36,7 @@
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    padding: 10px;
   }
 
   .headerThree {
@@ -64,5 +65,21 @@
     padding: 12px 0;
     text-align: center;
     /* margin: 10px 0; */
+  }
+  input {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    // color: #fff;
+    // background: $primaryColor;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 15px 12px;
+    margin: 20px 0;
+    text-align: center;
+    @include mobile {
+      width: 75%;
+    }
   }
 }

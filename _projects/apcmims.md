@@ -1,8 +1,9 @@
 ---
 title: "APCMIMS"
 summary: "Membership Data Capture Application"
-cover_image: "/images/project/mims-web.png"
+cover_image: "/images/project/green_mims.png"
 category: "web"
+date: "September 1, 2022"
 id: 11;
 ---
 
@@ -10,7 +11,7 @@ id: 11;
 
 ---
 
-- [🌐 Visit on Website](https:apcmims.org)
+[🌐 Visit on Website](https://apcmims.org/)
 
 ### Introduction
 

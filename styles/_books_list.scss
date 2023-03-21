@@ -2,9 +2,10 @@
 
 .booksListPage {
   .gridContainer {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     // flex-direction: column;
-    min-width: 50%;
+    // min-width: 50%;
     align-self: center;
     align-content: center;
     @include mobile {
