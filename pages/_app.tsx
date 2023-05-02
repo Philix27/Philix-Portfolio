@@ -1,4 +1,4 @@
-import Layout from "../views/Layout";
+import Layout from "../src/views/Layout";
 import "../styles/index.scss";
 import { type AppType } from "next/app";
 

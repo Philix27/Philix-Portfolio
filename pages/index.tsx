@@ -1,7 +1,7 @@
-import { HomeLanding } from "../views/HomeComps/Landing/Landing";
-import About from "../views/HomeComps/AboutUs";
-import Objectives from "../views/HomeComps/objectives";
-import Projects from "../views/projects/projects";
+import { HomeLanding } from "../src/views/HomeComps/Landing/Landing";
+import About from "../src/views/HomeComps/AboutUs";
+import Objectives from "../src/views/HomeComps/objectives";
+import Projects from "../src/views/projects/projects";
 
 export default function Home() {
   return (

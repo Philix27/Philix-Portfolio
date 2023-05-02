@@ -1,15 +1,17 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+// import Head from 'next/head'
 import BlogComp from "../../src/views/blogs";
 import { sortByDate } from "../../utils";
-import { BlogLanding } from "../../src/views/blogs/Landing/Landing";
 
 export default function PostPage({ posts }) {
   const _category = ["All", "Africa", "Think", "Productivity"];
   return (
     <div>
-      <BlogLanding />
+      {/* <Head>
+        <title>Blog Categories</title>
+      </Head> */}
       <BlogComp
         title="Blogs and Articles"
         page="blogs"
@@ -22,7 +24,7 @@ export default function PostPage({ posts }) {
 
 export async function getStaticProps() {
   // Get files from the posts dir
-  const files = fs.readdirSync(path.join("_go"));
+  const files = fs.readdirSync(path.join("_post"));
 
   // Get slug and frontmatter from posts
   const posts = files.map((filename) => {
@@ -31,7 +33,7 @@ export async function getStaticProps() {
 
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
-      path.join("_go", filename),
+      path.join("_post", filename),
       "utf-8"
     );
 

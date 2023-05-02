@@ -1,5 +1,5 @@
-import { HomeLanding } from "../views/HomeComps/Landing/Landing";
-import About from "../views/pharmacist";
+import { HomeLanding } from "../src/views/HomeComps/Landing/Landing";
+import About from "../src/views/pharmacist";
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
-import { Landing } from "../views/globalComps/Landing";
-import TechView from "../views/tech.view";
+import { Landing } from "../src/views/globalComps/Landing";
+import TechView from "../src/views/tech.view";
 
 export default function TechPage() {
   return (

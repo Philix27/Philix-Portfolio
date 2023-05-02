@@ -13,16 +13,11 @@ export default function PostContentPage({
 
   return (
     <>
-      {/* <Head>
-        <title>Tinq | {title}</title>
-      </Head> */}
       <div className="section post_page">
-        {/* <h1 className='sectionTitle'>{title}</h1> */}
         <div className="sectionText">Posted on {date}</div>
         <img src={cover_image} alt="" className="img" />
         <div className="markdown-section">
           <div dangerouslySetInnerHTML={{ __html: cc }}></div>
-          {/* <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div> */}
         </div>
       </div>
     </>

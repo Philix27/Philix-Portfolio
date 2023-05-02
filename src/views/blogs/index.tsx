@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function BlogComp({ posts, title, page, categoryList }) {
@@ -52,7 +52,8 @@ export default function BlogComp({ posts, title, page, categoryList }) {
           >
             {/* transition={{duration: 1.7, delay: 1, type: "tween", }}> */}
             {/* <Image src={image} width={500} height={300}/> */}
-            <Link href={`/${page}/${post.slug}`} target="_blank">
+            {/* <Link href={`/${page}/${post.slug}`} target="_blank"> */}
+            <Link href={`/${page}/${post.slug}`}>
               <img className="img" src={post.frontmatter.cover_image} />
             </Link>
             {/* <BlogCard> */}

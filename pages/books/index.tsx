@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 // import Head from 'next/head'
-import BooksComp from "../../views/books";
+import BooksComp from "../../src/views/books";
 import { sortByDate } from "../../utils";
 
 export default function PostPage({ books }) {
