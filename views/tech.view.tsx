@@ -10,10 +10,11 @@ export default function TechView() {
           <div>
             <h3>Languages</h3>
             <div className="sectionText">
-              <TechList title="Dart: 2019: - Current" />
+              <TechList title="Typescript: 2020 - Current" />
               <TechList title="Javascript: 2020 - Current" />
+              <TechList title="Dart: 2019: - Current" />
               <TechList title="Java: 2019 - Current" />
-              <TechList title="Rust: Current Date" />
+              <TechList title="Go: Current Date" />
               <TechList title="SQL 2018: - Current Date" />
             </div>
           </div>
@@ -43,13 +44,14 @@ export default function TechView() {
               <TechList title="Node.js: 20201- Current Date" />
               <TechList title="NestJS: 2021 - Current Date" />
               <TechList title="Spring Boot: 2021 - Current Date" />
+              <TechList title="Go fibre: 2021 - Current Date" />
             </div>
           </div>
           <div>
             <h3>CSS</h3>
             <div className="sectionText">
               <TechList title="Styled Components" />
-              <TechList title="SASS - Preferred Choice" />
+              <TechList title="SASS " />
               <TechList title="Bootstrap" />
               <TechList title="CSS modules" />
             </div>
@@ -76,8 +78,8 @@ export default function TechView() {
             <h3>Microservices</h3>
             <div className="sectionText">
               <TechList title="Apache Kafka" />
+              <TechList title="RabbitMQ" />
               <TechList title="gRPC" />
-              <TechList title="TCP" />
             </div>
           </div>
 
@@ -96,7 +98,6 @@ export default function TechView() {
             <h3>CI/CD</h3>
             <div className="sectionText">
               <TechList title="Github" />
-              <TechList title="Jenkins" />
               <TechList title="Gitlab" />
             </div>
           </div>
