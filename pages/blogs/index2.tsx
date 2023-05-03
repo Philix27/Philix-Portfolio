@@ -1,24 +1,18 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-// import Head from 'next/head'
 import BlogComp from "../../src/views/blogs";
 import { sortByDate } from "../../utils";
 
 export default function PostPage({ posts }) {
   const _category = ["All", "Africa", "Think", "Productivity"];
   return (
-    <div>
-      {/* <Head>
-        <title>Blog Categories</title>
-      </Head> */}
-      <BlogComp
-        title="Blogs and Articles"
-        page="blogs"
-        categoryList={_category}
-        posts={posts}
-      />
-    </div>
+    <BlogComp
+      title="Blogs and Articles"
+      page="blogs"
+      categoryList={_category}
+      posts={posts}
+    />
   );
 }
 

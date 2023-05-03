@@ -62,17 +62,6 @@ export default function Navbar() {
               </li>
               <li
                 className={
-                  _path == "/tech"
-                    ? styles.active_list_item
-                    : styles.nav_start_list_item
-                }
-              >
-                <Link className={styles.link} href="/tech">
-                  Stack
-                </Link>
-              </li>
-              <li
-                className={
                   _path == "/blogs"
                     ? styles.active_list_item
                     : styles.nav_start_list_item
