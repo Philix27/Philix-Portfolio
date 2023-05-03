@@ -3,16 +3,21 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "../../utils";
-import { Landing } from "../../src/views/globalComps/Landing";
+import { PlainLanding } from "../../src/comps/Landing";
 
 export default function ProjectsPage({ projects }) {
   return (
     <>
-      <Landing
+      {/* <Landing
         title="Web Applications"
         imgUrl="../images/web.jpg"
         subtitle="Web projects"
         opacity={undefined}
+      /> */}
+      <PlainLanding
+        title={"Web Projects"}
+        subtitle={"Study time"}
+        imageUrl={"/images/website.png"}
       />
       <ProjectsGroup category="web" projectCol={projects} />
     </>

@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
-
+import styles from "./blogs.module.scss";
+import { CardTitle } from "../../comps/Texts";
+import FullCard from "./FullCard";
 export default function BlogComp({ posts, title, page, categoryList }) {
   const [selectedCategory, setSelectedCategory] = useState(posts);
 
@@ -21,26 +23,16 @@ export default function BlogComp({ posts, title, page, categoryList }) {
   };
 
   return (
-    <div className="section postsSection" id="services">
-      {/* <div className='sectionTitle' >{title}</div > */}
-      <select
-        name="category"
-        defaultValue="All"
-        onChange={changeToCateorySelect}
-      >
-        {categoryList.map((_category, index) => {
-          return (
-            <option value={_category} key={index}>
-              {_category}
-            </option>
-          );
-        })}
-      </select>
-      <div className="gridContainer">
+    <div className={styles.container}>
+      <div className={styles.headerSection}>
+        <CardTitle>Golang</CardTitle>
+      </div>
+      <FullCard />
+      <div className={styles.gridContainer}>
         {selectedCategory.map((post, index) => (
           <motion.div
             key={index}
-            className="card"
+            className={styles.card}
             initial={{ x: "-100vw", opacity: 0.1 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
@@ -50,25 +42,18 @@ export default function BlogComp({ posts, title, page, categoryList }) {
               stiffness: 110,
             }}
           >
-            {/* transition={{duration: 1.7, delay: 1, type: "tween", }}> */}
-            {/* <Image src={image} width={500} height={300}/> */}
-            {/* <Link href={`/${page}/${post.slug}`} target="_blank"> */}
             <Link href={`/${page}/${post.slug}`}>
-              <img className="img" src={post.frontmatter.cover_image} />
+              <img className={styles.img} src={post.frontmatter.cover_image} />
             </Link>
-            {/* <BlogCard> */}
-            <h3 className="headerThree">{post.frontmatter.title}</h3>
-            <div className="sectionText">{post.frontmatter.excerpt}</div>
+            <h3 className={styles.headerThree}>{post.frontmatter.title}</h3>
+            <div className={styles.sectionText}>{post.frontmatter.excerpt}</div>
             <hr />
-            <div className="sectionSmallText">
+            <div className={styles.sectionSmallText}>
               Posted on {post.frontmatter.date}
             </div>
-
-            {/* </BlogCard> */}
           </motion.div>
         ))}
       </div>
     </div>
-    //  </div>
   );
 }

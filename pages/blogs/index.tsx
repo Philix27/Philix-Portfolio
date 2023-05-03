@@ -3,13 +3,17 @@ import path from "path";
 import matter from "gray-matter";
 import BlogComp from "../../src/views/blogs";
 import { sortByDate } from "../../utils";
-import { BlogLanding } from "../../src/views/blogs/Landing/Landing";
+import { PlainLanding } from "../../src/comps/Landing";
 
 export default function PostPage({ posts }) {
   const _category = ["All", "Africa", "Think", "Productivity"];
   return (
     <div>
-      <BlogLanding />
+      <PlainLanding
+        title={"Blogs"}
+        subtitle={"Study time"}
+        imageUrl={"/images/tech.png"}
+      />
       <BlogComp
         title="Blogs and Articles"
         page="blogs"

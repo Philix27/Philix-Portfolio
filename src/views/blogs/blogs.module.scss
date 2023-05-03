@@ -1,0 +1,105 @@
+@import "../../styles/variables";
+@import "../../styles/screensize";
+
+.container {
+  // display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  position: relative;
+  align-items: center;
+
+  @include tablet {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  @include mobile {
+    padding: 16px 16px 0;
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+  .headerSection {
+    // background-color: aqua;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 3rem;
+    align-self: center;
+    align-content: center;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 2rem;
+      padding-bottom: 0;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 2rem;
+      padding-bottom: 0;
+    }
+
+    .img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .card {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .headerThree {
+      color: #414143;
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+
+    .sectionSmallText {
+      max-width: 800px;
+      font-size: 15px;
+      line-height: 35px;
+      font-weight: 300;
+      // padding-bottom: 3.6rem;
+      /* color: rgba(255, 255, 255, 0.5); */
+
+      @include tablet {
+        max-width: 670px;
+        font-size: 13px;
+        line-height: 30px;
+        // padding-bottom: 24px;
+      }
+
+      @include mobile {
+        font-size: 11px;
+        line-height: 20px;
+        // padding-bottom: 16px;
+      }
+    }
+  }
+}
+
+.fullcard {
+  min-height: 50vh;
+  width: 100%;
+  background: rgb(2, 32, 69);
+  border-radius: 20px;
+  padding: 40px;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 32, 69, 1) 0%,
+    rgba(3, 3, 121, 1) 54%,
+    rgba(2, 32, 69, 1) 100%
+  );
+}
