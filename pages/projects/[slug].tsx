@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import { Landing } from "../../src/views/globalComps/Landing";
+import { Landing } from "../../src/comps/Landing2";
 
 export default function ProjectContentPage({
   frontmatter: { title, cover_image },

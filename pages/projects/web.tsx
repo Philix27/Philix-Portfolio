@@ -1,4 +1,4 @@
-import ProjectsGroup from "../../src/views/projects";
+import ProjectsGroup from "../../src/views/projects/project_group";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -8,12 +8,6 @@ import { PlainLanding } from "../../src/comps/Landing";
 export default function ProjectsPage({ projects }) {
   return (
     <>
-      {/* <Landing
-        title="Web Applications"
-        imgUrl="../images/web.jpg"
-        subtitle="Web projects"
-        opacity={undefined}
-      /> */}
       <PlainLanding
         title={"Web Projects"}
         subtitle={"Study time"}

@@ -1,9 +1,9 @@
-import ProjectsGroup from "../../src/views/projects";
+import ProjectsGroup from "../../src/views/projects/project_group";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "../../utils";
-import { Landing } from "../../src/views/globalComps/Landing";
+import { Landing } from "../../src/comps/Landing2";
 
 export default function ProjectsPage({ projects }) {
   return (

@@ -1,36 +1,52 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { useRouter } from "next/router";
-export default function ProjectsGroup({ category, projectCol }) {
-  const projectll = projectCol.filter((project) => {
-    return project.frontmatter.category == category;
-  });
+import styles from "./projects.module.scss";
+import { projects } from "./constants";
 
-  const router = useRouter();
+export default function Projects() {
+  const listic = [projects[0], projects[1], projects[3], projects[4]];
   return (
-    <div className="projects">
-      <div className="section">
-        <div className="gridContainer">
-          {projectll.map(({ slug, frontmatter }, index) => (
-            <motion.div
-              key={index}
-              className="card"
-              onClick={() => router.push(`/projects/${slug}`)}
-              initial={{ x: "-100vw", opacity: 0.1 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1.7, delay: 1, type: "tween" }}
-            >
-              <img className="img" src={frontmatter.cover_image} />
-              <div className="content">
-                <h3>{frontmatter.title}</h3>
-                <p>{frontmatter.summary}</p>
-              </div>
-            </motion.div>
-          ))}
+    <>
+      <div className="section" id="projects">
+        <h1 className="sectionTitle">Projects</h1>
+
+        <div className={styles.gridContainer}>
+          {listic.map(
+            ({
+              title,
+              description,
+              image,
+              detailsPage,
+              tags,
+              source,
+              visit,
+              id,
+            }) => (
+              <motion.div
+                key={id}
+                className={styles.card}
+                initial={{ x: "-100vw", opacity: 0.1 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.7, delay: 1, type: "tween" }}
+              >
+                <Link href={detailsPage}>
+                  <img className={styles.img} src={image} />
+                </Link>
+                <h5>{title}</h5>
+                <div style={{ padding: "0px 20px" }}>
+                  <div className="sectionText">{description}</div>
+                </div>
+              </motion.div>
+            )
+          )}
         </div>
       </div>
-    </div>
+      <div className="section">
+        <Link href="/projects">
+          <a className="btn">View All</a>
+        </Link>
+      </div>
+    </>
   );
 }
