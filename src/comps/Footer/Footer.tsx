@@ -15,34 +15,9 @@ export default function Footer() {
   return (
     <div id="footer" className={styles.wrapper}>
       <div className={styles.container}>
-        <div>
+        <div className={styles.section}>
+          <p className={styles.list_headers}>Contacts</p>
           <ul>
-            <li className={styles.list_headers}>Navigators</li>
-            <li>
-              <Link passHref={false} className={styles.Linka} href="#home">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link passHref={false} className={styles.Linka} href="#contact">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link passHref={false} className={styles.Linka} href="#projects">
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link passHref={false} className={styles.Linka} href="#about">
-                About
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li className={styles.list_headers}>Contacts</li>
             <li>
               <Link
                 className={styles.Linka}
@@ -86,10 +61,9 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className={styles.section}>
+          <p className={styles.list_headers}>Socials</p>
           <ul>
-            <li className={styles.list_headers}>Socials</li>
-
             <li>
               <Link
                 className={styles.Linka}

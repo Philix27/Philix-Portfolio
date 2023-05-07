@@ -2,17 +2,22 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "../../utils";
-import { Landing } from "../../src/comps/Landing2";
 import ProjectsGroup from "../../src/views/projects/project_group";
+import { PlainLanding } from "../../src/comps/Landing";
 
 export default function ProjectsPage({ projects }) {
   return (
     <>
-      <Landing
+      {/* <Landing
         title="Mobile Applications"
         imgUrl="../images/mobile.jpg"
         subtitle="Mobile application projects"
         opacity={undefined}
+      /> */}
+      <PlainLanding
+        title="Mobile Applications"
+        subtitle="Mobile application projects"
+        imageUrl={"/images/phone.jpg"}
       />
       <ProjectsGroup category="mobile" projectCol={projects} />
     </>

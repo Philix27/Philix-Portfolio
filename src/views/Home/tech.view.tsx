@@ -1,11 +1,11 @@
 import React from "react";
 import TechList from "../../comps/techlist";
 
-export default function TechView() {
+export default function TechSection() {
   return (
-    <div>
+    <div className="section">
+      <h1 className="sectionTitle">Programming</h1>
       <div className="tech">
-        <h1 className="sectionTitle">Programming</h1>
         <div className="content">
           <div>
             <h3>Languages</h3>
@@ -99,26 +99,6 @@ export default function TechView() {
             <div className="sectionText">
               <TechList title="Github" />
               <TechList title="Gitlab" />
-            </div>
-          </div>
-        </div>
-
-        <h1 className="sectionTitle">Graphics</h1>
-        <div className="content">
-          <div>
-            <h3>2D Graphics</h3>
-            <div className="sectionText">
-              <TechList title="Photoshop: 2015 - Current Date" />
-              <TechList title="Illustrator: 2015 - Current Date" />
-              <TechList title="Indesign: 2015 - Current Date" />
-            </div>
-          </div>
-
-          <div>
-            <h3>Motion Graphics</h3>
-            <div className="sectionText">
-              <TechList title="Premier Pro" />
-              <TechList title="After Effects" />
             </div>
           </div>
         </div>

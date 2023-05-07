@@ -30,6 +30,9 @@ export const BannerImg = styled.img`
   border-radius: 20px;
 `;
 
+export function GenSectionTitle() {
+  return;
+}
 // export const CompsRegistry = {
 //   banner: {
 //     title: BannerTitle,
