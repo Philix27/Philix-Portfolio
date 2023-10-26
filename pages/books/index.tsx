@@ -3,7 +3,8 @@ import path from "path";
 import matter from "gray-matter";
 // import Head from 'next/head'
 import BooksComp from "../../src/views/books";
-import { sortByDate } from "../../utils";
+import { sortByDate } from "../../src/utils/sort";
+import AppWrapper from "src/comps/wrapper/wrapper";
 
 export default function PostPage({ books }) {
   const _category = [
@@ -16,17 +17,14 @@ export default function PostPage({ books }) {
   ];
 
   return (
-    <div>
-      {/* <Head>
-        <title>Blog Categories</title>
-      </Head> */}
+    <AppWrapper title={"Books & Notes"} subtitle={"Books"}>
       <BooksComp
         title="Books & Notes"
         page="books"
         categoryList={_category}
         posts={books}
       />
-    </div>
+    </AppWrapper>
   );
 }
 

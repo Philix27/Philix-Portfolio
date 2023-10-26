@@ -1,8 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "portfolio_v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://philix.tech",
+  "homepage": "http://philix.dev",
   "author": "Eligbue Felix",
   "scripts": {
     "dev": "next dev -p 3009",
@@ -14,14 +14,14 @@
     "framer-motion": "^6.2.6",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
-    "next": "13.1.6",
+    "next": "^13.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.1",
-    "sass": "^1.58.3",
+    "sass": "^1.69.4",
     "sharp": "^0.30.1",
-    "styled-components": "^5.3.10",
+    "styled-components": "^6.1.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

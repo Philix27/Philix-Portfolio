@@ -2,10 +2,11 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import { Landing } from "../../src/comps/Landing2";
+import { Landing } from "../../src/views/home/Landing2";
+import AppWrapper from "src/comps/wrapper/wrapper";
 
 export default function ProjectContentPage({
-  frontmatter: { title, cover_image },
+  frontmatter: { title, cover_image, date },
   slug,
   content,
 }) {
@@ -13,7 +14,7 @@ export default function ProjectContentPage({
   const cc = md.render(content);
 
   return (
-    <>
+    <AppWrapper title={title} subtitle={date}>
       <Landing
         title={title}
         imgUrl={cover_image}
@@ -25,7 +26,7 @@ export default function ProjectContentPage({
           <div dangerouslySetInnerHTML={{ __html: cc }}></div>
         </div>
       </div>
-    </>
+    </AppWrapper>
   );
 }
 

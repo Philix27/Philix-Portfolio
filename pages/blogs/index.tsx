@@ -2,18 +2,21 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import BlogComp from "../../src/views/blogs";
-import { sortByDate } from "../../utils";
-import { PlainLanding } from "../../src/comps/Landing";
+import { sortByDate } from "../../src/utils/sort";
+import { PlainLanding } from "../../src/views/home/Landing";
+import AppWrapper from "src/comps/wrapper/wrapper";
 
 export default function PostPage({ posts }) {
   const _category = ["All", "Africa", "Think", "Productivity"];
   return (
-    <BlogComp
-      title="Blogs and Articles"
-      page="blogs"
-      categoryList={_category}
-      posts={posts}
-    />
+    <AppWrapper title={"Blogs and Articles"} subtitle={"Blogs"}>
+      <BlogComp
+        title="Blogs and Articles"
+        page="blogs"
+        categoryList={_category}
+        posts={posts}
+      />
+    </AppWrapper>
   );
 }
 

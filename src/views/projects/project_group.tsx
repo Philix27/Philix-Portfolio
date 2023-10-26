@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
@@ -11,7 +10,7 @@ export default function ProjectsGroup({ category, projectCol }) {
   const router = useRouter();
   return (
     <div className="projects">
-      <div className="section">
+      <div>
         <div className="gridContainer">
           {projectll.map(({ slug, frontmatter }, index) => (
             <motion.div

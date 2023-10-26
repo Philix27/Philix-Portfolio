@@ -2,31 +2,25 @@ import ProjectsGroup from "../../src/views/projects/project_group";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { sortByDate } from "../../utils";
-import { Landing } from "../../src/comps/Landing2";
+import { sortByDate } from "../../src/utils/sort";
+import { Landing } from "../../src/views/home/Landing2";
+import AppWrapper from "src/comps/wrapper/wrapper";
 
 export default function ProjectsPage({ projects }) {
   return (
-    <>
-      <Landing
-        title="Contact us"
-        imgUrl="images/dark.jpg"
-        subtitle="We run a 247 customer care technical support services."
-        opacity={undefined}
-      />
-      <div className="section">
-        <h1 className="sectionTitle">Flutter UI</h1>
-      </div>
-      <ProjectsGroup category="fui" projectCol={projects} />
-      <div className="section">
-        <h1 className="sectionTitle">Mobile Apps</h1>
+    <AppWrapper
+      title={"Projects"}
+      subtitle={"List of personal projects over the years"}
+    >
+      <div>
+        <h1>Mobile Apps</h1>
       </div>
       <ProjectsGroup category="mobile" projectCol={projects} />
-      <div className="section">
-        <h1 className="sectionTitle">Web Apps</h1>
+      <div>
+        <h1>Web Apps</h1>
       </div>
       <ProjectsGroup category="web" projectCol={projects} />
-    </>
+    </AppWrapper>
   );
 }
 

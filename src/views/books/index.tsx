@@ -28,9 +28,7 @@ export default function BooksComp({ posts, title, page, categoryList }) {
   };
 
   return (
-    // <div className="section booksListPage" id="books">
     <div className="section postsSection" id="books">
-      {/* <div className='sectionTitle' >{title}</div > */}
       <input type="search" placeholder="Find a book..." onChange={onSearch} />
       <select
         name="category"
@@ -63,7 +61,7 @@ export default function BooksComp({ posts, title, page, categoryList }) {
           >
             {/* transition={{duration: 1.7, delay: 1, type: "tween", }}> */}
             {/* <Image src={image} width={500} height={300}/> */}
-            <Link href={`/${page}/${post.slug}`} target="_blank">
+            <Link href={`/${page}/${post.slug}`}>
               <img className="img" src={post.frontmatter.cover_image} />
             </Link>
 

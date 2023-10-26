@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./About.module.scss";
 
-export default function About() {
+export default function AboutsView() {
   return (
-    <div className="section" id="about">
-      <h1 className="sectionTitle">About</h1>
+    <div className="section">
+      <h1>About</h1>
       <br />
       <br />
       <div className={styles.content}>

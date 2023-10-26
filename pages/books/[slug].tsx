@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
+import AppWrapper from "src/comps/wrapper/wrapper";
 
 export default function PostContentPage({
   frontmatter: { title, date, cover_image },
@@ -12,10 +13,7 @@ export default function PostContentPage({
   const cc = md.render(content);
 
   return (
-    <>
-      {/* <Head>
-        <title>Tinq | {title}</title>
-      </Head> */}
+    <AppWrapper title={title} subtitle={date}>
       <div className="section post_page">
         <img src={cover_image} alt="" className="img" />
         {/* <h1 className="sectionTitle">{title}</h1> */}
@@ -25,7 +23,7 @@ export default function PostContentPage({
           {/* <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div> */}
         </div>
       </div>
-    </>
+    </AppWrapper>
   );
 }
 

@@ -1,7 +1,7 @@
-import { BannerImg, BannerSubtitle, BannerTitle } from "./Texts";
+import { BannerImg, BannerSubtitle, BannerTitle } from "../../comps/Texts";
 
 import styled from "styled-components";
-import { device } from "../styles/screensize";
+import { device } from "../../styles/screensize";
 
 export const PlainLanding = ({ title, subtitle, imageUrl }) => {
   return (
