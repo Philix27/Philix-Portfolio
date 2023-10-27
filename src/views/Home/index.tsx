@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import GraphicsSection from "./graphics";
-import TechSection from "./tech.view";
+import TechSection from "../about/tech.view";
 
 export default function HomeView() {
   return (
     <Fragment>
-      <TechSection />
-      <GraphicsSection />
+      {/* <TechSection /> */}
+      {/* <GraphicsSection /> */}
     </Fragment>
   );
 }
