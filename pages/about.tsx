@@ -1,8 +1,9 @@
 import fs from "fs";
 import path from "path";
-import AboutsView from "src/views/about";
-import { AppWrapper } from "src/comps/wrapper/wrapper";
+import AboutsView from "views/about";
+import { AppWrapper } from "comps";
 import matter from "gray-matter";
+import { AppPaths } from "utils";
 
 export default function AboutUsPage(props: {
   frontmatter: any;
@@ -17,7 +18,7 @@ export default function AboutUsPage(props: {
 
 export async function getStaticProps() {
   const markdownWithMeta = fs.readFileSync(
-    path.join("_primary", "skills" + ".md"),
+    path.join(AppPaths.contents.resume, "skills" + ".md"),
     "utf-8"
   );
 

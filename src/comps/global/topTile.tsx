@@ -1,23 +1,19 @@
+import { TextBody, TextHeader } from "comps/text";
 import React from "react";
 import { styled } from "styled-components";
 
 export default function TopTitles(props: { title: string; subtitle: string }) {
   return (
     <Wrapper>
-      <h1>{props.title}</h1>
+      <TextHeader variant="one">{props.title}</TextHeader>
       <hr />
-      <p>{props.subtitle}</p>
+      <TextBody variant="three">{props.subtitle}</TextBody>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
   padding: 30px;
-
-  h1 {
-    font-weight: 700;
-    padding-bottom: 10px;
-  }
   hr {
     border: solid 0.1px #a7a7a7;
     margin-bottom: 10px;
@@ -26,8 +22,4 @@ const Wrapper = styled.div`
     color: #ff2f00;
     font-weight: 600;
   }
-`;
-const Contents = styled.div`
-  display: flex;
-  flex-direction: column;
 `;

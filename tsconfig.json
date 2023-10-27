@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -15,9 +15,9 @@
     "jsx": "preserve",
     "incremental": true,
     "noUncheckedIndexedAccess": true,
+    "baseUrl": "src",
     "paths": {
       "*": ["./*", "./src/*"],
-      "comps/*": ["./src/comps/*"],
       "pages/*": ["./pages/*"],
       "libs/*": ["./libs/*"]
     }

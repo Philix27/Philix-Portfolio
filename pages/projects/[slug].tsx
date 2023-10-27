@@ -2,8 +2,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import { Landing } from "src/views/home/Landing2";
-import { AppWrapper } from "src/comps/wrapper/wrapper";
+import { Landing } from "views/projects/banner";
+import { AppWrapper } from "comps/wrapper/wrapper";
+import { AppPaths } from "utils";
 
 export default function ProjectContentPage({
   frontmatter: { title, cover_image, date },
@@ -31,7 +32,7 @@ export default function ProjectContentPage({
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("_projects"));
+  const files = fs.readdirSync(path.join(AppPaths.contents.projects));
 
   const paths = files.map((filename) => ({
     params: {
@@ -47,7 +48,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("_projects", slug + ".md"),
+    path.join(AppPaths.contents.projects, slug + ".md"),
     "utf-8"
   );
 

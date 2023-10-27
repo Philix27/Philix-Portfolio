@@ -2,7 +2,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import { AppWrapper } from "src/comps/wrapper/wrapper";
+import { AppWrapper } from "comps/wrapper/wrapper";
+import { AppPaths } from "utils";
 // import { AppWrapper } from "comps";
 
 export default function PostContentPage({
@@ -27,7 +28,7 @@ export default function PostContentPage({
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("_primary"));
+  const files = fs.readdirSync(path.join(AppPaths.contents.blogs));
 
   const paths = files.map((filename) => ({
     params: {
@@ -43,7 +44,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("_primary", slug + ".md"),
+    path.join(AppPaths.contents.blogs, slug + ".md"),
     "utf-8"
   );
 

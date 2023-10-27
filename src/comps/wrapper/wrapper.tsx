@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import AppNav from "../global/nav";
 import TopTitles from "../global/topTile";
+import Footer from "comps/global/footer";
 
 export function AppWrapper(props: {
   children: ReactNode;
@@ -13,7 +14,8 @@ export function AppWrapper(props: {
       <Inner>
         <TopTitles title={props.title} subtitle={props.subtitle} />
         <AppNav />
-        {props.children}
+        <Content>{props.children}</Content>
+        <Footer />
       </Inner>
     </Container>
   );
@@ -34,4 +36,7 @@ const Inner = styled.div`
   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+`;
+const Content = styled.div`
+  min-height: 100vh;
 `;

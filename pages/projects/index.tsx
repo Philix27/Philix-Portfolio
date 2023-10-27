@@ -2,31 +2,40 @@ import ProjectsGroup from "../../src/views/projects/project_group";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { sortByDate } from "src/utils/sort";
-import { Landing } from "src/views/home/Landing2";
-import { AppWrapper } from "src/comps/wrapper/wrapper";
+import { sortByDate } from "utils/sort";
+import { AppWrapper } from "comps/wrapper/wrapper";
+import { AppPaths } from "utils";
+import { TextHeader } from "comps";
 
-export default function ProjectsPage({ projects }) {
+interface PropTypes {
+  slug: string;
+  frontmatter: {
+    [key: string]: string;
+  };
+}
+export default function ProjectsPage(props: { projects: Array<PropTypes> }) {
   return (
     <AppWrapper
       title={"Projects"}
       subtitle={"List of personal projects over the years"}
     >
-      <div>
-        <h1>Mobile Apps</h1>
-      </div>
-      <ProjectsGroup category="mobile" projectCol={projects} />
-      <div>
-        <h1>Web Apps</h1>
-      </div>
-      <ProjectsGroup category="web" projectCol={projects} />
+      <ProjectsGroup
+        category="mobile"
+        title={"Mobile Apps"}
+        collection={props.projects}
+      />
+      <ProjectsGroup
+        title={"Web Apps"}
+        category="web"
+        collection={props.projects}
+      />
     </AppWrapper>
   );
 }
 
 export async function getStaticProps() {
   // Get files from the projects dir
-  const files = fs.readdirSync(path.join("_projects"));
+  const files = fs.readdirSync(path.join(AppPaths.contents.projects));
   // Get slug and frontmatter from projects
   const books = files.map((filename) => {
     // Create slug
@@ -34,7 +43,7 @@ export async function getStaticProps() {
 
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
-      path.join("_projects", filename),
+      path.join(AppPaths.contents.projects, filename),
       "utf-8"
     );
 

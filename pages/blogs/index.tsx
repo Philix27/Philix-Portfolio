@@ -1,9 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import BlogComp from "src/views/blogs";
-import { sortByDate } from "src/utils/sort";
-import { AppWrapper } from "src/comps/wrapper/wrapper";
+import BlogComp from "views/blogs";
+import { sortByDate } from "utils/sort";
+import { AppWrapper } from "comps/wrapper/wrapper";
+import { AppPaths } from "utils";
 
 export default function PostPage({ posts }) {
   const _category = ["All", "Africa", "Think", "Productivity"];
@@ -20,11 +21,11 @@ export default function PostPage({ posts }) {
 }
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join("_primary"));
+  const files = fs.readdirSync(path.join(AppPaths.contents.blogs));
   const posts = files.map((filename) => {
     const slug = filename.replace(".md", "");
     const markdownWithMeta = fs.readFileSync(
-      path.join("_primary", filename),
+      path.join(AppPaths.contents.blogs, filename),
       "utf-8"
     );
 

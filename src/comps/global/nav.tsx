@@ -1,19 +1,23 @@
 import React from "react";
 import { styled } from "styled-components";
 import { useRouter } from "next/router";
-import { AppLinks } from "src/utils";
+import { AppLinks } from "utils";
 
 export default function AppNav() {
   const router = useRouter();
   const _path = router.pathname;
+  // <li
+  //   className={
+  //     _path == "/projects/web"
+  //       ? styles.active_list_item
+  //       : styles.nav_start_list_item
+  //   }
+  // ></li>;
   return (
     <Wrapper>
       <InnerWrapper>
         <NavItem onClick={() => router.push(AppLinks.home)}>
           <p>Home</p>
-        </NavItem>
-        <NavItem onClick={() => router.push(AppLinks.books)}>
-          <p>Books</p>
         </NavItem>
         <NavItem onClick={() => router.push(AppLinks.blogs)}>
           <p>Blog Posts</p>

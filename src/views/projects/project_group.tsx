@@ -1,35 +1,76 @@
-import React from "react";
-import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { TextBody, TextHeader } from "comps";
+import { styled } from "styled-components";
 
-export default function ProjectsGroup({ category, projectCol }) {
-  const projectll = projectCol.filter((project) => {
-    return project.frontmatter.category == category;
+interface PropTypes {
+  slug: string;
+  frontmatter: {
+    [key: string]: string;
+  };
+}
+
+export default function ProjectsGroup(props: {
+  category: string;
+  title: string;
+  collection: Array<PropTypes>;
+}) {
+  const sortedItems = props.collection.filter((item) => {
+    return item.frontmatter["category"] == props.category;
   });
 
   const router = useRouter();
+
   return (
-    <div className="projects">
+    <Wrapper>
+      <TextHeader variant="two">{props.title}</TextHeader>
       <div>
-        <div className="gridContainer">
-          {projectll.map(({ slug, frontmatter }, index) => (
-            <motion.div
-              key={index}
-              className="card"
-              onClick={() => router.push(`/projects/${slug}`)}
-              initial={{ x: "-100vw", opacity: 0.1 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1.7, delay: 1, type: "tween" }}
-            >
-              <img className="img" src={frontmatter.cover_image} />
-              <div className="content">
-                <h3>{frontmatter.title}</h3>
-                <p>{frontmatter.summary}</p>
+        <GridWrapper>
+          {sortedItems.map(({ slug, frontmatter }, index) => (
+            <Card key={index} onClick={() => router.push(`/projects/${slug}`)}>
+              <Img src={frontmatter["cover_image"]} />
+              <div style={{ padding: "20px" }}>
+                <TextHeader variant="five">{frontmatter["title"]}</TextHeader>
+                <TextBody variant="four">{frontmatter["summary"]}</TextBody>
               </div>
-            </motion.div>
+            </Card>
           ))}
-        </div>
+        </GridWrapper>
       </div>
-    </div>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center;
+  justify-content: center; */
+  text-align: center;
+  padding-top: 20px;
+`;
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  // visibility: hidden;
+  object-fit: cover;
+  overflow: hidden;
+`;
+const Card = styled.div`
+  background-color: #fff;
+  /* padding: 20px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+`;
+const GridWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem;
+  column-gap: 3rem;
+  row-gap: 3rem;
+`;
