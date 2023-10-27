@@ -2,8 +2,8 @@ import ProjectsGroup from "../../src/views/projects/project_group";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { sortByDate } from "../../src/utils/sort";
-import { Landing } from "../../src/views/home/Landing2";
+import { sortByDate } from "src/utils/sort";
+import { Landing } from "src/views/home/Landing2";
 import { AppWrapper } from "src/comps/wrapper/wrapper";
 
 export default function ProjectsPage({ projects }) {

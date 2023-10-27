@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import { Landing } from "../../src/views/home/Landing2";
+import { Landing } from "src/views/home/Landing2";
 import { AppWrapper } from "src/comps/wrapper/wrapper";
 
 export default function ProjectContentPage({

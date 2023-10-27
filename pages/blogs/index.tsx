@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import BlogComp from "../../src/views/blogs";
-import { sortByDate } from "../../src/utils/sort";
+import BlogComp from "src/views/blogs";
+import { sortByDate } from "src/utils/sort";
 import { AppWrapper } from "src/comps/wrapper/wrapper";
 
 export default function PostPage({ posts }) {
