@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import BlogComp from "../../src/views/blogs";
 import { sortByDate } from "../../src/utils/sort";
-import AppWrapper from "src/comps/wrapper/wrapper";
+import { AppWrapper } from "src/comps/wrapper/wrapper";
 
 export default function PostPage({ posts }) {
   const _category = ["All", "Africa", "Think", "Productivity"];

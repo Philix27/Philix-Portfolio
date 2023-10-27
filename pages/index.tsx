@@ -1,4 +1,4 @@
-import AppWrapper from "../src/comps/wrapper/wrapper";
+import { AppWrapper } from "src/comps/wrapper/wrapper";
 import HomeView from "../src/views/home";
 
 export default function Home() {

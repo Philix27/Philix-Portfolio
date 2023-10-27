@@ -4,7 +4,7 @@ import matter from "gray-matter";
 // import Head from 'next/head'
 import BooksComp from "../../src/views/books";
 import { sortByDate } from "../../src/utils/sort";
-import AppWrapper from "src/comps/wrapper/wrapper";
+import { AppWrapper } from "src/comps/wrapper/wrapper";
 
 export default function PostPage({ books }) {
   const _category = [

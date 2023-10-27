@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import AppWrapper from "src/comps/wrapper/wrapper";
+import { AppWrapper } from "src/comps/wrapper/wrapper";
 
 export default function PostContentPage({
   frontmatter: { title, date, cover_image },

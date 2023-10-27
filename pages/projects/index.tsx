@@ -4,7 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "../../src/utils/sort";
 import { Landing } from "../../src/views/home/Landing2";
-import AppWrapper from "src/comps/wrapper/wrapper";
+import { AppWrapper } from "src/comps/wrapper/wrapper";
 
 export default function ProjectsPage({ projects }) {
   return (

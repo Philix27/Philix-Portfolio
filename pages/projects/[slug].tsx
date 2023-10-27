@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 import { Landing } from "../../src/views/home/Landing2";
-import AppWrapper from "src/comps/wrapper/wrapper";
+import { AppWrapper } from "src/comps/wrapper/wrapper";
 
 export default function ProjectContentPage({
   frontmatter: { title, cover_image, date },

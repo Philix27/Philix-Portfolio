@@ -3,7 +3,7 @@ import styled from "styled-components";
 import AppNav from "../global/nav";
 import TopTitles from "../global/topTile";
 
-export default function AppWrapper(props: {
+export function AppWrapper(props: {
   children: ReactNode;
   title: string;
   subtitle: string;

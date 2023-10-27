@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import AboutsView from "src/views/about";
-import AppWrapper from "../src/comps/wrapper/wrapper";
+import { AppWrapper } from "src/comps/wrapper/wrapper";
 import matter from "gray-matter";
 
 export default function AboutUsPage(props: {
