@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
 import AboutsView from "views/about";
-import { AppWrapper } from "comps";
 import matter from "gray-matter";
 import { AppPaths } from "utils";
+import { AppWrapper } from "comps/wrapper/wrapper";
 
 export default function AboutUsPage(props: {
   frontmatter: any;

@@ -61,8 +61,12 @@ export default function BooksComp({ posts, title, page, categoryList }) {
           >
             {/* transition={{duration: 1.7, delay: 1, type: "tween", }}> */}
             {/* <Image src={image} width={500} height={300}/> */}
-            <Link href={`/${page}/${post.slug}`}>
-              <img className="img" src={post.frontmatter.cover_image} />
+            <Link href={`/${page}/${post.slug}`} passHref>
+              <img
+                className="img"
+                src={post.frontmatter.cover_image}
+                alt="cover"
+              />
             </Link>
 
             <div className="texty">

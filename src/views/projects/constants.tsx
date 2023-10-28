@@ -50,19 +50,7 @@ export const projects = [
     githubLink: "",
     id: 6,
   },
-  {
-    title: "SmattLife",
-    group: "web",
-    detailsPage: "/projects/smattlife",
-    description:
-      "A website for selling health products, multivitiamins and other o.t.c drugs. Also offers health tips",
-    image: "/images/project/smattlife.jpg",
-    tags: ["Next.js"],
-    source: "https://smattlife.com/",
-    visit: "https://smattlife.com/",
-    githubLink: "",
-    id: 7,
-  },
+
   {
     title: "Diary",
     group: "mobile",

@@ -1,4 +1,14 @@
-
+import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import {
+  AiOutlineMail,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillFacebook,
+  AiFillTwitterSquare,
+  AiFillPhone,
+} from "react-icons/ai";
+import Link from "next/link";
 
 export default function Footer() {
   return (

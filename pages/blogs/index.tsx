@@ -4,25 +4,28 @@ import matter from "gray-matter";
 import BlogComp from "views/blogs";
 import { sortByDate } from "utils/sort";
 import { AppWrapper } from "comps/wrapper/wrapper";
+import { MetaHeader } from "comps/global/meta";
 import { AppPaths } from "utils";
 
-export default function PostPage({ posts }) {
-  const _category = ["All", "Africa", "Think", "Productivity"];
+interface PropTypes {
+  slug: string;
+  frontmatter: {
+    [key: string]: string;
+  };
+}
+
+export default function PostPage(props: { posts: Array<PropTypes> }) {
   return (
     <AppWrapper title={"Blogs and Articles"} subtitle={"Blogs"}>
-      <BlogComp
-        title="Blogs and Articles"
-        page="blogs"
-        categoryList={_category}
-        posts={posts}
-      />
+      <MetaHeader title={"Blogs | Felix Eligbue"} />
+      <BlogComp category="mobile" title={"All"} collection={props.posts} />
     </AppWrapper>
   );
 }
 
 export async function getStaticProps() {
   const files = fs.readdirSync(path.join(AppPaths.contents.blogs));
-  const posts = files.map((filename) => {
+  const articles = files.map((filename) => {
     const slug = filename.replace(".md", "");
     const markdownWithMeta = fs.readFileSync(
       path.join(AppPaths.contents.blogs, filename),
@@ -39,7 +42,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      posts: articles.sort(sortByDate),
     },
   };
 }

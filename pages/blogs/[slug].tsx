@@ -4,6 +4,9 @@ import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 import { AppWrapper } from "comps/wrapper/wrapper";
 import { AppPaths } from "utils";
+import { AppBlogs } from "../../docs";
+import { sortByDate } from "utils/sort";
+
 // import { AppWrapper } from "comps";
 
 export default function PostContentPage({
@@ -18,7 +21,7 @@ export default function PostContentPage({
     <AppWrapper title={title} subtitle={"Blogs"}>
       <div className="section post_page">
         <div className="sectionText">Posted on {date}</div>
-        <img src={cover_image} alt="" className="img" />
+        <img src={cover_image} alt="" />
         <div className="markdown-section">
           <div dangerouslySetInnerHTML={{ __html: cc }}></div>
         </div>

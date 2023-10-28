@@ -1,11 +1,10 @@
-import ProjectsGroup from "../../src/views/projects/project_group";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "utils/sort";
 import { AppWrapper } from "comps/wrapper/wrapper";
 import { AppPaths } from "utils";
-import { TextHeader } from "comps";
+import ProjectsGroup from "views/projects/project_group";
 
 interface PropTypes {
   slug: string;
