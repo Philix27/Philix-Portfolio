@@ -1,8 +1,9 @@
-import { AppWrapper } from "comps/wrapper/wrapper";
 import Image from "next/image";
-import { MarkdownStyledComp } from "comps/markdown";
-import MdFile from "../docs/primary/skills.mdx";
 import { styled } from "styled-components";
+import { MarkdownStyledComp } from "../src/comps/markdown";
+import MdFile from "../docs/primary/skills.mdx";
+import { AppWrapper } from "../src/comps/wrapper/wrapper";
+
 export default function AboutUsPage(props: {
   frontmatter: any;
   content: string;
