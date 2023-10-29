@@ -1,41 +1,28 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import MarkdownIt from "markdown-it";
 import { AppWrapper } from "comps/wrapper/wrapper";
 import { AppPaths } from "utils";
 import { Landing } from "views/projects/banner";
 import { MarkdownStyledComp } from "comps/markdown";
+import { AppBlogs } from "../../docs";
 
-// import { AppWrapper } from "comps";
-
-export default function PostContentPage({
-  frontmatter: { title, date, cover_image },
-  slug,
-  content,
-}) {
-  const md = new MarkdownIt();
-  const cc = md.render(content);
-
+export default function PostContentPage({ slug }) {
+  const activeContent = AppBlogs.filter((v, index) => v.id === slug)[0];
   return (
-    <AppWrapper title={title} subtitle={"Blogs"}>
+    <AppWrapper title={activeContent.title} subtitle={activeContent.subtitle}>
       <Landing
-        title={title}
-        imgUrl={cover_image}
-        subtitle="Web projects"
+        title={activeContent.title}
+        imgUrl={activeContent.cover_image}
+        subtitle={activeContent.subtitle}
         opacity={undefined}
       />
-      <MarkdownStyledComp dangerouslySetInnerHTML={{ __html: cc }} />
+      <MarkdownStyledComp>{activeContent.comp}</MarkdownStyledComp>
     </AppWrapper>
   );
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join(AppPaths.contents.blogs));
-
-  const paths = files.map((filename) => ({
+  const paths = AppBlogs.map((val, index) => ({
     params: {
-      slug: filename.replace(".md", ""),
+      slug: val.id,
     },
   }));
 
@@ -46,18 +33,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const markdownWithMeta = fs.readFileSync(
-    path.join(AppPaths.contents.blogs, slug + ".md"),
-    "utf-8"
-  );
-
-  const { data: frontmatter, content } = matter(markdownWithMeta);
-
   return {
     props: {
-      frontmatter,
       slug,
-      content,
     },
   };
 }

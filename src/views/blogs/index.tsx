@@ -10,20 +10,11 @@ import {
 } from "./comps";
 
 import { AiOutlineClockCircle } from "react-icons/ai";
-interface PropTypes {
-  slug: string;
-  frontmatter: {
-    [key: string]: string;
-  };
-}
+import { AppBlogs } from "../../../docs";
 
-export default function BlogComp(props: {
-  category: string;
-  title: string;
-  collection: Array<PropTypes>;
-}) {
-  const sortedItems = props.collection.filter((item) => {
-    return item.frontmatter["category"] == props.category;
+export default function BlogComp() {
+  const sortedItems = AppBlogs.filter((item) => {
+    return item.category == "rust";
   });
 
   const router = useRouter();
@@ -31,19 +22,22 @@ export default function BlogComp(props: {
   return (
     <Wrapper>
       <ContentWrapper>
-        {props.collection.map(({ slug, frontmatter }, index) => (
-          <Card key={index} onClick={() => router.push(`/blogs/${slug}`)}>
+        {AppBlogs.map((item, index) => (
+          <Card
+            key={index}
+            onClick={() => router.push(`/blogs/${item.id}`)}
+          >
             <FirstContent>
               <div>
-                <TextHeader variant="five">{frontmatter["title"]}</TextHeader>
+                <TextHeader variant="five">{item.title}</TextHeader>
                 <SecondContent>
                   <AiOutlineClockCircle />
-                  <TextBody variant="four">{frontmatter["date"]}</TextBody>
+                  <TextBody variant="four">{item.start_date}</TextBody>
                 </SecondContent>
-                <TextBody variant="four">{frontmatter["subtitle"]}</TextBody>
+                <TextBody variant="four">{item.subtitle}</TextBody>
               </div>
             </FirstContent>
-            <Img src={frontmatter["cover_image"]} alt="cover" />
+            <Img src={item.cover_image} alt="cover" />
           </Card>
         ))}
       </ContentWrapper>

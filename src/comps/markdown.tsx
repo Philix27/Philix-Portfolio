@@ -20,20 +20,20 @@ export const MarkdownStyledComp = styled.div`
     margin: 10px 0;
     color: rgb(14, 15, 15);
     line-height: 1.6;
-    font-weight: 200;
-    img {
-      padding: 10 auto;
-      width: fit-content;
-      border-radius: 8px;
-      max-width: 100%;
-      height: auto;
-    }
+    font-weight: 300;
+  }
+  img {
+    padding: 10 auto;
+    width: fit-content;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
   }
 
   ul {
     // list-style: lower-alpha;
     color: rgb(55, 56, 57);
-    font-weight: 200;
+    font-weight: 300;
     padding: 5px;
     li {
       list-style: disc;

@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { TextBody, TextHeader } from "comps";
 import { styled } from "styled-components";
+import { AppProjects } from "../../../docs/projects";
 
 interface PropTypes {
   slug: string;
@@ -9,42 +10,31 @@ interface PropTypes {
   };
 }
 
-export default function ProjectsGroup(props: {
-  category: string;
-  title: string;
-  collection: Array<PropTypes>;
-}) {
-  const sortedItems = props.collection.filter((item) => {
-    return item.frontmatter["category"] == props.category;
+export default function ProjectsGroup() {
+  const sortedItems = AppProjects.filter((item) => {
+    return item.category == "web";
   });
 
   const router = useRouter();
 
   return (
     <Wrapper>
-      <TextHeader variant="two">{props.title}</TextHeader>
-      <div>
-        <GridWrapper>
-          {sortedItems.map(({ slug, frontmatter }, index) => (
-            <Card key={index} onClick={() => router.push(`/projects/${slug}`)}>
-              <Img src={frontmatter["cover_image"]} />
-              <div style={{ padding: "20px" }}>
-                <TextHeader variant="five">{frontmatter["title"]}</TextHeader>
-                <TextBody variant="four">{frontmatter["summary"]}</TextBody>
-              </div>
-            </Card>
-          ))}
-        </GridWrapper>
-      </div>
+      <GridWrapper>
+        {AppProjects.map((val, index) => (
+          <Card key={index} onClick={() => router.push(`/projects/${val.id}`)}>
+            <Img src={val.cover_image} />
+            <div style={{ padding: "20px" }}>
+              <TextHeader variant="five">{val.title}</TextHeader>
+              <TextBody variant="four">{val.subtitle}</TextBody>
+            </div>
+          </Card>
+        ))}
+      </GridWrapper>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: center;
-  justify-content: center; */
   text-align: center;
   padding-top: 20px;
 `;

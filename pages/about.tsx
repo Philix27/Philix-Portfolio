@@ -1,33 +1,33 @@
-import fs from "fs";
-import path from "path";
-import AboutsView from "views/about";
-import matter from "gray-matter";
-import { AppPaths } from "utils";
 import { AppWrapper } from "comps/wrapper/wrapper";
-
+import Image from "next/image";
+import { MarkdownStyledComp } from "comps/markdown";
+import MdFile from "../docs/primary/skills.mdx";
+import { styled } from "styled-components";
 export default function AboutUsPage(props: {
   frontmatter: any;
   content: string;
 }) {
   return (
-    <AppWrapper title={"About up page"} subtitle={"More info about Felix"}>
-      <AboutsView content={props.content} />
+    <AppWrapper title={"Author"} subtitle={"More info about Felix"}>
+      <Wrapper>
+        <Image
+          height={300}
+          width={300}
+          src="/fxc.jpg"
+          alt="Eligbue Felix"
+          style={{ borderRadius: "10px" }}
+        />
+      </Wrapper>
+      <MarkdownStyledComp>
+        <MdFile />
+      </MarkdownStyledComp>
     </AppWrapper>
   );
 }
 
-export async function getStaticProps() {
-  const markdownWithMeta = fs.readFileSync(
-    path.join(AppPaths.contents.resume, "skills" + ".md"),
-    "utf-8"
-  );
-
-  const { data: frontmatter, content } = matter(markdownWithMeta);
-
-  return {
-    props: {
-      frontmatter,
-      content,
-    },
-  };
-}
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+`;
