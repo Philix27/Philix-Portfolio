@@ -5,6 +5,7 @@ import MarkdownIt from "markdown-it";
 import { Landing } from "views/projects/banner";
 import { AppWrapper } from "comps/wrapper/wrapper";
 import { AppPaths } from "utils";
+import { MarkdownStyledComp } from "comps/markdown";
 
 export default function ProjectContentPage({
   frontmatter: { title, cover_image, date },
@@ -22,11 +23,7 @@ export default function ProjectContentPage({
         subtitle="Web projects"
         opacity={undefined}
       />
-      <div className="section post_page">
-        <div className="markdown-section">
-          <div dangerouslySetInnerHTML={{ __html: cc }}></div>
-        </div>
-      </div>
+      <MarkdownStyledComp dangerouslySetInnerHTML={{ __html: cc }} />
     </AppWrapper>
   );
 }

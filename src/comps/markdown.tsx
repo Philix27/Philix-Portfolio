@@ -1,5 +1,8 @@
-.markdown-section {
+import { styled } from "styled-components";
+
+export const MarkdownStyledComp = styled.div`
   padding: 10px 15px;
+  margin: 20px;
 
   h1 {
     font-size: 2.8rem;
@@ -24,13 +27,6 @@
       border-radius: 8px;
       max-width: 100%;
       height: auto;
-    }
-    @include tablet {
-      font-weight: 300;
-    }
-
-    @include mobile {
-      font-weight: 300;
     }
   }
 
@@ -85,4 +81,4 @@
   hr {
     margin-bottom: 10px;
   }
-}
+`;

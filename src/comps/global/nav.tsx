@@ -40,10 +40,12 @@ const Wrapper = styled.div`
   color: white;
   border-bottom: solid 5px red;
 `;
+
 const InnerWrapper = styled.div`
   display: flex;
   height: 100%;
 `;
+
 const NavItem = styled.div`
   display: flex;
   align-items: center;
