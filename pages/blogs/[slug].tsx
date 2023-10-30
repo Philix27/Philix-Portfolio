@@ -14,13 +14,13 @@ export default function BlogContentPage() {
       title={ "Topper"}
       subtitle={ "Hello"}
     >
-      {/* <Landing
+      <Landing
         title={activeContent.title}
         imgUrl={activeContent.cover_image}
         subtitle={activeContent.subtitle}
         opacity={0.5}
-      /> */}
-      {/* <MarkdownStyledComp>{activeContent.comp}</MarkdownStyledComp> */}
+      />
+      <MarkdownStyledComp>{activeContent.comp}</MarkdownStyledComp>
     </AppWrapper>
   );
 }

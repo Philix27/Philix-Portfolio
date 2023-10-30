@@ -1,6 +1,6 @@
-import { MetaHeader } from "../src/comps/global/meta";
-import { AppWrapper } from "../src/comps/wrapper/wrapper";
-import HomeView from "../src/views/home";
+import HomeView from "views/home";
+import { MetaHeader } from "comps/global/meta";
+import { AppWrapper } from "comps/wrapper/wrapper";
 
 export default function Home() {
   return (

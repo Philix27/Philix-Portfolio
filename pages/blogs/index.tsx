@@ -13,7 +13,7 @@ export default function BlogsPage() {
   return (
     <AppWrapper title={"Blogs and Articles"} subtitle={"Blogs"}>
       <MetaHeader title={"Blogs | Felix Eligbue"} />
-      {/* <BlogComp  /> */}
+      <BlogComp  />
     </AppWrapper>
   );
 }
