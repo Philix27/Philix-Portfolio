@@ -2,4 +2,4 @@
 
 ## Personal Journal
 ### To document my daily personnal tech development.
-Visit my portfolio [philix.tech](https://philix.tech/)
+Visit my portfolio [philix.tech](https://philix.dev/)

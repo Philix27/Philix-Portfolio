@@ -1,10 +1,5 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { sortByDate } from "utils/sort";
 import { AppWrapper } from "comps/wrapper/wrapper";
-import { AppPaths } from "utils";
-import ProjectsGroup from "views/projects/project_group";
+import ProjectsList from "views/projects";
 
 interface PropTypes {
   slug: string;
@@ -18,7 +13,7 @@ export default function ProjectsPage(props: { projects: Array<PropTypes> }) {
       title={"Projects"}
       subtitle={"List of personal projects over the years"}
     >
-      <ProjectsGroup />
+      {/* <ProjectsList /> */}
     </AppWrapper>
   );
 }

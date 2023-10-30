@@ -6,26 +6,32 @@ import { AppLinks } from "utils";
 export default function AppNav() {
   const router = useRouter();
   const _path = router.pathname;
-  // <li
-  //   className={
-  //     _path == "/projects/web"
-  //       ? styles.active_list_item
-  //       : styles.nav_start_list_item
-  //   }
-  // ></li>;
+
   return (
     <Wrapper>
       <InnerWrapper>
-        <NavItem onClick={() => router.push(AppLinks.home)}>
+        <NavItem
+          isActive={_path === AppLinks.home}
+          onClick={() => router.push(AppLinks.home)}
+        >
           <p>Home</p>
         </NavItem>
-        <NavItem onClick={() => router.push(AppLinks.blogs)}>
+        <NavItem
+          isActive={_path === AppLinks.blogs}
+          onClick={() => router.push(AppLinks.blogs)}
+        >
           <p>Blog Posts</p>
         </NavItem>
-        <NavItem onClick={() => router.push(AppLinks.projects)}>
+        <NavItem
+          isActive={_path === AppLinks.projects}
+          onClick={() => router.push(AppLinks.projects)}
+        >
           <p>Projects</p>
         </NavItem>
-        <NavItem onClick={() => router.push(AppLinks.about)}>
+        <NavItem
+          isActive={_path === AppLinks.about}
+          onClick={() => router.push(AppLinks.about)}
+        >
           <p>About</p>
         </NavItem>
       </InnerWrapper>
@@ -46,7 +52,7 @@ const InnerWrapper = styled.div`
   height: 100%;
 `;
 
-const NavItem = styled.div`
+const NavItem = styled.div<{ isActive: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +60,7 @@ const NavItem = styled.div`
   justify-content: center;
   height: 100%;
   border-right: solid 0.01px #9c9c9c;
-
+  background-color: ${(props) => (props.isActive ? "red" : "#1a0e0e")};
   &:hover {
     background-color: red;
   }

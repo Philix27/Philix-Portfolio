@@ -1,58 +1,40 @@
-import Link from "next/link";
-import React from "react";
-import { motion } from "framer-motion";
-import styles from "./projects.module.scss";
-import { projects } from "./constants";
-import styled from "styled-components";
+import { useRouter } from "next/router";
+import { TextBody, TextHeader } from "comps";
+import { styled } from "styled-components";
+import { AppProjects } from "../../../docs/projects";
 
-export default function Projects() {
-  const listic = [projects[0], projects[1], projects[3], projects[4]];
+interface PropTypes {
+  slug: string;
+  frontmatter: {
+    [key: string]: string;
+  };
+}
+
+export default function ProjectsList() {
+  const sortedItems = AppProjects.filter((item) => {
+    return item.category == "web";
+  });
+
+  const router = useRouter();
+
   return (
-    <>
-      <div className="section" id="projects">
-        <h1 className="sectionTitle">Projects</h1>
-
-        <div className={styles.gridContainer}>
-          {listic.map(
-            ({
-              title,
-              description,
-              image,
-              detailsPage,
-              tags,
-              source,
-              visit,
-              id,
-            }) => (
-              <div key={id} className={styles.card}>
-                <Link href={detailsPage} passHref>
-                  <img className={styles.img} src={image} alt="cover" />
-                </Link>
-                <h5>{title}</h5>
-                <div style={{ padding: "0px 20px" }}>
-                  <div className="sectionText">{description}</div>
-                </div>
-              </div>
-            )
-          )}
-        </div>
-      </div>
-      <div className="section">
-        <Link href="/projects">
-          <a className="btn">View All</a>
-        </Link>
-      </div>
-    </>
+    <Wrapper>
+      <GridWrapper>
+        {AppProjects.map((val, index) => (
+          <Card key={index} onClick={() => router.push(`/projects/${val.id}`)}>
+            <Img src={val.cover_image} />
+            <div style={{ padding: "20px" }}>
+              <TextHeader variant="five">{val.title}</TextHeader>
+              <TextBody variant="four">{val.subtitle}</TextBody>
+            </div>
+          </Card>
+        ))}
+      </GridWrapper>
+    </Wrapper>
   );
 }
 
-
-
 const Wrapper = styled.div`
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: center;
-  justify-content: center; */
   text-align: center;
   padding-top: 20px;
 `;
