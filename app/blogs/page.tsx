@@ -1,3 +1,4 @@
+"use client"
 import { AppWrapper } from "../comps/wrapper/wrapper";
 import { MetaHeader } from "../comps/global/meta";
 
@@ -16,7 +17,7 @@ export default function BlogsPage() {
     <ClientOnly>
       <AppWrapper title={"Blogs and Articles"} subtitle={"Blogs"}>
         <MetaHeader title={"Blogs | Felix Eligbue"} />
-        {/* <BlogComp /> */}
+        <BlogComp />
       </AppWrapper>
     </ClientOnly>
   );

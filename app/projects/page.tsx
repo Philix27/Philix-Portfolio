@@ -1,3 +1,4 @@
+"use client"
 import ClientOnly from "../comps/CleintOnly";
 import { AppWrapper } from "../comps/wrapper/wrapper";
 import ProjectsList from "./grid";

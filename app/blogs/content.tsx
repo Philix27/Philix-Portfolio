@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { AppBlogs } from "../lib/docs";
 import { AppWrapper } from "../comps";
 import { MarkdownStyledComp } from "../comps/markdown";
-import { Landing } from "../project/banner";
+import { Landing } from "../projects/banner";
 
 
 export default function BlogContentPage() {
