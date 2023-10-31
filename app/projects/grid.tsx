@@ -1,8 +1,9 @@
-"use client"
-import { useRouter } from "next/router";
-import { TextBody, TextHeader } from "../comps";
+import { useRouter } from "next/navigation";
+import { TextBody, TextHeader } from "../comps/text";
 import { styled } from "styled-components";
 import { AppProjects } from "../lib/docs/projects";
+import Link from "next/link";
+import { AppLinks } from "@/lib/utils";
 
 interface PropTypes {
   slug: string;
@@ -22,13 +23,17 @@ export default function ProjectsList() {
     <Wrapper>
       <GridWrapper>
         {AppProjects.map((val, index) => (
-          <Card key={index}>
+          <InLink
+            passHref={false}
+            href={`${AppLinks.projects}/${val.id}`}
+            key={index}
+          >
             <Img src={val.cover_image} />
             <div style={{ padding: "20px" }}>
               <TextHeader variant="five">{val.title}</TextHeader>
               <TextBody variant="four">{val.subtitle}</TextBody>
             </div>
-          </Card>
+          </InLink>
         ))}
       </GridWrapper>
     </Wrapper>
@@ -46,9 +51,10 @@ const Img = styled.img`
   object-fit: cover;
   overflow: hidden;
 `;
-const Card = styled.div`
+const InLink = styled(Link)`
   background-color: #fff;
-  /* padding: 20px; */
+  color: #490000;
+  display: block;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -58,6 +64,18 @@ const Card = styled.div`
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 `;
+
+// const Card = styled.div`
+//   /* padding: 20px; */
+//   border-radius: 10px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-items: center;
+//   text-align: center;
+//   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+//   cursor: pointer;
+// `;
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);

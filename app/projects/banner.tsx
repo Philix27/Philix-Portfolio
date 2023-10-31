@@ -1,4 +1,5 @@
-import { TextBody, TextHeader } from "../comps";
+// "use client"
+import { TextBody, TextHeader } from "../comps/text";
 import { styled } from "styled-components";
 
 export const Landing = (props: {
