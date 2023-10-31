@@ -4,7 +4,6 @@ import { MarkdownStyledComp } from "comps/markdown";
 import { useRouter } from "next/router";
 import { AppProjects } from "../../docs/projects";
 
-
 export default function ProjectsContentPage() {
   const router = useRouter();
   const activeContent = AppProjects.filter(

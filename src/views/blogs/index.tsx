@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { TextBody, TextHeader } from "comps";
+import { TextBody, TextHeader } from "comps/text";
 import {
   Wrapper,
   ContentWrapper,
@@ -10,34 +10,29 @@ import {
 } from "./comps";
 
 import { AiOutlineClockCircle } from "react-icons/ai";
-import { AppBlogs } from "../../../docs";
+import { AppBlogs } from "docs";
+import { AppDocs } from "./doc_list";
+
 
 export default function BlogComp() {
-  const sortedItems = AppBlogs.filter((item) => {
-    return item.category == "rust";
-  });
-
   const router = useRouter();
 
   return (
     <Wrapper>
       <ContentWrapper>
-        {AppBlogs.map((item, index) => (
-          <Card
-            key={index}
-            onClick={() => router.push(`/blogs/${item.id}`)}
-          >
+        {AppDocs.map((val, index) => (
+          <Card key={index} onClick={() => router.push(`/blogs/${val.id}`)}>
             <FirstContent>
               <div>
-                <TextHeader variant="five">{item.title}</TextHeader>
+                <TextHeader variant="five">{val.title}</TextHeader>
                 <SecondContent>
                   <AiOutlineClockCircle />
-                  <TextBody variant="four">{item.start_date}</TextBody>
+                  <TextBody variant="four">{val.start_date}</TextBody>
                 </SecondContent>
-                <TextBody variant="four">{item.subtitle}</TextBody>
+                <TextBody variant="four">{val.subtitle}</TextBody>
               </div>
             </FirstContent>
-            <Img src={item.cover_image} alt="cover" />
+            <Img src={val.cover_image} alt="cover" />
           </Card>
         ))}
       </ContentWrapper>

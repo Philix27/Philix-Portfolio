@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { styled } from "styled-components";
 import { MarkdownStyledComp } from "../src/comps/markdown";
-import MdFile from "../docs/primary/skills.mdx";
+import MdFile from "docs/primary/skills.mdx";
 import { AppWrapper } from "comps/wrapper/wrapper";
 
 export default function AboutUsPage(props: {

@@ -1,8 +1,8 @@
-import UltimateRust from "./blogs/ultimate_backend.mdx";
-import { IBlogPost } from "./types";
+import { IBlogPost } from "docs/types";
+import UltimateRust from "docs/blogs/ultimate_backend.mdx";
 
 
-export const AppBlogs: Array<IBlogPost> = [
+export const AppDocs = [
   {
     id: "1",
     title: "Ultimate Backend in Rust - 1",

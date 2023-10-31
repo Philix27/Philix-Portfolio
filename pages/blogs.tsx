@@ -1,6 +1,6 @@
-import BlogComp from "views/blogs";
 import { AppWrapper } from "comps/wrapper/wrapper";
 import { MetaHeader } from "comps/global/meta";
+import BlogComp from "views/blogs";
 
 interface PropTypes {
   slug: string;

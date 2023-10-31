@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { TextBody, TextHeader } from "comps";
 import { styled } from "styled-components";
-import { AppProjects } from "../../../docs/projects";
+import { AppProjects } from "../../docs/projects";
 
 interface PropTypes {
   slug: string;
@@ -21,7 +21,7 @@ export default function ProjectsList() {
     <Wrapper>
       <GridWrapper>
         {AppProjects.map((val, index) => (
-          <Card key={index} onClick={() => router.push(`/projects/${val.id}`)}>
+          <Card key={index}>
             <Img src={val.cover_image} />
             <div style={{ padding: "20px" }}>
               <TextHeader variant="five">{val.title}</TextHeader>
