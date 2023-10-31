@@ -18,8 +18,8 @@
     "baseUrl": "src",
     "paths": {
       "*": ["./*", "./src/*"],
-      "pages/*": ["./pages/*"],
-      "libs/*": ["./libs/*"]
+      // "pages/*": ["./pages/*"],
+      // "libs/*": ["./libs/*"]
     },
     "types": ["node"]
   },
