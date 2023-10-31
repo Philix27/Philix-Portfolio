@@ -6,10 +6,10 @@ import HomeView from "./home";
 export default function Home() {
   return (
     <ClientOnly>
-      {/* <AppWrapper title={"Home"} subtitle={"Welcome to Felix's Website"}> */}
+      <AppWrapper title={"Home"} subtitle={"Welcome to Felix's Website"}>
       {/* <MetaHeader title={"Eligbue Felix | Home Page"} /> */}
       {/* <HomeView /> */}
-      {/* </AppWrapper> */}
+      </AppWrapper>
     </ClientOnly>
   );
 }
