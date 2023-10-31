@@ -1,4 +1,4 @@
-import { TextBody, TextHeader } from "comps/text";
+import { TextBody, TextHeader } from "../text";
 import React from "react";
 import { styled } from "styled-components";
 

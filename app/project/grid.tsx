@@ -1,7 +1,8 @@
+"use client"
 import { useRouter } from "next/router";
-import { TextBody, TextHeader } from "comps";
+import { TextBody, TextHeader } from "../comps";
 import { styled } from "styled-components";
-import { AppProjects } from "../../docs/projects";
+import { AppProjects } from "../lib/docs/projects";
 
 interface PropTypes {
   slug: string;

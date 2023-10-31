@@ -1,5 +1,5 @@
+"use client"
 import { useRouter } from "next/router";
-import { TextBody, TextHeader } from "comps/text";
 import {
   Wrapper,
   ContentWrapper,
@@ -10,9 +10,9 @@ import {
 } from "./comps";
 
 import { AiOutlineClockCircle } from "react-icons/ai";
-import { AppBlogs } from "docs";
+// import { AppBlogs } from "../../lib/docs";
 import { AppDocs } from "./doc_list";
-
+import { TextBody, TextHeader } from "../comps/text";
 
 export default function BlogComp() {
   const router = useRouter();

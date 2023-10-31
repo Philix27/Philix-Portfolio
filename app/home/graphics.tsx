@@ -1,5 +1,5 @@
 import React from "react";
-import TechList from "../../comps/techlist";
+import TechList from "../comps/techlist";
 
 export default function GraphicsSection() {
   return (

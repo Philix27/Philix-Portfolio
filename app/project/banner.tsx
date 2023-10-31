@@ -1,19 +1,24 @@
-import { TextBody, TextHeader } from "comps";
+import { TextBody, TextHeader } from "../comps";
 import { styled } from "styled-components";
 
-export const Landing = ({ imgUrl, title, subtitle, opacity }) => {
+export const Landing = (props: {
+  imgUrl: string;
+  title: string;
+  subtitle: string;
+  opacity: number;
+}) => {
   return (
     <Wrapper
       id="home"
       style={{
         backgroundImage: `linear-gradient(rgba(31, 44, 90, 0.2), rgba(4, 9, 30, ${
-          opacity ? opacity : 0.1
-        })), url(${imgUrl})`,
+          props.opacity ? props.opacity : 0.1
+        })), url(${props.imgUrl})`,
       }}
     >
       <Content>
-        <TextHeader variant="three">{title}</TextHeader>
-        <TextBody variant="three">{subtitle}</TextBody>
+        <TextHeader variant="three">{props.title}</TextHeader>
+        <TextBody variant="three">{props.subtitle}</TextBody>
       </Content>
     </Wrapper>
   );

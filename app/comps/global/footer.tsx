@@ -1,4 +1,4 @@
-import { TextBody } from "comps/text";
+import { TextBody } from "../text";
 import Link from "next/link";
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";

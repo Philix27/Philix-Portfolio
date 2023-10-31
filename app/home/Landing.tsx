@@ -1,17 +1,21 @@
-import { BannerImg, BannerSubtitle, BannerTitle } from "../../comps/Texts";
+import { BannerImg, BannerSubtitle, BannerTitle } from "../comps/Texts";
 
 import styled from "styled-components";
-import { device } from "../../styles/screensize";
+import { device } from "../lib/styles/screensize";
 
-export const PlainLanding = ({ title, subtitle, imageUrl }) => {
+export const PlainLanding = (props: {
+  title: string;
+  subtitle: string;
+  imageUrl: string;
+}) => {
   return (
     <Container>
       <Content>
-        <BannerTitle>{title}</BannerTitle>
-        <BannerSubtitle>{subtitle}</BannerSubtitle>
+        <BannerTitle>{props.title}</BannerTitle>
+        <BannerSubtitle>{props.subtitle}</BannerSubtitle>
       </Content>
       <div>
-        <BannerImg src={imageUrl} alt="hero_img" />
+        <BannerImg src={props.imageUrl} alt="hero_img" />
       </div>
     </Container>
   );

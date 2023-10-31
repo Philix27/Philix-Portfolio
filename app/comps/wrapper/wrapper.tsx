@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import AppNav from "../global/nav";
 import TopTitles from "../global/topTile";
-import Footer from "comps/global/footer";
+import Footer from "../global/footer";
 
 export function AppWrapper(props: {
   children: ReactNode;

@@ -1,8 +1,9 @@
-import { Landing } from "views/projects/banner";
-import { AppWrapper } from "comps/wrapper/wrapper";
-import { MarkdownStyledComp } from "comps/markdown";
 import { useRouter } from "next/router";
-import { AppBlogs } from "../../docs";
+import { AppBlogs } from "../lib/docs";
+import { AppWrapper } from "../comps";
+import { MarkdownStyledComp } from "../comps/markdown";
+import { Landing } from "../project/banner";
+
 
 export default function BlogContentPage() {
   const router = useRouter();

@@ -1,7 +1,8 @@
+"use client"
 import React from "react";
 import { styled } from "styled-components";
 import { useRouter } from "next/router";
-import { AppLinks } from "utils";
+import { AppLinks } from "../../lib/utils";
 
 export default function AppNav() {
   const router = useRouter();

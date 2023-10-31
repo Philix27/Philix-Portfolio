@@ -1,6 +1,4 @@
-import { IBlogPost } from "docs/types";
-import UltimateRust from "docs/blogs/ultimate_backend.mdx";
-
+import UltimateRust from "../lib/docs/blogs/ultimate_backend.mdx";
 
 export const AppDocs = [
   {
