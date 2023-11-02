@@ -1,4 +1,5 @@
 import UltimateRust from "./blogs/ultimate_backend.mdx";
+import Notification1 from "./blogs/notify1.mdx";
 import { IBlogPost } from "./types";
 
 export const AppBlogs: Array<IBlogPost> = [
@@ -11,7 +12,7 @@ export const AppBlogs: Array<IBlogPost> = [
     link: "docs/rust/ultimate_backend1.md",
     start_date: "27th October, 2023",
     last_edit: "15th November,  2023",
-    comp: <UltimateRust />,
+    comp: <Notification1 />,
   },
   {
     id: "2",
