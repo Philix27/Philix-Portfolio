@@ -10,9 +10,8 @@ import {
 } from "./comps";
 
 import { AiOutlineClockCircle } from "react-icons/ai";
-// import { AppBlogs } from "../../lib/docs";
-import { AppDocs } from "./doc_list";
 import { TextBody, TextHeader } from "../comps/text";
+import { AppBlogs } from "@/lib/docs";
 
 export default function BlogComp() {
   const router = useRouter();
@@ -20,7 +19,7 @@ export default function BlogComp() {
   return (
     <Wrapper>
       <ContentWrapper>
-        {AppDocs.map((val, index) => (
+        {AppBlogs.map((val, index) => (
           <Card key={index} onClick={() => router.push(`/blogs/${val.id}`)}>
             <FirstContent>
               <div>

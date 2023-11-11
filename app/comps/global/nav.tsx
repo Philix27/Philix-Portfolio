@@ -16,7 +16,7 @@ export default function AppNav() {
           isActive={_path === AppLinks.home}
           onClick={() => router.push(AppLinks.home)}
         >
-          <p>Home</p>
+          <p>Series</p>
         </NavItem>
         <NavItem
           isActive={_path === AppLinks.blogs}

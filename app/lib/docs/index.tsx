@@ -1,18 +1,18 @@
 import UltimateRust from "./blogs/ultimate_backend.mdx";
-import Notification1 from "./blogs/notify1.mdx";
+import Harmony1 from "./series/harmony/1.mdx";
 import { IBlogPost } from "./types";
 
 export const AppBlogs: Array<IBlogPost> = [
   {
     id: "1",
-    title: "Ultimate Backend in Rust - 1",
-    subtitle: "Using actix web",
+    title: "Harmony Backend 1- Rust",
+    subtitle: "Project setup",
     cover_image: "/post_img/africa.jpg",
     category: "ultimate_backend",
-    link: "docs/rust/ultimate_backend1.md",
+    link: "docs/series/harmony/1.md",
     start_date: "27th October, 2023",
     last_edit: "15th November,  2023",
-    comp: <Notification1 />,
+    comp: <Harmony1 />,
   },
   {
     id: "2",
