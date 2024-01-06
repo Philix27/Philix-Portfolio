@@ -1,14 +1,16 @@
-"use client";
 import { HomeView } from "./(pages)/home";
 import { ClientOnly, MetaHeader, AppWrapper } from "@/comps";
+import { Metadata } from "next";
 
 export default function Home() {
   return (
     <ClientOnly>
-      <AppWrapper title={"Articles"} subtitle={"Series of all articles"}>
-        <MetaHeader title={"Eligbue Felix | Home Page"} />
-        <HomeView />
-      </AppWrapper>
+      <HomeView />
     </ClientOnly>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Eligbue Felix",
+  description: "Home Page",
+};

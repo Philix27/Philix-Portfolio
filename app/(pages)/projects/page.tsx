@@ -2,12 +2,6 @@
 import { ClientOnly, AppWrapper } from "@/comps";
 import ProjectsList from "./grid";
 
-interface PropTypes {
-  slug: string;
-  frontmatter: {
-    [key: string]: string;
-  };
-}
 export default function ProjectsPage() {
   return (
     <ClientOnly>

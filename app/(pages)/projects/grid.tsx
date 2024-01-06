@@ -4,13 +4,6 @@ import { styled } from "styled-components";
 import { AppProjects, AppLinks } from "@/lib";
 import Link from "next/link";
 
-interface PropTypes {
-  slug: string;
-  frontmatter: {
-    [key: string]: string;
-  };
-}
-
 export default function ProjectsList() {
   const sortedItems = AppProjects.filter((item) => {
     return item.category == "web";

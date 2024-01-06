@@ -1,15 +1,19 @@
+"use client";
 import { Wrapper, ContentWrapper } from "@/(pages)/blogs/comps";
+import { AppWrapper } from "@/comps";
 import React from "react";
 import { styled } from "styled-components";
 
 export function HomeView() {
   return (
-    <ContentWrapper>
-      <ListItem>
-        <h4>Title</h4>
-        <p>Title</p>
-      </ListItem>
-    </ContentWrapper>
+    <AppWrapper title={"Articles"} subtitle={"Series of all articles"}>
+      <ContentWrapper>
+        <ListItem>
+          {/* <h4>Title</h4> */}
+          {/* <p>Title</p> */}
+        </ListItem>
+      </ContentWrapper>
+    </AppWrapper>
   );
 }
 

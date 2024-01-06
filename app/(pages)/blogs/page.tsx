@@ -1,21 +1,16 @@
-"use client";
 import { AppWrapper, ClientOnly, MetaHeader } from "@/comps";
-import BlogComp from ".";
-
-interface PropTypes {
-  slug: string;
-  frontmatter: {
-    [key: string]: string;
-  };
-}
+import BlogComp from "./client";
+import { Metadata } from "next";
 
 export default function BlogsPage() {
   return (
     <ClientOnly>
-      <AppWrapper title={"Blogs and Articles"} subtitle={"Blogs"}>
-        <MetaHeader title={"Blogs | Felix Eligbue"} />
-        <BlogComp />
-      </AppWrapper>
+      <BlogComp />
     </ClientOnly>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Eligbue Felix",
+  description: "Blogs",
+};

@@ -1,9 +1,8 @@
 "use client";
 import { AppBlogs } from "@/lib";
-// import { Landing } from "../../projects/banner";
 import { ClientOnly, MarkdownStyledComp, AppWrapper, Landing } from "@/comps";
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default function BlogPage({ params }: { params: { slug: string } }) {
   const activeContent = AppBlogs.filter((v, index) => v.id === params.slug)[0];
   console.log(params.slug, "SLUGGY");
   return (
