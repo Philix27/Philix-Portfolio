@@ -1,8 +1,6 @@
 "use client";
-import ClientOnly from "./comps/CleintOnly";
-import { MetaHeader } from "./comps/global/meta";
-import { AppWrapper } from "./comps/wrapper/wrapper";
-import HomeView from "./home";
+import { HomeView } from "./(pages)/home";
+import { ClientOnly, MetaHeader, AppWrapper } from "@/comps";
 
 export default function Home() {
   return (

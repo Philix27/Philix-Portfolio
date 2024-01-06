@@ -1,9 +1,6 @@
 "use client";
-import { AppWrapper } from "../../comps/wrapper/wrapper";
-import { Landing } from "../banner";
-import { MarkdownStyledComp } from "../../comps/markdown";
-import { useRouter } from "next/router";
-import { AppProjects } from "../../lib/docs/projects";
+import { AppWrapper, MarkdownStyledComp, Landing } from "@/comps";
+import { AppProjects } from "@/lib";
 
 export default function ProjectsContentPage({
   params,

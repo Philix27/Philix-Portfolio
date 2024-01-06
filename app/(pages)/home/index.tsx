@@ -1,8 +1,8 @@
-import { Wrapper, ContentWrapper } from "@/blogs/comps";
+import { Wrapper, ContentWrapper } from "@/(pages)/blogs/comps";
 import React from "react";
 import { styled } from "styled-components";
 
-export default function HomeView() {
+export function HomeView() {
   return (
     <ContentWrapper>
       <ListItem>
@@ -20,9 +20,8 @@ const ListItem = styled.div`
   border-bottom: solid 1px gray;
 
   h4 {
-
   }
-  p{
+  p {
     color: gray;
     font-weight: 300;
   }

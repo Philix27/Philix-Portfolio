@@ -1,9 +1,8 @@
 "use client";
 import Image from "next/image";
 import { styled } from "styled-components";
-import { MarkdownStyledComp } from "../comps/markdown";
-import MdFile from "../lib/docs/primary/skills.mdx";
-import { AppWrapper } from "../comps/wrapper/wrapper";
+import { MarkdownStyledComp, AppWrapper } from "@/comps";
+import MdFile from "@/lib/docs/primary/skills.mdx";
 
 export default function AboutUsPage() {
   return (

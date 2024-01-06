@@ -1,9 +1,8 @@
 import { useRouter } from "next/navigation";
-import { TextBody, TextHeader } from "../comps/text";
+import { TextBody, TextHeader } from "@/comps";
 import { styled } from "styled-components";
-import { AppProjects } from "../lib/docs/projects";
+import { AppProjects, AppLinks } from "@/lib";
 import Link from "next/link";
-import { AppLinks } from "@/lib/utils";
 
 interface PropTypes {
   slug: string;

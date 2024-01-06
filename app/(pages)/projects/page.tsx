@@ -1,6 +1,5 @@
 "use client";
-import ClientOnly from "../comps/CleintOnly";
-import { AppWrapper } from "../comps/wrapper/wrapper";
+import { ClientOnly, AppWrapper } from "@/comps";
 import ProjectsList from "./grid";
 
 interface PropTypes {

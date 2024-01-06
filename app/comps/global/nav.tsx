@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 import { usePathname, useRouter } from "next/navigation";
 import { AppLinks } from "../../lib/utils";
 
-export default function AppNav() {
+export function AppNav() {
   const router = useRouter();
 
   const _path = usePathname();

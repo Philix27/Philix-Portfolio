@@ -1,8 +1,5 @@
-"use client"
-import { AppWrapper } from "../comps/wrapper/wrapper";
-import { MetaHeader } from "../comps/global/meta";
-
-import ClientOnly from "../comps/CleintOnly";
+"use client";
+import { AppWrapper, ClientOnly, MetaHeader } from "@/comps";
 import BlogComp from ".";
 
 interface PropTypes {

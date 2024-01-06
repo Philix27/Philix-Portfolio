@@ -1,9 +1,7 @@
 "use client";
 import React, { ReactNode } from "react";
 import styled from "styled-components";
-import AppNav from "../global/nav";
-import TopTitles from "../global/topTile";
-import Footer from "../global/footer";
+import { AppNav, TopTitles, Footer } from "@/comps";
 
 export function AppWrapper(props: {
   children: ReactNode;

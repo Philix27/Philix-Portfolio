@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai";
 import { styled } from "styled-components";
 
-export default function Footer() {
+export function Footer() {
   return (
     <Wrapper>
       <InnerWrapper>

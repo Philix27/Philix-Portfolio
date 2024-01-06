@@ -1,9 +1,7 @@
 "use client";
-import { AppBlogs } from "@/lib/docs";
-import { AppWrapper } from "@/comps/wrapper";
-import { MarkdownStyledComp } from "@/comps/markdown";
-import { Landing } from "../../projects/banner";
-import ClientOnly from "@/comps/CleintOnly";
+import { AppBlogs } from "@/lib";
+// import { Landing } from "../../projects/banner";
+import { ClientOnly, MarkdownStyledComp, AppWrapper, Landing } from "@/comps";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const activeContent = AppBlogs.filter((v, index) => v.id === params.slug)[0];
