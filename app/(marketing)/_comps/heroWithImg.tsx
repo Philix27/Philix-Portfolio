@@ -10,7 +10,7 @@ export function HeroWithImg(props: { children: ReactNode; bg: string; img: strin
         className={cn(
           props.bg,
           `container rounded-lg md:rounded-3xl
-        md:min-h-[50vh] w-[80%] 
+        md:min-h-[50vh] w-[90%] md:w-[80%]
         flex items-center justify-between
         flex-col md:flex-row
     `
@@ -20,7 +20,7 @@ export function HeroWithImg(props: { children: ReactNode; bg: string; img: strin
           className={`
         pt-4 h-full flex items-center justify-center
         w-full
-        md:w-[50%] gap-x-4
+        md:w-[45%] gap-x-4
       `}
         >
           {props.children}

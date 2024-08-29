@@ -15,7 +15,7 @@ export const cardData = [
   {
     title: 'Low-Interest Loans',
     img: '/profile.jpg',
-    color: 'bg-lemon-700',
+    color: 'bg-pink-700',
     subtitle: `Through our platform, we strive to offer clients 
       low-interest rate loans, enabling
       them to access credit responsibly and affordably.`,

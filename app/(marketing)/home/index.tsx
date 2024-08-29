@@ -11,15 +11,16 @@ import { useTheme } from 'next-themes';
 import { FaGithub, FaGitlab, FaLinkedin } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import { DARK_GRADIENT, LIGHT_GRADIENT, useAppTheme } from '../../lib/hooks/useTheme';
+import { CardsLessSection } from '../_comps/cardless';
 
 export function HomeSection() {
   const router = useRouter();
   const { gradient } = useAppTheme();
   return (
     <div className={'flex flex-col items-center justify-center w-full'}>
-      <HeroWithImg img={'/profile.jpg'} className="my-5" bg={gradient}>
+      <HeroWithImg img={'/profile.jpg'} className="my-4" bg={gradient}>
         <div className="h-full">
-          <TextH v="h2" className={'text-[24px] font-extrabold md:text-[50px] text-card-foreground tracking-wide'}>
+          <TextH v="h3" className={'text-[20px] font-extrabold md:text-[35px] text-card-foreground tracking-normal'}>
             Hello, I am Felix Eligbue a Fullstack Engineer
           </TextH>
           <TextP>
@@ -38,7 +39,7 @@ export function HomeSection() {
 
       <JumbutronSection title={'Fun time'} subtitle="Play chess and have fun with friends and top chess master." />
 
-      <CardsSection data={cardData} />
+      <CardsLessSection data={cardData} />
       <HeroWithImg img={'/profile.jpg'} className="my-5" bg={gradient}>
         <div className="h-full">
           <TextH v="h1" className={'text-[24px] font-extrabold md:text-[50px] text-card-foreground'}>
@@ -49,6 +50,7 @@ export function HomeSection() {
           <TextP>Say some</TextP>
         </div>
       </HeroWithImg>
+      <CardsSection data={cardData} />
     </div>
   );
 }

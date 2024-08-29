@@ -3,7 +3,6 @@
 import React from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { IconType } from 'react-icons';
-import { BiSolidChess } from 'react-icons/bi';
 import { MdOutlineSettings } from 'react-icons/md';
 import { FaRegChessKing } from 'react-icons/fa6';
 import { cn } from '@/lib';

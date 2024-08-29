@@ -3,15 +3,19 @@
 import React from 'react';
 import { TextH, TextP } from '@/comps';
 import Link from 'next/link';
-import { AppPages } from '../../lib';
+import { AppPages, cn, useAppTheme } from '../../lib';
 
 export function FooterSection() {
+  const { gradient } = useAppTheme();
   return (
     <div
-      className={`
-      w-full border-t-[1px] border-primary
+      className={cn(
+        `
+      w-full
       bg-primary flex items-center
-      justify-center`}
+      justify-center`,
+        gradient
+      )}
     >
       <div
         className={`w-[80%]
@@ -47,7 +51,7 @@ function Section(props: { title: string; list: { title: string; link: string }[]
       <TextH v="h4" className={'font-bold text-primary-foreground'}>
         {props.title}
       </TextH>
-      <div className='flex space-x-2'>
+      <div className="flex space-x-2">
         {props.list.map((val, i) => (
           <Link href={val.link} key={i}>
             <TextP>{val.title}</TextP>
