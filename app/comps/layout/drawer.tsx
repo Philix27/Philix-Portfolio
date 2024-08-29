@@ -1,6 +1,6 @@
 'use client';
 import { AppStores } from '@/lib';
-import { TextP } from '@/comps';
+import { NavItem, NavItems, TextP } from '@/comps';
 import { motion } from 'framer-motion';
 import { usePathname, useRouter } from 'next/navigation';
 import React from 'react';
@@ -11,12 +11,8 @@ import { GoPerson } from 'react-icons/go';
 import { IoColorPaletteOutline } from 'react-icons/io5';
 import { PiSpeakerHighThin, PiSpeakerSimpleXLight } from 'react-icons/pi';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
-import { FaServicestack } from 'react-icons/fa';
-import { MdOutlinePrivacyTip } from 'react-icons/md';
-import { RiQuestionAnswerLine } from 'react-icons/ri';
-import { BiMessage } from 'react-icons/bi';
 
-export function Drawer() {
+export function Drawer(props: { items?: NavItem[] }) {
   const store = AppStores.useSettingsStore();
   const router = useRouter();
   const { setTheme, theme } = useTheme();
@@ -31,7 +27,11 @@ export function Drawer() {
         transition={{ ease: 'easeInOut', duration: 0.3 }}
         className={'w-[60%] max-w-[300px] bg-secondary rounded-r-2xl'}
       >
-        {homePaths.includes(path) ? <HomeDrawer router={router} /> : <InAppDrawer router={router} />}
+        {homePaths.includes(path) ? (
+          <HomeDrawer router={router} items={props.items} />
+        ) : (
+          <InAppDrawer router={router} items={props.items} />
+        )}
       </motion.div>
       <div
         className={'w-[40%]'}
@@ -54,56 +54,33 @@ function DrawerRow(props: { title: string; icon?: IconType; onClick?: VoidFuncti
   );
 }
 
-function HomeDrawer(props: { router: AppRouterInstance }) {
+function HomeDrawer(props: { router: AppRouterInstance; items?: NavItem[] }) {
   const { router } = props;
   const { setTheme, theme } = useTheme();
   const store = AppStores.useSettingsStore();
 
   return (
     <div className="px-4 mt-[50px]">
-      <DrawerRow
-        title={'About Us'}
-        icon={GoPerson}
-        onClick={() => {
-          router.push('/settings');
-        }}
-      />
-      <DrawerRow
-        title={'Contact Us'}
-        icon={BiMessage}
-        onClick={() => {
-          router.push('/notify');
-        }}
-      />
-      <DrawerRow
-        title={'Faq'}
-        icon={RiQuestionAnswerLine}
-        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-      />
-      <DrawerRow
-        title={'Privacy'}
-        icon={MdOutlinePrivacyTip}
-        onClick={() => {
-          router.push('/notify');
-        }}
-      />
-      <DrawerRow
-        title={'Terms of service'}
-        icon={FaServicestack}
-        onClick={() => {
-          router.push('/notify');
-        }}
-      />
-      <DrawerRow
-        title={'Theme'}
-        icon={IoColorPaletteOutline}
-        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-      />
+      {NavItems.map((val) => (
+        <DrawerRow
+          title={val.title}
+          icon={val.icon}
+          onClick={() => {
+            if (val.href === 'THEME') {
+              setTheme(theme === 'light' ? 'dark' : 'light');
+              return;
+            }
+            if (val.href) {
+              router.push(val.href);
+            }
+          }}
+        />
+      ))}
     </div>
   );
 }
 
-function InAppDrawer(props: { router: AppRouterInstance }) {
+function InAppDrawer(props: { router: AppRouterInstance; items?: NavItem[] }) {
   const { setTheme, theme } = useTheme();
   const store = AppStores.useSettingsStore();
   const { router } = props;

@@ -6,10 +6,13 @@ import { AppButton, Drawer, TextH, TextP } from '@/comps';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useRouter } from 'next/navigation';
 import { AppPages, AppStores } from '@/lib';
+import { PiSunLight } from 'react-icons/pi';
+import { useTheme } from 'next-themes';
 
 export function NavbarMarketing(props: MainNavProps) {
   const router = useRouter();
   const store = AppStores.useSettingsStore();
+  const { setTheme, theme } = useTheme();
 
   return (
     <header className="bg-background sticky top-0 z-20 w-full">
@@ -25,15 +28,29 @@ export function NavbarMarketing(props: MainNavProps) {
 
         <div className="flex items-center justify-center md:gap-x-3">
           <div className={'hidden md:flex w-full gap-x-4'}>
-            {props.items?.map((v, i) => (
-              <Link
-                key={i}
-                href={v.href || '/#'}
-                className={`hover:bg-accent p-2 rounded-md hover:[&>p]:text-primary-foreground`}
-              >
-                <TextP className={'text-primary'}>{v.title}</TextP>
-              </Link>
-            ))}
+            {props.items?.map((v, i) => {
+              if (v.href == 'THEME') {
+                return (
+                  <div
+                    className={`hover:bg-accent p-2 rounded-md hover:[&>p]:text-primary-foreground`}
+                    onClick={() => {
+                      setTheme(theme === 'light' ? 'dark' : 'light');
+                    }}
+                  >
+                    <PiSunLight />
+                  </div>
+                );
+              }
+              return (
+                <Link
+                  key={i}
+                  href={v.href || '/#'}
+                  className={`hover:bg-accent p-2 rounded-md hover:[&>p]:text-primary-foreground`}
+                >
+                  <TextP className={'text-primary'}>{v.title}</TextP>
+                </Link>
+              );
+            })}
 
             <AppButton className="px-4" onClick={() => {}}>
               Hire me
@@ -41,7 +58,7 @@ export function NavbarMarketing(props: MainNavProps) {
           </div>
 
           <div className={'md:hidden'}>
-            {store.drawerIsOpen && <Drawer />}
+            {store.drawerIsOpen && <Drawer items={props.items} />}
 
             {store.drawerIsOpen ? (
               <AiOutlineClose

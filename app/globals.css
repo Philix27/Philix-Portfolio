@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: #e6e6e6;
+    --background: #e5e7eb;
     --foreground: #535353;
 
     --muted: 210 40% 96.1%;
@@ -16,7 +16,8 @@
     --card: #ffffff;
     --card-foreground: #0e151d;
 
-    --primary: #f24500;
+    --primary: #1f2937;
+    /* --primary: #f24500; */
     --primary-foreground: #fff;
 
     --secondary: #ffffff;
@@ -36,7 +37,7 @@
   }
 
   .dark {
-    --background: #19232f;
+    --background: #1e293b;
     --foreground: #e3e6e6;
 
     --muted: 210 40% 96.1%;
@@ -60,9 +61,9 @@
     --destructive: #d00000;
     --destructive-foreground: #ffffff;
 
-    --ring:  #3a4d5f;
-    --border:  #3a4d5f;
-    --input:  #3a4d5f;
+    --ring: #3a4d5f;
+    --border: #3a4d5f;
+    --input: #3a4d5f;
 
     --radius: 0.5rem;
   }
@@ -74,6 +75,8 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
   }
 }

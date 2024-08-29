@@ -3,20 +3,23 @@
 import { cn } from '@/lib';
 import React, { ReactNode } from 'react';
 
-export function HeroWithImg(props: { children: ReactNode; img: string; className?: string }) {
+export function HeroWithImg(props: { children: ReactNode; bg: string; img: string; className?: string }) {
   return (
-    <section className={cn(props.className)}>
+    <section className={cn('md:py-0 py-5 rounded-lg md:rounded-3xl w-full', props.className)}>
       <div
-        className={`container rounded-3xl
-        md:min-h-[50vh] w-full 
+        className={cn(
+          props.bg,
+          `container rounded-lg md:rounded-3xl
+        md:min-h-[50vh] w-[80%] 
         flex items-center justify-between
         flex-col md:flex-row
-    `}
+    `
+        )}
       >
         <div
           className={`
         pt-4 h-full flex items-center justify-center
-        w-[85%]
+        w-full
         md:w-[50%] gap-x-4
       `}
         >
