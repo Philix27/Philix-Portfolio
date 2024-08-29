@@ -4,18 +4,17 @@ import Link from 'next/link';
 import { MainNavProps } from './site';
 import { AppButton, Drawer, TextH, TextP } from '@/comps';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { useRouter } from 'next/navigation';
-import { AppPages, AppStores } from '@/lib';
+import { useAppTheme, AppStores, cn } from '@/lib';
 import { PiSunLight } from 'react-icons/pi';
 import { useTheme } from 'next-themes';
 
 export function NavbarMarketing(props: MainNavProps) {
-  const router = useRouter();
   const store = AppStores.useSettingsStore();
   const { setTheme, theme } = useTheme();
+  const { gradient } = useAppTheme();
 
   return (
-    <header className="bg-background sticky top-0 z-20 w-full">
+    <header className={cn('sticky top-0 z-20 w-full', gradient)}>
       <div className="container flex h-[50px] md:h-[60px] items-center justify-between">
         <div className="flex gap-6 md:gap-10 ">
           {/* <img src={'/logoBlue.png'} className="size-[35px] rounded-[17.5px]" /> */}
