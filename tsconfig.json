@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext", "webworker"],
+    "types": [],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./app/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "exclude": ["node_modules", "tmp", "server"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/file/page.tsx", "app/(pages)/cluster9", "app/auth/ConversationContainer.tsx", "app/auth/ListConversations.tsx", "app/auth/MessageContainer.tsx", "app/auth/MessageInput.tsx", "app/auth/MessageItem.tsx", "app/auth/NewConversation.tsx"]
+}
