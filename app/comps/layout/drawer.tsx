@@ -27,11 +27,7 @@ export function Drawer(props: { items?: NavItem[] }) {
         transition={{ ease: 'easeInOut', duration: 0.3 }}
         className={'w-[60%] max-w-[300px] bg-secondary rounded-r-2xl'}
       >
-        {homePaths.includes(path) ? (
-          <HomeDrawer router={router} items={props.items} />
-        ) : (
-          <InAppDrawer router={router} items={props.items} />
-        )}
+        <HomeDrawer router={router} items={props.items} />
       </motion.div>
       <div
         className={'w-[40%]'}
@@ -76,40 +72,6 @@ function HomeDrawer(props: { router: AppRouterInstance; items?: NavItem[] }) {
           }}
         />
       ))}
-    </div>
-  );
-}
-
-function InAppDrawer(props: { router: AppRouterInstance; items?: NavItem[] }) {
-  const { setTheme, theme } = useTheme();
-  const store = AppStores.useSettingsStore();
-  const { router } = props;
-  return (
-    <div className="px-4 mt-[50px]">
-      <DrawerRow
-        title={'Profile'}
-        icon={GoPerson}
-        onClick={() => {
-          router.push('/settings');
-        }}
-      />
-      <DrawerRow
-        title={'Notifications'}
-        icon={IoIosNotificationsOutline}
-        onClick={() => {
-          router.push('/notify');
-        }}
-      />
-      <DrawerRow
-        title={'Theme'}
-        icon={IoColorPaletteOutline}
-        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-      />
-      <DrawerRow
-        title={'Sound'}
-        icon={store.isLoud ? PiSpeakerHighThin : PiSpeakerSimpleXLight}
-        onClick={() => store.update({ isLoud: !store.isLoud })}
-      />
     </div>
   );
 }

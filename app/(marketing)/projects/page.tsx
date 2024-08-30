@@ -1,23 +1,23 @@
+'use client';
 import { TextH, TextP, AppTextInput } from '@/comps';
 import React from 'react';
+import { projectData } from './data';
+import { cn, useAppTheme } from '@/lib';
 
 export default function ContactUsPage() {
+  const { gradient } = useAppTheme();
+
   return (
-    <div className={`flex w-full h-full`}>
-      <div className={'w-[50%] bg-teal-700 hidden md:block'}>Image</div>
-      <div className={'md:w-[50%] w-full h-full flex flex-col items-center justify-center'}>
-        <div className="w-1/2 mb-4">
-          <TextH>Title</TextH>
-          <TextP>WhatsApp</TextP>
-          <TextP>LinkedIn</TextP>
-          <TextP>Instagram</TextP>
-          <TextP>Support Email</TextP>
-        </div>
-        <div className={`gap-y-4 w-1/2`}>
-          <AppTextInput control={undefined} name={'title'} label="Title" place="Tile of your message" />
-          <AppTextInput control={undefined} name={'email'} label="Email" place="Your email to receive response" />
-          <AppTextInput control={undefined} name={'message'} label="Message" place="Enter your message" />
-        </div>
+    <div className={`flex w-full h-full items-center justify-center`}>
+      <div className="grid grid-cols-2 gap-2">
+        {projectData.map((val, i) => (
+          <div key={i} className={cn('bg-card rounded-lg p-2 border', gradient)}>
+            <div>
+              <TextH>{val.title} </TextH>
+              <TextP>{val.subtitle} </TextP>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

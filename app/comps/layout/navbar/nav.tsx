@@ -15,7 +15,7 @@ export function NavbarMarketing(props: MainNavProps) {
   const { gradient } = useAppTheme();
 const router = useRouter()
   return (
-    <header className={cn('sticky top-0 z-20 w-full', gradient)}>
+    <header className={cn('fixed left-0 top-0 z-20 w-full', gradient)}>
       <div className="container flex h-[50px] md:h-[60px] items-center justify-between">
         <div className="flex gap-6 md:gap-10 ">
           {/* <img src={'/logoBlue.png'} className="size-[35px] rounded-[17.5px]" /> */}

@@ -2,15 +2,13 @@
 
 import React from 'react';
 
-import { CardsSection, HeroSection, JumbutronSection, HeroWithImg } from '../_comps';
-import { AppImg, AppPages } from '@/lib';
+import { CardsSection, JumbutronSection, HeroWithImg } from '../_comps';
 import { AppButton, TextH, TextP } from '@/comps';
 import { cardData } from './cards';
 import { useRouter } from 'next/navigation';
-import { useTheme } from 'next-themes';
 import { FaGithub, FaGitlab, FaLinkedin } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
-import { DARK_GRADIENT, LIGHT_GRADIENT, useAppTheme } from '../../lib/hooks/useTheme';
+import { useAppTheme } from '@/lib';
 import { CardsLessSection } from '../_comps/cardless';
 
 export function HomeSection() {
