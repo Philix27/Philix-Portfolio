@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { TextH, TextP } from '@/comps';
+import React from "react";
+import { TextH, TextP } from "@/comps";
 
 export function JumbutronSection(props: { title: string; subtitle: string }) {
   return (
@@ -12,13 +12,11 @@ export function JumbutronSection(props: { title: string; subtitle: string }) {
     flex flex-col items-center 
     gap-4 justify-center 
     max-w-[85vw] md:max-w-[50%] 
-    md:my-8 my-8 text-center
+    md:my-8 my-6 text-center
     `}
         >
-          <TextH v={'h2'} className="leading-loose text-xl">
-            {props.title}
-          </TextH>
-          <TextP v={'p5'} className="leading-loose">
+          <TextH className="leading-loose text-2xl">{props.title}</TextH>
+          <TextP v={"p5"} className="leading-loose">
             {props.subtitle}
           </TextP>
         </div>

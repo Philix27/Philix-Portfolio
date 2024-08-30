@@ -11,6 +11,7 @@ import { MdEmail } from "react-icons/md";
 import { useAppTheme } from "@/lib";
 import { CardsLessSection } from "../_comps/cardless";
 import Link from "next/link";
+import { ExperienceSection } from "./experience";
 
 export function HomeSection() {
   const router = useRouter();
@@ -28,10 +29,8 @@ export function HomeSection() {
             Hello, I am Felix Eligbue a Fullstack Engineer
           </TextH>
           <TextP>
-            Qualifications An Engineer who is passionate about building
-            products/applications within Defi Individual who is excited by the
-            opportunity to join a founding core team and drive a product from
-            zero to one.
+            Fullstack Typescript developer with over 4 years of professional experience. I enjoy working on 
+            innovative projects and also Web3 ideas. 
           </TextP>
           <div className="flex items-center gap-x-4 w-full text-2xl my-4">
             <AppButton className="w-fit py-1">Hire me</AppButton>
@@ -48,28 +47,10 @@ export function HomeSection() {
           </div>
         </div>
       </HeroWithImg>
-
-      <JumbutronSection
-        title={"Fun time"}
-        subtitle="Play chess and have fun with friends and top chess master."
-      />
-
+      <JumbutronSection title={"Stay Real"} subtitle="" />
       <CardsLessSection data={imageLessData} />
-      <HeroWithImg img={"/profile.jpg"} className="my-5" bg={gradient}>
-        <div className="h-full">
-          <TextH
-            v="h1"
-            className={
-              "text-[24px] font-extrabold md:text-[50px] text-card-foreground"
-            }
-          >
-            <span className="text-primary tracking-wide"> Board Masters </span>
-            <span className="text-primary tracking-wide"> Chess </span> and
-            <span className="text-primary tracking-wide"> Checkers</span>
-          </TextH>
-          <TextP>Say some</TextP>
-        </div>
-      </HeroWithImg>
+      <JumbutronSection title={"Work Experience"} subtitle="" />
+      <ExperienceSection />
       <JumbutronSection title={"Skills"} subtitle="" />
       <CardsSection data={cardData} />
     </div>
