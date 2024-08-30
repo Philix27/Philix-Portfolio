@@ -5,7 +5,6 @@ export const cardData = [
   {
     title: 'Flexible Savings Options',
     img: '/profile.jpg',
-    color: 'bg-teal-700',
     subtitle: `
       We aim to provide clients with flexible ways to save,
       allowing them to contribute a fixed amount of their
@@ -15,7 +14,6 @@ export const cardData = [
   {
     title: 'Low-Interest Loans',
     img: '/profile.jpg',
-    color: 'bg-pink-700',
     subtitle: `Through our platform, we strive to offer clients 
       low-interest rate loans, enabling
       them to access credit responsibly and affordably.`,
@@ -23,7 +21,6 @@ export const cardData = [
   {
     title: 'Utility Bill Payments',
     img: '/profile.jpg',
-    color: 'bg-blue-700',
     subtitle: `In addition to savings and loans, 
     we also offer the convenience of utility
     bill payments through our app,

@@ -9,7 +9,6 @@ export function CardsLessSection(props: {
   className?: string;
   data: {
     title: string;
-    color: string;
     subtitle: string;
   }[];
 }) {
