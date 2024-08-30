@@ -48,9 +48,8 @@ export function HomeSection() {
           <TextP>Say some</TextP>
         </div>
       </HeroWithImg>
-      <JumbutronSection title={'Fun time'} subtitle="Play chess and have fun with friends and top chess master." />
+      <JumbutronSection title={'Skills'} subtitle="Domains and specialization" />
       <CardsSection data={cardData} />
-      <JumbutronSection title={'Fun time'} subtitle="Play chess and have fun with friends and top chess master." />
     </div>
   );
 }

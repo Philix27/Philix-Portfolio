@@ -3,7 +3,7 @@ import './globals.css';
 import { AppProviders, fontSans, cn } from './lib';
 
 export const metadata: Metadata = {
-  title: 'Chess',
+  title: 'Philix',
   description: 'An easy to use off-ramping platform',
 };
 
