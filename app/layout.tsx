@@ -1,22 +1,27 @@
-import "./lib/styles/index.scss";
-import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
+import './globals.css';
+import { AppProviders, fontSans, cn } from './lib';
 
 export const metadata: Metadata = {
-  title: "Eligbue Felix",
-  description: "Eligbue Felix",
+  title: 'Chess',
+  description: 'An easy to use off-ramping platform',
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-        <div id="modal-portal" />
+      <body
+        className={cn(
+          `min-h-screen bg-background 
+          font-sans antialiased`,
+          fontSans.variable
+        )}
+      >
+        <AppProviders>{children}</AppProviders>
       </body>
     </html>
   );
