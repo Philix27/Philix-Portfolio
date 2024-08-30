@@ -21,9 +21,8 @@ export interface NavItem {
 }
 
 export const NavItems: NavItem[] = [
-  { title: 'Blogs', href: AppPages.blogs },
-  { title: 'Courses', href: AppPages.courses },
+  // { title: 'Blogs', href: AppPages.blogs },
+  // { title: 'Courses', href: AppPages.courses },
   { title: 'Projects', href: AppPages.project },
-  { title: 'Contacts', href: AppPages.contact, icon: BiMessage },
   { title: 'Theme', href: 'THEME', icon: BiColor },
 ];

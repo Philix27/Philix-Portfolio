@@ -46,7 +46,7 @@ const router = useRouter()
                     if (v.href) {
                       router.push(v.href)
                     }
-                  }} className={`hover:bg-accent p-2 rounded-md hover:[&>p]:text-primary-foreground`}>
+                  }} className={`hover:bg-accent p-2 rounded-md hover:[&>p]:text-primary-foreground cursor-pointer`}>
                     <TextP className={'text-primary'}>{v.title}</TextP>
                   </div>
                 );

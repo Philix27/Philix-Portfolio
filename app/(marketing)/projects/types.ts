@@ -19,6 +19,8 @@ type ITags =
   | 'PRISMA'
   | 'HACKATHON'
   | 'FLUTTER'
+  | 'TRPC'
+  | 'STYLED-COMPONENTS'
   | 'DRIZZLE';
 
 export type IProject = {
@@ -26,10 +28,11 @@ export type IProject = {
   title: string;
   subtitle: string;
   sourceCode: string;
-  img: string;
   liveLink: string;
   lastContribution: string;
   dateStarted: string;
+  images: string[];
+  coverImg: string;
   language: ILang[];
   tags: ITags[];
   status: IStatus;
