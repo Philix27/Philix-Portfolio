@@ -23,8 +23,8 @@ export default function ContactUsPage() {
               <TextP>{val.subtitle} </TextP>
               <div className="flex gap-x-1">
                 {val.tags.map((tag, tagIndex) => (
-                  <p key={tagIndex} className="mt-1 text-xs">
-                    {tag},
+                  <p key={tagIndex} className="mt-1 text-xs text-primary">
+                    {tag} | 
                   </p>
                 ))}
               </div>

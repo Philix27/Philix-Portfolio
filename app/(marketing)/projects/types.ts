@@ -17,6 +17,7 @@ type ITags =
   | 'TURBO-REPO'
   | 'ETHERS.JS'
   | 'PRISMA'
+  | 'TAURI'
   | 'HACKATHON'
   | 'FLUTTER'
   | 'TRPC'
