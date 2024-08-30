@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { HeroCenter } from '../_comps';
 import { TextH } from '@/comps';

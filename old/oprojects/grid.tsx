@@ -1,8 +1,8 @@
 import { useRouter } from "next/navigation";
 import { TextBody, TextHeader } from "@/comps";
 import { styled } from "styled-components";
-import { AppProjects, AppLinks } from "@/lib";
 import Link from "next/link";
+import { AppProjects, AppLinks } from "@/old/lib";
 
 export default function ProjectsList() {
   const sortedItems = AppProjects.filter((item) => {

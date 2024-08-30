@@ -1,3 +1,4 @@
+'use client'
 import { TextH, TextP, AppTextInput } from '@/comps';
 import React from 'react';
 

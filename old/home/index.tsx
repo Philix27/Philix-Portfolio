@@ -1,8 +1,9 @@
 "use client";
-import { Wrapper, ContentWrapper } from "@/(pages)/blogs/comps";
+
 import { AppWrapper } from "@/comps";
 import React from "react";
 import { styled } from "styled-components";
+import { ContentWrapper } from "../oblogs/comps";
 
 export function HomeView() {
   return (

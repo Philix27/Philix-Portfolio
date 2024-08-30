@@ -1,6 +1,8 @@
 "use client";
-import { AppBlogs } from "@/lib";
-import { ClientOnly, MarkdownStyledComp, AppWrapper, Landing } from "@/comps";
+
+import { ClientOnly, MarkdownStyledComp, AppWrapper } from "@/comps";
+import { AppBlogs } from "@/old/lib";
+import { Landing } from "../../oprojects/banner";
 
 export default function BlogPage({ params }: { params: { slug: string } }) {
   const activeContent = AppBlogs.filter((v, index) => v.id === params.slug)[0];

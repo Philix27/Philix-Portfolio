@@ -1,11 +1,16 @@
-import { TextH, TextP, AppTextInput } from '@/comps';
-import React from 'react';
+"use client";
+import { TextH, TextP, AppTextInput } from "@/comps";
+import React from "react";
 
 export default function ContactUsPage() {
   return (
     <div className={`flex w-full h-full`}>
-      <div className={'w-[50%] bg-teal-700 hidden md:block'}>Image</div>
-      <div className={'md:w-[50%] bg-lime-300 w-full h-full flex flex-col items-center justify-center'}>
+      <div className={"w-[50%] bg-teal-700 hidden md:block"}>Image</div>
+      <div
+        className={
+          "md:w-[50%] bg-lime-300 w-full h-full flex flex-col items-center justify-center"
+        }
+      >
         <div className="md:w-1/2 w-[85%] mb-4">
           <TextH>Title</TextH>
           <TextP>WhatsApp</TextP>
@@ -14,9 +19,24 @@ export default function ContactUsPage() {
           <TextP>Support Email</TextP>
         </div>
         <div className={`gap-y-4 md:w-1/2 w-[85%]`}>
-          <AppTextInput control={undefined} name={'title'} label="Title" place="Tile of your message" />
-          <AppTextInput control={undefined} name={'email'} label="Email" place="Your email to receive response" />
-          <AppTextInput control={undefined} name={'message'} label="Message" place="Enter your message" />
+          <AppTextInput
+            control={undefined}
+            name={"title"}
+            label="Title"
+            place="Tile of your message"
+          />
+          <AppTextInput
+            control={undefined}
+            name={"email"}
+            label="Email"
+            place="Your email to receive response"
+          />
+          <AppTextInput
+            control={undefined}
+            name={"message"}
+            label="Message"
+            place="Enter your message"
+          />
         </div>
       </div>
     </div>

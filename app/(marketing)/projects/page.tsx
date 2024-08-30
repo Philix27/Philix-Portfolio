@@ -4,7 +4,7 @@ import React from 'react';
 import { projectData } from './data';
 import { cn, useAppTheme } from '@/lib';
 
-export default function ContactUsPage() {
+export default function ProjectPage() {
   const { gradient } = useAppTheme();
 
   return (

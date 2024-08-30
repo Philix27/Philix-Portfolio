@@ -1,4 +1,4 @@
-import { HomeView } from "./(pages)/home";
+import { HomeView } from "./home";
 import { ClientOnly, MetaHeader, AppWrapper } from "@/comps";
 import { Metadata } from "next";
 

@@ -1,6 +1,7 @@
 "use client";
-import { AppWrapper, MarkdownStyledComp, Landing } from "@/comps";
-import { AppProjects } from "@/lib";
+import { AppWrapper, MarkdownStyledComp } from "@/comps";
+import { AppProjects } from "@/old/lib";
+import { Landing } from "../banner";
 
 export default function ProjectsContentPage({
   params,
@@ -8,7 +9,7 @@ export default function ProjectsContentPage({
   params: { slug: string };
 }) {
   const activeContent = AppProjects.filter(
-    (v, index) => v.id === params.slug
+    (v, index) => v.id === params.slug,
   )[0];
   return (
     <AppWrapper title={"Topper"} subtitle={"Hello"}>

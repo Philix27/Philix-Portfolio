@@ -10,7 +10,7 @@ import {
 } from "./comps";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { AppWrapper, TextBody, TextHeader } from "@/comps";
-import { AppBlogs } from "@/lib";
+import { AppBlogs } from "@/old/lib";
 
 export default function BlogComp() {
   const router = useRouter();

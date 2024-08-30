@@ -1,6 +1,6 @@
 import { BannerImg, BannerSubtitle, BannerTitle } from "@/comps";
+import { device } from "@/old/lib";
 import styled from "styled-components";
-import { device } from "@/lib";
 
 export const PlainLanding = (props: {
   title: string;

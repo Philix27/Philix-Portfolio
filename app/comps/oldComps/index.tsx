@@ -6,4 +6,3 @@ export * from "./markdown";
 export * from "./CleintOnly";
 export * from "./techlist";
 export * from "./Texts";
-export * from "../(pages)/projects/banner";

@@ -2,7 +2,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { usePathname, useRouter } from "next/navigation";
-import { AppLinks } from "../../lib/utils";
+import { AppLinks } from "@/old/lib";
 
 export function AppNav() {
   const router = useRouter();
