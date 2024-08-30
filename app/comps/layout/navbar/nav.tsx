@@ -7,12 +7,13 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useAppTheme, AppStores, cn } from '@/lib';
 import { PiSunLight } from 'react-icons/pi';
 import { useTheme } from 'next-themes';
+import { useRouter } from 'next/navigation';
 
 export function NavbarMarketing(props: MainNavProps) {
   const store = AppStores.useSettingsStore();
   const { setTheme, theme } = useTheme();
   const { gradient } = useAppTheme();
-
+const router = useRouter()
   return (
     <header className={cn('sticky top-0 z-20 w-full', gradient)}>
       <div className="container flex h-[50px] md:h-[60px] items-center justify-between">
@@ -28,7 +29,7 @@ export function NavbarMarketing(props: MainNavProps) {
         <div className="flex items-center justify-center md:gap-x-3">
           <div className={'hidden md:flex w-full gap-x-4'}>
             {props.items?.map((v, i) => {
-              if (v.href == 'THEME') {
+              if (v.href == 'THEME' || !v.href) {
                 return (
                   <div
                     className={`hover:bg-accent p-2 rounded-md hover:[&>p]:text-primary-foreground`}
@@ -39,16 +40,17 @@ export function NavbarMarketing(props: MainNavProps) {
                     <PiSunLight />
                   </div>
                 );
+              } else {
+                return (
+                  <div key={i} onClick={() => {
+                    if (v.href) {
+                      router.push(v.href)
+                    }
+                  }} className={`hover:bg-accent p-2 rounded-md hover:[&>p]:text-primary-foreground`}>
+                    <TextP className={'text-primary'}>{v.title}</TextP>
+                  </div>
+                );
               }
-              return (
-                <Link
-                  key={i}
-                  href={v.href || '/#'}
-                  className={`hover:bg-accent p-2 rounded-md hover:[&>p]:text-primary-foreground`}
-                >
-                  <TextP className={'text-primary'}>{v.title}</TextP>
-                </Link>
-              );
             })}
 
             <AppButton className="px-4" onClick={() => {}}>
