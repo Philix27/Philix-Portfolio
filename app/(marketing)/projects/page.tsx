@@ -55,14 +55,26 @@ export default function ProjectPage() {
                   />
                 ))}
               </div>
-              <div className="flex gap-x-1">
-                {val.language.map((language, languageIndex) => (
-                  <Tag
-                    key={languageIndex}
-                    text={language}
-                    className="mt-1 bg-teal-600"
-                  />
-                ))}
+              <div className="flex items-center justify-between">
+                <div className="flex gap-x-1">
+                  {val.language.map((language, languageIndex) => (
+                    <Tag
+                      key={languageIndex}
+                      text={language}
+                      className="mt-1 bg-teal-600"
+                    />
+                  ))}
+                </div>
+
+                <div className="flex gap-x-1">
+                  {val.devices.map((device, deviceIndex) => (
+                    <Tag
+                      key={deviceIndex}
+                      text={device}
+                      className="mt-1 bg-blue-600"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

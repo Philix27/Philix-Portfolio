@@ -143,8 +143,9 @@ export const projectData: IProject[] = [
   {
     id: 9,
     title: "Get2Geda",
-    subtitle:
-      "A mobile app for students on campus (Delta State University Abraka). For getting live updates and exam past questions.",
+    subtitle: `A mobile app for students on campus 
+    (Delta State University Abraka).
+    For getting live updates and exam past questions.`,
     tags: ["FLUTTER", "FIREBASE"],
     sourceCode: "#",
     liveLink: "#",

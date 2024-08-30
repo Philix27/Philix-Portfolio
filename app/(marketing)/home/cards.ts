@@ -1,6 +1,3 @@
-import { AppImg } from "@/lib";
-import { color } from "framer-motion";
-
 export const cardData = [
   {
     title: "Frontend Web Apps",

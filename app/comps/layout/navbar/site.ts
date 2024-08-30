@@ -1,9 +1,7 @@
-'use client';
+"use client";
 
-import { IconType } from 'react-icons';
-import { AppPages } from '@/lib';
-import { BiColor, BiMessage } from 'react-icons/bi';
-import { PiSunLight } from 'react-icons/pi';
+import { IconType } from "react-icons";
+import { AppPages } from "@/lib";
 
 export interface MainNavProps {
   title: string;
@@ -23,6 +21,6 @@ export interface NavItem {
 export const NavItems: NavItem[] = [
   // { title: 'Blogs', href: AppPages.blogs },
   // { title: 'Courses', href: AppPages.courses },
-  { title: 'Projects', href: AppPages.project },
-  { title: 'Theme', href: 'THEME', icon: BiColor },
+  { title: "Projects", href: AppPages.project },
+  { title: "Theme", href: "THEME" },
 ];
