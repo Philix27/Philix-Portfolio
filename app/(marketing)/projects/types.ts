@@ -20,6 +20,7 @@ type ITags =
   | 'TAURI'
   | 'HACKATHON'
   | 'FLUTTER'
+  | 'FIREBASE'
   | 'TRPC'
   | 'STYLED-COMPONENTS'
   | 'DRIZZLE';

@@ -54,7 +54,7 @@ export function HomeSection() {
         subtitle="Play chess and have fun with friends and top chess master."
       />
 
-      <CardsLessSection data={cardData} />
+      <CardsLessSection data={imageLessData} />
       <HeroWithImg img={"/profile.jpg"} className="my-5" bg={gradient}>
         <div className="h-full">
           <TextH
@@ -70,11 +70,8 @@ export function HomeSection() {
           <TextP>Say some</TextP>
         </div>
       </HeroWithImg>
-      <JumbutronSection
-        title={"Skills"}
-        subtitle="Domains and specialization"
-      />
-      <CardsSection data={imageLessData} />
+      <JumbutronSection title={"Skills"} subtitle="" />
+      <CardsSection data={cardData} />
     </div>
   );
 }

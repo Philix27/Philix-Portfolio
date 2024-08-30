@@ -1,7 +1,7 @@
-'use client';
-import { useRouter } from 'next/navigation';
+"use client";
+import { useRouter } from "next/navigation";
 
-type IPage = '/blogs' | '/' | '/courses' | '/project' | 'contact';
+type IPage = "/blogs" | "/" | "/courses" | "/project" | "contact";
 export const useAppRouter = () => {
   const router = useRouter();
 
@@ -9,5 +9,5 @@ export const useAppRouter = () => {
     router.push(params);
   }
 
-  return routeHandler;
+  return { routeHandler, router };
 };

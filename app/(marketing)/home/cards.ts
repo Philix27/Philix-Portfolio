@@ -4,7 +4,7 @@ import { color } from "framer-motion";
 export const cardData = [
   {
     title: "Frontend Web Apps",
-    img: "/profile.jpg",
+    img: "/icons/web.jpeg",
     subtitle: `
       We aim to provide clients with flexible ways to save,
       allowing them to contribute a fixed amount of their
@@ -13,14 +13,14 @@ export const cardData = [
   },
   {
     title: "Backend Server",
-    img: "/profile.jpg",
+    img: "/icons/secure.jpeg",
     subtitle: `Through our platform, we strive to offer clients 
       low-interest rate loans, enabling
       them to access credit responsibly and affordably.`,
   },
   {
     title: "Blockchain & Smart Contract",
-    img: "/profile.jpg",
+    img: "/icons/lock.jpeg",
     subtitle: `In addition to savings and loans, 
     we also offer the convenience of utility
     bill payments through our app,

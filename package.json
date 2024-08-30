@@ -1,9 +1,9 @@
 {
-  "name": "portfolio_v2",
+  "name": "portfolio_v3",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://philix.dev",
-  "author": "Eligbue Felix",
+  "homepage": "https://philix.vercel.app",
+  "author": "Felix Eligbue",
   "scripts": {
     "dev": "next dev -p 3009",
     "build": "next build",
