@@ -29,8 +29,9 @@ export function HomeSection() {
             Hello, I am Felix Eligbue a Fullstack Engineer
           </TextH>
           <TextP>
-            Fullstack Typescript developer with over 4 years of professional experience. I enjoy working on 
-            innovative projects and also Web3 ideas. 
+            Fullstack Typescript developer with over 4 years of professional
+            experience. I enjoy working on innovative projects and also Web3
+            ideas.
           </TextP>
           <div className="flex items-center gap-x-4 w-full text-2xl my-4">
             <AppButton className="w-fit py-1">Hire me</AppButton>
@@ -47,12 +48,12 @@ export function HomeSection() {
           </div>
         </div>
       </HeroWithImg>
-      <JumbutronSection title={"Stay Real"} subtitle="" />
-      <CardsLessSection data={imageLessData} />
-      <JumbutronSection title={"Work Experience"} subtitle="" />
-      <ExperienceSection />
+      {/* <JumbutronSection title={"Stay Real"} subtitle="" /> */}
+      {/* <CardsLessSection data={imageLessData} /> */}
       <JumbutronSection title={"Skills"} subtitle="" />
       <CardsSection data={cardData} />
+      <JumbutronSection title={"Work Experience"} subtitle="" />
+      <ExperienceSection />
     </div>
   );
 }
